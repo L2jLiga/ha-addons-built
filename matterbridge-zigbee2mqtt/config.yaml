@@ -1,44 +1,35 @@
-name: MatterBridge
-version: 0.0.1
+name: MatterBridge Zigbee2MQTT
+version: 0.0.9
 slug: matterbridge-zigbee2mqtt
-description: Network-wide ads & trackers blocking DNS server
+description: MatterBridge with Zigbee2MQTT plugin integration
 url: https://github.com/l2jliga/ha-addons
 codenotary: l2jliga@gmail.com
-ingress: true
-ingress_port: 0
-ingress_stream: true
-panel_icon: mdi:shield-check
-startup: services
-homeassistant: 0.113.2
-arch:
-- aarch64
-- amd64
-- armv7
 init: false
+arch:
+- i386
+- amd64
+- aarch64
 ports:
-  53/udp: 53
-  80/tcp: null
+  3000/tcp: 3000
 ports_description:
-  53/udp: DNS server port
-  80/tcp: Web interface (Not required for Ingress)
-discovery:
-- adguard
-auth_api: true
-host_network: true
-hassio_api: true
-hassio_role: manager
-map:
-- ssl
+  3000/tcp: Web UI
 options:
-  ssl: true
-  certfile: fullchain.pem
-  keyfile: privkey.pem
+  host: localhost
+  port: 1883
+  topic: zigbee2mqtt
+  username: zigbee2mqtt
+  password: zigbee2mqtt
+  whitelist: '[]'
+  blacklist: '[]'
+map:
+- addon_config:rw
 schema:
-  log_level: list(trace|debug|info|notice|warning|error|fatal)?
-  ssl: bool
-  certfile: str
-  keyfile: str
-  leave_front_door_open: bool?
-backup_exclude:
-- '*/adguard/data/querylog.*'
-image: ghcr.io/hassio-addons/adguard/{arch}
+  host: str
+  port: int
+  topic: str
+  username: str
+  password: str
+  whitelist: str
+  blacklist: str
+host_network: true
+image: ghcr.io/l2jliga/matterbridge-zigbe2mqtt/{arch}
