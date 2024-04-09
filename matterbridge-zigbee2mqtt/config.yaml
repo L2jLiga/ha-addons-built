@@ -32,4 +32,4 @@ schema:
   whitelist: str
   blacklist: str
 host_network: true
-image: ghcr.io/l2jliga/matterbridge-zigbe2mqtt/{arch}
+image: ghcr.io/l2jliga/matterbridge-zigbee2mqtt/{arch}
