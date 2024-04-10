@@ -1,5 +1,5 @@
 name: MatterBridge Zigbee2MQTT
-version: 0.0.24
+version: 0.0.25
 slug: matterbridge-zigbee2mqtt
 description: MatterBridge with Zigbee2MQTT plugin integration
 url: https://github.com/l2jliga/ha-addons
@@ -30,8 +30,8 @@ schema:
   username: str
   password: str
   whitelist:
-  - str
+  - str?
   blacklist:
-  - str
+  - str?
 host_network: true
 image: ghcr.io/l2jliga/matterbridge-zigbee2mqtt/{arch}
