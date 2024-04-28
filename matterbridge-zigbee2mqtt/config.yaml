@@ -1,5 +1,5 @@
 name: MatterBridge Zigbee2MQTT
-version: 1.6.1
+version: 1.7.0
 slug: matterbridge-zigbee2mqtt
 description: MatterBridge with Zigbee2MQTT plugin integration
 url: https://github.com/l2jliga/ha-addons
@@ -20,13 +20,14 @@ options:
   topic: zigbee2mqtt
   username: mqtt
   password: mqtt
+  unregisterOnShutdown: false
   whiteList: []
   blackList: []
   switchList: []
   lightList: []
   outletList: []
   featureBlackList: []
-  deviceFeatureBlackList: null
+  type: DynamicPlatform
 map:
 - addon_config:rw
 discovery:
@@ -39,6 +40,7 @@ schema:
   topic: str
   username: str
   password: str
+  unregisterOnShutdown: bool
   whitelist:
   - str?
   blacklist:
@@ -51,5 +53,6 @@ schema:
   - str?
   featureBlackList:
   - str?
+  type: list(DynamicPlatform)
 host_network: true
 image: ghcr.io/l2jliga/matterbridge-zigbee2mqtt/{arch}
