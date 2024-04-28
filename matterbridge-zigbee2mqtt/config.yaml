@@ -1,5 +1,5 @@
 name: MatterBridge Zigbee2MQTT
-version: 1.5.1
+version: 1.6.0
 slug: matterbridge-zigbee2mqtt
 description: MatterBridge with Zigbee2MQTT plugin integration
 url: https://github.com/l2jliga/ha-addons
@@ -10,13 +10,9 @@ arch:
 - amd64
 - aarch64
 ports:
-  8283/tcp: 8283
-  5550/tcp: 5550
+  8283/tcp: null
+  5550/tcp: null
   8284/tcp: null
-ports_description:
-  8283/tcp: Web UI
-  8284/tcp: WebSocket for UI
-  5550/tcp: MatterBridge Aggregator port
 webui: http://[HOST]:[PORT:8283]/
 options:
   host: core-mosquitto
@@ -26,6 +22,11 @@ options:
   password: mqtt
   whiteList: []
   blackList: []
+  switchList: []
+  lightList: []
+  outletList: []
+  featureBlackList: []
+  deviceFeatureBlackList: null
 map:
 - addon_config:rw
 discovery:
@@ -41,6 +42,14 @@ schema:
   whitelist:
   - str?
   blacklist:
+  - str?
+  switchList:
+  - str?
+  lightList:
+  - str?
+  outletList:
+  - str?
+  featureBlackList:
   - str?
 host_network: true
 image: ghcr.io/l2jliga/matterbridge-zigbee2mqtt/{arch}
