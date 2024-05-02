@@ -1,5 +1,5 @@
 Changes in this Release
 
-<details><summary>8d02ac4 chore(apparmor): added complain flag</summary>
-chore(apparmor): added complain flag
+<details><summary>d238bd0 chore: added ingress port to config</summary>
+chore: added ingress port to config
 </details>
