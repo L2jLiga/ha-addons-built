@@ -1,5 +1,5 @@
 Changes in this Release
 
-<details><summary>631caed fix: invalid ingress config</summary>
+<details><summary>feaf9c2 fix: invalid ingress config</summary>
 fix: invalid ingress config
 </details>
