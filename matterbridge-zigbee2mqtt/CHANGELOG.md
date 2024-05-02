@@ -1,5 +1,5 @@
 Changes in this Release
 
-<details><summary>5d7d6d6 chore: drop complain flag</summary>
-chore: drop complain flag
+<details><summary>cd9941c chore: ingress absolute to relative url transform</summary>
+chore: ingress absolute to relative url transform
 </details>
