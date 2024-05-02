@@ -1,5 +1,5 @@
 Changes in this Release
 
-<details><summary>d0e080c chore: adjusted ingress</summary>
-chore: adjusted ingress
+<details><summary>5d7d6d6 chore: drop complain flag</summary>
+chore: drop complain flag
 </details>
