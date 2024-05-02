@@ -1,5 +1,5 @@
 Changes in this Release
 
-<details><summary>1a8b4bb fix: missed apparmor for nginx</summary>
-fix: missed apparmor for nginx
+<details><summary>a417ed1 fix(apparmor): invalid nginx access rights</summary>
+fix(apparmor): invalid nginx access rights
 </details>
