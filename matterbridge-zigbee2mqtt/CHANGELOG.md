@@ -1,5 +1,5 @@
 Changes in this Release
 
-<details><summary>76eae59 chore: swap complain flags between profiles</summary>
-chore: swap complain flags between profiles
+<details><summary>18d272b change apparmor mode</summary>
+change apparmor mode
 </details>
