@@ -1,5 +1,5 @@
 Changes in this Release
 
-<details><summary>f6d3450 fix: missed semicolon in ingress config</summary>
-fix: missed semicolon in ingress config
+<details><summary>9d2c58c fix: invalid nginx config</summary>
+fix: invalid nginx config
 </details>
