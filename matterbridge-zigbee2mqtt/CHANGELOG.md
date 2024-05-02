@@ -1,5 +1,5 @@
 Changes in this Release
 
-<details><summary>0afcedf chore: reworked nginx conf</summary>
-chore: reworked nginx conf
+<details><summary>ffe2d27 chore: added missed nginx configuration</summary>
+chore: added missed nginx configuration
 </details>
