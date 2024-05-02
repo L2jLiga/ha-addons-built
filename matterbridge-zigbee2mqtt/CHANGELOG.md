@@ -1,5 +1,5 @@
 Changes in this Release
 
-<details><summary>2a8a8d5 chore: updated ingress</summary>
-chore: updated ingress
+<details><summary>f48b113 fix: ingress fails to start</summary>
+fix: ingress fails to start
 </details>
