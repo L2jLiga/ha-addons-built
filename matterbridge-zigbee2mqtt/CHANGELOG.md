@@ -1,5 +1,5 @@
 Changes in this Release
 
-<details><summary>0470def fix: invalid ingress config</summary>
+<details><summary>631caed fix: invalid ingress config</summary>
 fix: invalid ingress config
 </details>
