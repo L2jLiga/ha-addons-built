@@ -1,5 +1,5 @@
 Changes in this Release
 
-<details><summary>ffe2d27 chore: added missed nginx configuration</summary>
-chore: added missed nginx configuration
+<details><summary>7496757 chore: adjust ingress subfilter</summary>
+chore: adjust ingress subfilter
 </details>
