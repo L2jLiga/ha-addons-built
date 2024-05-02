@@ -1,5 +1,5 @@
 Changes in this Release
 
-<details><summary>81101bb fix: invalid ingress config</summary>
+<details><summary>dec8dcf fix: invalid ingress config</summary>
 fix: invalid ingress config
 </details>
