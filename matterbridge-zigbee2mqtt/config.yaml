@@ -1,5 +1,5 @@
 name: MatterBridge Zigbee2MQTT
-version: 1.10.0
+version: 1.11.0
 slug: matterbridge-zigbee2mqtt
 description: MatterBridge with Zigbee2MQTT plugin integration
 url: https://github.com/l2jliga/ha-addons
@@ -13,7 +13,8 @@ ports:
   8283/tcp: null
   5550/tcp: null
   8284/tcp: null
-webui: http://[HOST]:[PORT:8283]/
+ingress: true
+ingress_port: 8285
 options:
   host: core-mosquitto
   port: 1883
