@@ -1,5 +1,5 @@
 Changes in this Release
 
-<details><summary>a417ed1 fix(apparmor): invalid nginx access rights</summary>
-fix(apparmor): invalid nginx access rights
+<details><summary>f6d3450 fix: missed semicolon in ingress config</summary>
+fix: missed semicolon in ingress config
 </details>
