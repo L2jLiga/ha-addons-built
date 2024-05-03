@@ -1,5 +1,5 @@
 Changes in this Release
 
-<details><summary>dec8dcf fix: invalid ingress config</summary>
-fix: invalid ingress config
+<details><summary>a397779 feat: drop AppArmor</summary>
+feat: drop AppArmor
 </details>
