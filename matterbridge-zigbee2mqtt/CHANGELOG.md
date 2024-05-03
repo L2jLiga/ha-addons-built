@@ -1,5 +1,5 @@
 Changes in this Release
 
-<details><summary>a397779 feat: drop AppArmor</summary>
-feat: drop AppArmor
+<details><summary>defac17 chore: try to run</summary>
+chore: try to run
 </details>
