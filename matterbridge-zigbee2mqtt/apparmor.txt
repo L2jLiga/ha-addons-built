@@ -26,4 +26,9 @@ profile ADDON_SLUG flags=(attach_disconnected,mediate_deleted) {
 
   # Access to options.json and other files within your addon
   /config/** rw,
+
+  # Nginx
+  /usr/sbin/nginx ix,
+  /var/lib/nginx rwkl,
+  /var/lib/nginx/** rwkl,
 }
