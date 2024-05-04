@@ -1,5 +1,5 @@
 Changes in this Release
 
-<details><summary>5b25943 fix: react links are incorrect</summary>
-fix: react links are incorrect
+<details><summary>0e954ec fix: invalid React router patches</summary>
+fix: invalid React router patches
 </details>
