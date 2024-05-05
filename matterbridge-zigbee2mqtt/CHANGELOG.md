@@ -1,6 +1,9 @@
 Changes in this Release
 
-<details><summary>b5e565d chore: disable apparmor in config</summary>
-chore: disable apparmor in config
+<details><summary>75eb11b chore: fixed prettier config</summary>
+chore: fixed prettier config
+</details>
 
-Attempt to workaround issue "unable to unload apparmor profile" in HA</details>
+<details><summary>c92757c chore: rename addon dir</summary>
+chore: rename addon dir
+</details>
