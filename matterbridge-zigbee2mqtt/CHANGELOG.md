@@ -1,5 +1,6 @@
 Changes in this Release
 
-<details><summary>14b8fa4 fix: invalid websocket url</summary>
-fix: invalid websocket url
-</details>
+<details><summary>b5e565d chore: disable apparmor in config</summary>
+chore: disable apparmor in config
+
+Attempt to workaround issue "unable to unload apparmor profile" in HA</details>
