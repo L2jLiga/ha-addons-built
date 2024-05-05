@@ -3,5 +3,5 @@ channel: stable
 addons:
   matterbridge-zigbee2mqtt:
     repository: L2jLiga/ha-addons
-    target: matterbridge
+    target: matterbridge-zigbee2mqtt
     image: ghcr.io/l2jliga/matterbridge-zigbee2mqtt/{arch}
