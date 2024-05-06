@@ -1,4 +1,5 @@
 Changes in this Release
 
-<details><summary>c993bbe feat: re-enabled AppArmor back</summary>
-feat: re-enabled AppArmor back</details>
+<details><summary>14c8afe chore: fix git permissions</summary>
+chore: fix git permissions
+</details>
