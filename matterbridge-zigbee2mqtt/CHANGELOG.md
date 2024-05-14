@@ -1,40 +1,27 @@
 Changes in this Release
 
-<details><summary>99537b5 chore: bump matterbridge from 1.2.13 to 1.2.14 in /matterbridge-zigbee2mqtt (#16)</summary>
-chore: bump matterbridge from 1.2.13 to 1.2.14 in /matterbridge-zigbee2mqtt (#16)
+<details><summary>0a11294 chore: bump matterbridge from 1.2.14 to 1.2.15 in /matterbridge-zigbee2mqtt (#17)</summary>
+chore: bump matterbridge from 1.2.14 to 1.2.15 in /matterbridge-zigbee2mqtt (#17)
 
-[//]: # (dependabot-start)
-⚠️  **Dependabot is rebasing this PR** ⚠️ 
-
-Rebasing might not happen immediately, so don't worry if this takes some
-time.
-
-Note: if you make any changes to this PR yourself, they will take
-precedence over the rebase.
-
----
-
-[//]: # (dependabot-end)
-
-Bumps [matterbridge](https://github.com/Luligu/matterbridge) from 1.2.13
-to 1.2.14.
+Bumps [matterbridge](https://github.com/Luligu/matterbridge) from 1.2.14
+to 1.2.15.
 <details>
 <summary>Release notes</summary>
 <p><em>Sourced from <a
 href="https://github.com/Luligu/matterbridge/releases">matterbridge's
 releases</a>.</em></p>
 <blockquote>
-<h2>Release 1.2.14</h2>
-<h2>[1.2.14] - 2024-05-09</h2>
+<h2>Release 1.2.15</h2>
+<h2>[1.2.15] - 2024-05-14</h2>
 <h3>Added</h3>
 <ul>
-<li>[frontend]: Frontend updated to 0.9.0.</li>
-<li>[frontend]: Added Plugin config editor</li>
-<li>[frontend]: Added tool column to registered plugins with QRCode,
-Config, Remove and Enable/Disable</li>
-<li>[frontend]: Removed Shutdown button when Matterbridge runs as a
-service or with docker</li>
-<li>[frontend]: Added Error state to registered plugins</li>
+<li>[frontend]: Added sponsor link in Header.</li>
+<li>[frontend]: Added sponsor link in the plugin list.</li>
+</ul>
+<h3>Fixed</h3>
+<ul>
+<li>[frontend]: Fixed the case when the latest version of Matterbridge
+or a plugin is not available.</li>
 </ul>
 <!-- raw HTML omitted -->
 </blockquote>
@@ -45,16 +32,16 @@ service or with docker</li>
 href="https://github.com/Luligu/matterbridge/blob/main/CHANGELOG.md">matterbridge's
 changelog</a>.</em></p>
 <blockquote>
-<h2>[1.2.14] - 2024-05-09</h2>
+<h2>[1.2.15] - 2024-05-14</h2>
 <h3>Added</h3>
 <ul>
-<li>[frontend]: Frontend updated to 0.9.0.</li>
-<li>[frontend]: Added Plugin config editor</li>
-<li>[frontend]: Added tool column to registered plugins with QRCode,
-Config, Remove and Enable/Disable</li>
-<li>[frontend]: Removed Shutdown button when Matterbridge runs as a
-service or with docker</li>
-<li>[frontend]: Added Error state to registered plugins</li>
+<li>[frontend]: Added sponsor link in Header.</li>
+<li>[frontend]: Added sponsor link in the plugin list.</li>
+</ul>
+<h3>Fixed</h3>
+<ul>
+<li>[frontend]: Fixed the case when the latest version of Matterbridge
+or a plugin is not available.</li>
 </ul>
 <!-- raw HTML omitted -->
 </blockquote>
@@ -63,15 +50,41 @@ service or with docker</li>
 <summary>Commits</summary>
 <ul>
 <li><a
-href="https://github.com/Luligu/matterbridge/commit/6853d6097b8190dd057a3d1f80d9dcfd968f203f"><code>6853d60</code></a>
+href="https://github.com/Luligu/matterbridge/commit/c56a3851266fdc497aeef252ce1d9a40fdb6a16c"><code>c56a385</code></a>
 Merge pull request <a
-href="https://redirect.github.com/Luligu/matterbridge/issues/21">#21</a>
+href="https://redirect.github.com/Luligu/matterbridge/issues/25">#25</a>
 from Luligu/dev</li>
 <li><a
-href="https://github.com/Luligu/matterbridge/commit/d50d1f5a01986ef0e2f8ff01c1ef1de437d2dfd1"><code>d50d1f5</code></a>
-Docker publish</li>
-<li>See full diff in <a
-href="https://github.com/Luligu/matterbridge/compare/1.2.13...1.2.14">compare
+href="https://github.com/Luligu/matterbridge/commit/e7d0fc7ea47d4a5f86eaefe25b30a073f1c484b6"><code>e7d0fc7</code></a>
+Merge branch 'main' into dev</li>
+<li><a
+href="https://github.com/Luligu/matterbridge/commit/e173280f41755e01918aceadbb573735b652d39e"><code>e173280</code></a>
+Revert drop down list in Add remove plugin</li>
+<li><a
+href="https://github.com/Luligu/matterbridge/commit/f454048d3c37fd160cef8ed99dd073443aa8a05a"><code>f454048</code></a>
+Release 1.2.15</li>
+<li><a
+href="https://github.com/Luligu/matterbridge/commit/166aba1620b0035b3a7599c0fc8bc20a759384dc"><code>166aba1</code></a>
+Release 1.2.15</li>
+<li><a
+href="https://github.com/Luligu/matterbridge/commit/5b3599fcaba57c425e1c28f791ad527edf92c523"><code>5b3599f</code></a>
+Added sponsor to plugins and drop list to plugin</li>
+<li><a
+href="https://github.com/Luligu/matterbridge/commit/7f98b073c2f33126478a183a0674c2cdcd75e989"><code>7f98b07</code></a>
+Added sponsor link in Header</li>
+<li><a
+href="https://github.com/Luligu/matterbridge/commit/d0e551eab382fd1f5f51a1b1b27537074b05b065"><code>d0e551e</code></a>
+Merge pull request <a
+href="https://redirect.github.com/Luligu/matterbridge/issues/24">#24</a>
+from Luligu/dev</li>
+<li><a
+href="https://github.com/Luligu/matterbridge/commit/10f483d0dfd6dad4a53dcde1f15eabbfa15859aa"><code>10f483d</code></a>
+Updated readme</li>
+<li><a
+href="https://github.com/Luligu/matterbridge/commit/9e8b2a349890984151ae287f406b6d546f0eb37c"><code>9e8b2a3</code></a>
+chore: Add &quot;siri&quot; to package.json keywords</li>
+<li>Additional commits viewable in <a
+href="https://github.com/Luligu/matterbridge/compare/1.2.14...1.2.15">compare
 view</a></li>
 </ul>
 </details>
@@ -79,7 +92,7 @@ view</a></li>
 
 
 [![Dependabot compatibility
-score](https://dependabot-badges.githubapp.com/badges/compatibility_score?dependency-name=matterbridge&package-manager=npm_and_yarn&previous-version=1.2.13&new-version=1.2.14)](https://docs.github.com/en/github/managing-security-vulnerabilities/about-dependabot-security-updates#about-compatibility-scores)
+score](https://dependabot-badges.githubapp.com/badges/compatibility_score?dependency-name=matterbridge&package-manager=npm_and_yarn&previous-version=1.2.14&new-version=1.2.15)](https://docs.github.com/en/github/managing-security-vulnerabilities/about-dependabot-security-updates#about-compatibility-scores)
 
 Dependabot will resolve any conflicts with this PR as long as you don't
 alter it yourself. You can also trigger a rebase manually by commenting
