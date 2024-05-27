@@ -1,32 +1,73 @@
 Changes in this Release
 
-<details><summary>afb09a3 chore: bump matterbridge from 1.2.15 to 1.2.16 in /matterbridge-zigbee2mqtt (#18)</summary>
-chore: bump matterbridge from 1.2.15 to 1.2.16 in /matterbridge-zigbee2mqtt (#18)
+<details><summary>1619f1f chore: bump matterbridge from 1.2.16 to 1.2.17 in /matterbridge-zigbee2mqtt (#19)</summary>
+chore: bump matterbridge from 1.2.16 to 1.2.17 in /matterbridge-zigbee2mqtt (#19)
 
-Bumps [matterbridge](https://github.com/Luligu/matterbridge) from 1.2.15
-to 1.2.16.
+Bumps [matterbridge](https://github.com/Luligu/matterbridge) from 1.2.16
+to 1.2.17.
+<details>
+<summary>Release notes</summary>
+<p><em>Sourced from <a
+href="https://github.com/Luligu/matterbridge/releases">matterbridge's
+releases</a>.</em></p>
+<blockquote>
+<h2>Release 1.2.17</h2>
+<h2>[1.2.17] - 2024-05-22</h2>
+<h3>Fixed</h3>
+<ul>
+<li>[matterbridge]: Fixed the issue causing the commissioning reset for
+all fabrics when only one is removed. (Apple uses 2 fabrics: Home app
+and Key chain).</li>
+</ul>
+<h3>Changed</h3>
+<ul>
+<li>[matterbridge]: Preliminary integration for the new
+matterbridge-shelly plugin (still not published)</li>
+<li>[matterbridge]: Updated dependencies</li>
+<li>[matterbridge]: Moved eslint to
+<code>@​typescript-eslint/strict</code> and
+<code>@​typescript-eslint/stylistic</code></li>
+</ul>
+<h3>Added</h3>
+<ul>
+<li>[frontend]: Fetch data in Home page every minute</li>
+<li>[device]: Added new method addClusterServerFromList</li>
+<li>[device]: Added ModeSelectClusterServer (only for testing)</li>
+<li>[matterbridge]: Added fabric info in the log on startup</li>
+<li>[matterbridge]: Added vendorId for Alexa</li>
+</ul>
+<!-- raw HTML omitted -->
+</blockquote>
+</details>
 <details>
 <summary>Changelog</summary>
 <p><em>Sourced from <a
 href="https://github.com/Luligu/matterbridge/blob/main/CHANGELOG.md">matterbridge's
 changelog</a>.</em></p>
 <blockquote>
-<h2>[1.2.16] - 2024-05-15</h2>
+<h2>[1.2.17] - 2024-05-25</h2>
+<h3>Fixed</h3>
+<ul>
+<li>[matterbridge]: Fixed the issue causing the commissioning reset for
+all fabrics when only one is removed. (Apple uses 2 fabrics: Home app
+and Key chain).</li>
+</ul>
 <h3>Changed</h3>
 <ul>
-<li>[matter.js]: Update to <code>@​project-chip/matter-node</code>.js v.
-0.9.0</li>
+<li>[matterbridge]: Preliminary integration for the new
+matterbridge-shelly plugin (still not published)</li>
+<li>[matterbridge]: Updated dependencies</li>
+<li>[matterbridge]: Moved eslint to
+<code>@​typescript-eslint/strict</code> and
+<code>@​typescript-eslint/stylistic</code></li>
 </ul>
 <h3>Added</h3>
 <ul>
-<li>[frontend]: Frontend updated to 1.0.0.</li>
-<li>[frontend]: Added check version interval.</li>
-<li>[frontend]: Added help and version information icons for
-plugins.</li>
-<li>[frontend]: Added version information for Matterbridge (Click on the
-version badge).</li>
-<li>[frontend]: Added help badge for Matterbridge.</li>
-<li>[frontend]: Added version information badge for Matterbridge.</li>
+<li>[frontend]: Fetch data in Home page every minute</li>
+<li>[device]: Added new method addClusterServerFromList</li>
+<li>[device]: Added ModeSelectClusterServer (only for testing)</li>
+<li>[matterbridge]: Added fabric info in the log on startup</li>
+<li>[matterbridge]: Added vendorId for Alexa</li>
 </ul>
 <!-- raw HTML omitted -->
 </blockquote>
@@ -35,7 +76,7 @@ version badge).</li>
 <summary>Commits</summary>
 <ul>
 <li>See full diff in <a
-href="https://github.com/Luligu/matterbridge/commits">compare
+href="https://github.com/Luligu/matterbridge/commits/1.2.17">compare
 view</a></li>
 </ul>
 </details>
@@ -43,7 +84,7 @@ view</a></li>
 
 
 [![Dependabot compatibility
-score](https://dependabot-badges.githubapp.com/badges/compatibility_score?dependency-name=matterbridge&package-manager=npm_and_yarn&previous-version=1.2.15&new-version=1.2.16)](https://docs.github.com/en/github/managing-security-vulnerabilities/about-dependabot-security-updates#about-compatibility-scores)
+score](https://dependabot-badges.githubapp.com/badges/compatibility_score?dependency-name=matterbridge&package-manager=npm_and_yarn&previous-version=1.2.16&new-version=1.2.17)](https://docs.github.com/en/github/managing-security-vulnerabilities/about-dependabot-security-updates#about-compatibility-scores)
 
 Dependabot will resolve any conflicts with this PR as long as you don't
 alter it yourself. You can also trigger a rebase manually by commenting
@@ -87,6 +128,3 @@ PR or upgrade to it yourself)
 
 Signed-off-by: dependabot[bot] <support@github.com>
 Co-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com></details>
-
-<details><summary>d89c1c9 chore: bump alpine dependencies</summary>
-chore: bump alpine dependencies</details>
