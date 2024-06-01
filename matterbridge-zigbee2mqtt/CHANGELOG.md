@@ -1,103 +1,80 @@
 Changes in this Release
 
-<details><summary>301eb74 chore: bump matterbridge from 1.2.17 to 1.2.18 in /matterbridge-zigbee2mqtt (#20)</summary>
-chore: bump matterbridge from 1.2.17 to 1.2.18 in /matterbridge-zigbee2mqtt (#20)
+<details><summary>d32f32f chore: bump docker/login-action from 3.1.0 to 3.2.0 (#21)</summary>
+chore: bump docker/login-action from 3.1.0 to 3.2.0 (#21)
 
-Bumps [matterbridge](https://github.com/Luligu/matterbridge) from 1.2.17
-to 1.2.18.
+Bumps [docker/login-action](https://github.com/docker/login-action) from
+3.1.0 to 3.2.0.
 <details>
 <summary>Release notes</summary>
 <p><em>Sourced from <a
-href="https://github.com/Luligu/matterbridge/releases">matterbridge's
+href="https://github.com/docker/login-action/releases">docker/login-action's
 releases</a>.</em></p>
 <blockquote>
-<h2>Release 1.2.18</h2>
-<h2>[1.2.18] - 2024-05-28</h2>
-<h3>Changed</h3>
+<h2>v3.2.0</h2>
 <ul>
-<li>[matterbridgeDevice]: bridgedNode and powerSource device types as
-conformance to Matter 1.3</li>
+<li>Improve missing username/password by <a
+href="https://github.com/Frankkkkk"><code>@​Frankkkkk</code></a> in <a
+href="https://redirect.github.com/docker/login-action/pull/706">docker/login-action#706</a></li>
+<li>Bump <code>@​docker/actions-toolkit</code> from 0.18.0 to 0.24.0 in
+<a
+href="https://redirect.github.com/docker/login-action/pull/715">docker/login-action#715</a>
+<a
+href="https://redirect.github.com/docker/login-action/pull/721">docker/login-action#721</a></li>
+<li>Bump aws-sdk-dependencies to 3.583.0 in <a
+href="https://redirect.github.com/docker/login-action/pull/720">docker/login-action#720</a></li>
+<li>Bump undici from 5.28.3 to 5.28.4 in <a
+href="https://redirect.github.com/docker/login-action/pull/694">docker/login-action#694</a></li>
 </ul>
-<h3>Fixed</h3>
-<ul>
-<li>[matterbridge]: Fixed /api/settings error after resetting
-commissioning server</li>
-<li>[matterbridge]: Added error message and clean shutdown when
-WebSocketServer or ExpressServer ports are already in use</li>
-</ul>
-<h3>Added</h3>
-<ul>
-<li>[frontend]: Added a dropdown menu in Add Remove plugin to select the
-plugins</li>
-</ul>
-<!-- raw HTML omitted -->
-</blockquote>
-</details>
-<details>
-<summary>Changelog</summary>
-<p><em>Sourced from <a
-href="https://github.com/Luligu/matterbridge/blob/main/CHANGELOG.md">matterbridge's
-changelog</a>.</em></p>
-<blockquote>
-<h2>[1.2.18] - 2024-05-28</h2>
-<h3>Changed</h3>
-<ul>
-<li>[matterbridgeDevice]: bridgedNode and powerSource device types as
-conformance to Matter 1.3</li>
-</ul>
-<h3>Fixed</h3>
-<ul>
-<li>[matterbridge]: Fixed /api/settings error after resetting
-commissioning server</li>
-<li>[matterbridge]: Added error message and clean shutdown when
-WebSocketServer or ExpressServer ports are already in use</li>
-</ul>
-<h3>Added</h3>
-<ul>
-<li>[frontend]: Added a dropdown menu in Add Remove plugin to select the
-plugins</li>
-</ul>
-<!-- raw HTML omitted -->
+<p><strong>Full Changelog</strong>: <a
+href="https://github.com/docker/login-action/compare/v3.1.0...v3.2.0">https://github.com/docker/login-action/compare/v3.1.0...v3.2.0</a></p>
 </blockquote>
 </details>
 <details>
 <summary>Commits</summary>
 <ul>
 <li><a
-href="https://github.com/Luligu/matterbridge/commit/2d995bacac97c4496fc4196503f000908c7297c3"><code>2d995ba</code></a>
+href="https://github.com/docker/login-action/commit/0d4c9c5ea7693da7b068278f7b52bda2a190a446"><code>0d4c9c5</code></a>
 Merge pull request <a
-href="https://redirect.github.com/Luligu/matterbridge/issues/33">#33</a>
-from Luligu/dev</li>
+href="https://redirect.github.com/docker/login-action/issues/722">#722</a>
+from crazy-max/update-readme</li>
 <li><a
-href="https://github.com/Luligu/matterbridge/commit/14931132926a89f358e39f1e20efe21aa5cfb205"><code>1493113</code></a>
-Release candidate 1.2.18</li>
+href="https://github.com/docker/login-action/commit/b29e14f6a983abc16efafe71e083f4b1ba2b1e5b"><code>b29e14f</code></a>
+add contributing section to README</li>
 <li><a
-href="https://github.com/Luligu/matterbridge/commit/4b1e570dc3f4806764a39768792e3fda913b1811"><code>4b1e570</code></a>
-Release candidate 1.2.18</li>
+href="https://github.com/docker/login-action/commit/218a70c516af2f25cb9fc1e5a14a5a3576e7093f"><code>218a70c</code></a>
+Merge pull request <a
+href="https://redirect.github.com/docker/login-action/issues/721">#721</a>
+from docker/dependabot/npm_and_yarn/docker/actions-to...</li>
 <li><a
-href="https://github.com/Luligu/matterbridge/commit/5d61b93276df23a8e3c01188f31ca6fa34e58f29"><code>5d61b93</code></a>
-Fixed bug in drop down list</li>
+href="https://github.com/docker/login-action/commit/b8200806cfe29e3355c44f34309b26916aae48f6"><code>b820080</code></a>
+build(deps): bump <code>@​docker/actions-toolkit</code> from 0.23.0 to
+0.24.0</li>
 <li><a
-href="https://github.com/Luligu/matterbridge/commit/f353168efca968b8418b983a0982c1e749b0fe2c"><code>f353168</code></a>
-Added error message and clean shutdown when WebSocketServer or
-ExpressServer ...</li>
+href="https://github.com/docker/login-action/commit/27530a9fbbe988616da1dc41b4a8072f949d8042"><code>27530a9</code></a>
+Merge pull request <a
+href="https://redirect.github.com/docker/login-action/issues/720">#720</a>
+from docker/dependabot/npm_and_yarn/aws-sdk-dependenc...</li>
 <li><a
-href="https://github.com/Luligu/matterbridge/commit/b9d8925c0f21ec163dde50dd5cebc6baedcff931"><code>b9d8925</code></a>
-Added error listener for port already in use</li>
+href="https://github.com/docker/login-action/commit/d072a60421ee5ac6ee763e9306c27f92e8ce5a20"><code>d072a60</code></a>
+chore: update generated content</li>
 <li><a
-href="https://github.com/Luligu/matterbridge/commit/e0a02bc116f2f22269747a0d26653d94bd28d36f"><code>e0a02bc</code></a>
-Added a dropdown menu to Add Remove plugin to select the plugins</li>
+href="https://github.com/docker/login-action/commit/7c627b5124287958ac76b37cc2d94f1c9ef72aaa"><code>7c627b5</code></a>
+build(deps): bump the aws-sdk-dependencies group across 1 directory with
+2 up...</li>
 <li><a
-href="https://github.com/Luligu/matterbridge/commit/772b61a3cfca9e5646c313ef3850b1a957444126"><code>772b61a</code></a>
-Added a dropdown menu to Add Remove plugin</li>
+href="https://github.com/docker/login-action/commit/787cfc66231286ca823ebc099f52001f53aa8f42"><code>787cfc6</code></a>
+Merge pull request <a
+href="https://redirect.github.com/docker/login-action/issues/694">#694</a>
+from docker/dependabot/npm_and_yarn/undici-5.28.4</li>
 <li><a
-href="https://github.com/Luligu/matterbridge/commit/75cb90b89a599b802315b69d0cb4773f52b2c2ae"><code>75cb90b</code></a>
-Prerelease 1.2.18</li>
+href="https://github.com/docker/login-action/commit/8e66e916f8ed83b241171904f8e1b9e0a83070bc"><code>8e66e91</code></a>
+chore: update generated content</li>
 <li><a
-href="https://github.com/Luligu/matterbridge/commit/80b0318ef4abcfca3282962b988a4d464f28c8d8"><code>80b0318</code></a>
-Fixed error /api/settings after resetting commissioning server</li>
+href="https://github.com/docker/login-action/commit/5ba5e97350e175e4c4e222569e6746675408a75c"><code>5ba5e97</code></a>
+build(deps): bump undici from 5.28.3 to 5.28.4</li>
 <li>Additional commits viewable in <a
-href="https://github.com/Luligu/matterbridge/compare/1.2.17...1.2.18">compare
+href="https://github.com/docker/login-action/compare/v3.1.0...v3.2.0">compare
 view</a></li>
 </ul>
 </details>
@@ -105,7 +82,7 @@ view</a></li>
 
 
 [![Dependabot compatibility
-score](https://dependabot-badges.githubapp.com/badges/compatibility_score?dependency-name=matterbridge&package-manager=npm_and_yarn&previous-version=1.2.17&new-version=1.2.18)](https://docs.github.com/en/github/managing-security-vulnerabilities/about-dependabot-security-updates#about-compatibility-scores)
+score](https://dependabot-badges.githubapp.com/badges/compatibility_score?dependency-name=docker/login-action&package-manager=github_actions&previous-version=3.1.0&new-version=3.2.0)](https://docs.github.com/en/github/managing-security-vulnerabilities/about-dependabot-security-updates#about-compatibility-scores)
 
 Dependabot will resolve any conflicts with this PR as long as you don't
 alter it yourself. You can also trigger a rebase manually by commenting
