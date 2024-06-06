@@ -1,28 +1,23 @@
 Changes in this Release
 
-<details><summary>773845e chore: bump matterbridge from 1.2.20 to 1.2.21 in /matterbridge-zigbee2mqtt (#22)</summary>
-chore: bump matterbridge from 1.2.20 to 1.2.21 in /matterbridge-zigbee2mqtt (#22)
+<details><summary>27a86f5 chore: bump matterbridge-zigbee2mqtt from 2.0.15 to 2.0.16 in /matterbridge-zigbee2mqtt (#23)</summary>
+chore: bump matterbridge-zigbee2mqtt from 2.0.15 to 2.0.16 in /matterbridge-zigbee2mqtt (#23)
 
-Bumps [matterbridge](https://github.com/Luligu/matterbridge) from 1.2.20
-to 1.2.21.
+Bumps
+[matterbridge-zigbee2mqtt](https://github.com/Luligu/matterbridge-zigbee2mqtt)
+from 2.0.15 to 2.0.16.
 <details>
 <summary>Release notes</summary>
 <p><em>Sourced from <a
-href="https://github.com/Luligu/matterbridge/releases">matterbridge's
+href="https://github.com/Luligu/matterbridge-zigbee2mqtt/releases">matterbridge-zigbee2mqtt's
 releases</a>.</em></p>
 <blockquote>
-<h2>Release 1.2.21</h2>
-<h2>[1.2.21] - 2024-06-04</h2>
-<h3>Changed</h3>
+<h2>Release 2.0.16</h2>
+<h2>[2.0.16] - 2024-06-06</h2>
+<h3>Added</h3>
 <ul>
-<li>[matterbridge]: Updated dependencies</li>
-</ul>
-<h3>Fixed</h3>
-<ul>
-<li>[matterbridge]: Removed error stack from log error for npm get
-versions</li>
-<li>[matterbridge]: Fixed the error that caused -add plugin to fail at
-the first run of matterbridge</li>
+<li>[dependencies]: Update dependencies</li>
+<li>[matterbridge]: Added bridgeOnline to the start checks.</li>
 </ul>
 <!-- raw HTML omitted -->
 </blockquote>
@@ -30,20 +25,14 @@ the first run of matterbridge</li>
 <details>
 <summary>Changelog</summary>
 <p><em>Sourced from <a
-href="https://github.com/Luligu/matterbridge/blob/main/CHANGELOG.md">matterbridge's
+href="https://github.com/Luligu/matterbridge-zigbee2mqtt/blob/main/CHANGELOG.md">matterbridge-zigbee2mqtt's
 changelog</a>.</em></p>
 <blockquote>
-<h2>[1.2.21] - 2024-06-04</h2>
-<h3>Changed</h3>
+<h2>[2.0.16] - 2024-06-06</h2>
+<h3>Added</h3>
 <ul>
-<li>[matterbridge]: Updated dependencies</li>
-</ul>
-<h3>Fixed</h3>
-<ul>
-<li>[matterbridge]: Removed error stack from log error for npm get
-versions</li>
-<li>[matterbridge]: Fixed the error that caused -add plugin to fail at
-the first run of matterbridge</li>
+<li>[dependencies]: Update dependencies</li>
+<li>[matterbridge]: Added bridgeOnline to the start checks.</li>
 </ul>
 <!-- raw HTML omitted -->
 </blockquote>
@@ -52,27 +41,24 @@ the first run of matterbridge</li>
 <summary>Commits</summary>
 <ul>
 <li><a
-href="https://github.com/Luligu/matterbridge/commit/1a9d096dd31c71e0dda8f2e9908caaef506f0103"><code>1a9d096</code></a>
+href="https://github.com/Luligu/matterbridge-zigbee2mqtt/commit/91f3251000b7667be70c12d76752db9213ad3adb"><code>91f3251</code></a>
 Merge pull request <a
-href="https://redirect.github.com/Luligu/matterbridge/issues/40">#40</a>
+href="https://redirect.github.com/Luligu/matterbridge-zigbee2mqtt/issues/25">#25</a>
 from Luligu/dev</li>
 <li><a
-href="https://github.com/Luligu/matterbridge/commit/6acd77d79f5e72de598f2701ae8110f96c2bdf4c"><code>6acd77d</code></a>
-Remove console</li>
+href="https://github.com/Luligu/matterbridge-zigbee2mqtt/commit/f4c5d5819981f83670678dad041cdfb8a7e96320"><code>f4c5d58</code></a>
+2.0.16</li>
 <li><a
-href="https://github.com/Luligu/matterbridge/commit/8be45527f755020b849afce8a7b3e30e6a19af82"><code>8be4552</code></a>
-Release 1.2.21</li>
+href="https://github.com/Luligu/matterbridge-zigbee2mqtt/commit/6a053e73336088f8cbe5198b04d6619f99cc092a"><code>6a053e7</code></a>
+Release 2.0.16</li>
 <li><a
-href="https://github.com/Luligu/matterbridge/commit/6390ac049e4422763c812d4f67a51c51c0aa45ee"><code>6390ac0</code></a>
-Fix version error message.</li>
-<li><a
-href="https://github.com/Luligu/matterbridge/commit/f8984f1e3cc58767cb446f6e1bbefa2f9fb505f3"><code>f8984f1</code></a>
+href="https://github.com/Luligu/matterbridge-zigbee2mqtt/commit/99fc95801a054eedb91e41bc1f2cde9dfb4b0a23"><code>99fc958</code></a>
 Update README.md</li>
 <li><a
-href="https://github.com/Luligu/matterbridge/commit/dfc3f89107108ddd64595a211a3a2ac9f36684a2"><code>dfc3f89</code></a>
+href="https://github.com/Luligu/matterbridge-zigbee2mqtt/commit/d90e0e1d733604c27c8074132e4bc84fccc3781b"><code>d90e0e1</code></a>
 Update README.md</li>
 <li>See full diff in <a
-href="https://github.com/Luligu/matterbridge/compare/1.2.20...1.2.21">compare
+href="https://github.com/Luligu/matterbridge-zigbee2mqtt/compare/2.0.15...2.0.16">compare
 view</a></li>
 </ul>
 </details>
@@ -80,7 +66,7 @@ view</a></li>
 
 
 [![Dependabot compatibility
-score](https://dependabot-badges.githubapp.com/badges/compatibility_score?dependency-name=matterbridge&package-manager=npm_and_yarn&previous-version=1.2.20&new-version=1.2.21)](https://docs.github.com/en/github/managing-security-vulnerabilities/about-dependabot-security-updates#about-compatibility-scores)
+score](https://dependabot-badges.githubapp.com/badges/compatibility_score?dependency-name=matterbridge-zigbee2mqtt&package-manager=npm_and_yarn&previous-version=2.0.15&new-version=2.0.16)](https://docs.github.com/en/github/managing-security-vulnerabilities/about-dependabot-security-updates#about-compatibility-scores)
 
 Dependabot will resolve any conflicts with this PR as long as you don't
 alter it yourself. You can also trigger a rebase manually by commenting
