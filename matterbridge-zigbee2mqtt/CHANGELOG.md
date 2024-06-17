@@ -1,36 +1,51 @@
 Changes in this Release
 
-<details><summary>425f6bc chore: bump matterbridge from 1.2.21 to 1.2.22 in /matterbridge-zigbee2mqtt (#24)</summary>
-chore: bump matterbridge from 1.2.21 to 1.2.22 in /matterbridge-zigbee2mqtt (#24)
+<details><summary>5e81c7a chore: bump matterbridge from 1.2.22 to 1.3.0 in /matterbridge-zigbee2mqtt (#25)</summary>
+chore: bump matterbridge from 1.2.22 to 1.3.0 in /matterbridge-zigbee2mqtt (#25)
 
-[//]: # (dependabot-start)
-⚠️  **Dependabot is rebasing this PR** ⚠️ 
-
-Rebasing might not happen immediately, so don't worry if this takes some
-time.
-
-Note: if you make any changes to this PR yourself, they will take
-precedence over the rebase.
-
----
-
-[//]: # (dependabot-end)
-
-Bumps [matterbridge](https://github.com/Luligu/matterbridge) from 1.2.21
-to 1.2.22.
+Bumps [matterbridge](https://github.com/Luligu/matterbridge) from 1.2.22
+to 1.3.0.
 <details>
 <summary>Release notes</summary>
 <p><em>Sourced from <a
 href="https://github.com/Luligu/matterbridge/releases">matterbridge's
 releases</a>.</em></p>
 <blockquote>
-<h2>Release 1.2.22</h2>
-<h2>[1.2.22] - 2024-06-04</h2>
+<h2>Release 1.3.0</h2>
+<h2>[1.3.0] - 2024-06-16</h2>
+<p>This release is all about Matter 1.3</p>
+<p>If you are wondering whether the controllers already support Matter
+1.3, the answer is unfortunately no.</p>
+<p>Only Home Automation supports:</p>
+<ul>
+<li>airQualitySensor (Matter 1.2)</li>
+</ul>
+<p>and (probably only like BooleanState cluster)</p>
+<ul>
+<li>waterFreezeDetector (Matter 1.3)</li>
+<li>waterLeakDetector (Matter 1.3)</li>
+<li>rainSensor (Matter 1.3)</li>
+</ul>
 <h3>Changed</h3>
 <ul>
 <li>[matterbridge]: Updated dependencies</li>
 <li>[matterbridge]: Default config and schema for the new plugin
-matterbridge-shelly</li>
+matterbridge-shelly (will be published after this release)</li>
+</ul>
+<h3>Added</h3>
+<ul>
+<li>[matterbridgeDevice]: Added waterFreezeDetector, waterLeakDetector,
+rainSensor, smokeCoAlarm, electricalSensor and deviceEnergyManagement
+device types as conformance to Matter 1.3</li>
+<li>[matterbridgeDevice]: Added all clusters needed for the above Matter
+1.3 device types</li>
+<li>[matterbridgeDevice]: Added FanControl cluster (rev. 2) helper
+methods for the Fan device type</li>
+<li>[matterbridge]: Added parameter -matterlogger [debug | info | notice
+| warn | error | fatal] to set the matter.js Logger separately from the
+Matterbridge log</li>
+<li>[frontend]: Added logger level settings to reflect -matterlogger
+[debug | info | notice | warn | error | fatal]</li>
 </ul>
 <!-- raw HTML omitted -->
 </blockquote>
@@ -41,12 +56,40 @@ matterbridge-shelly</li>
 href="https://github.com/Luligu/matterbridge/blob/main/CHANGELOG.md">matterbridge's
 changelog</a>.</em></p>
 <blockquote>
-<h2>[1.2.22] - 2024-06-04</h2>
+<h2>[1.3.0] - 2024-06-16</h2>
+<p>This release is all about Matter 1.3</p>
+<p>If you are wondering whether the controllers already support Matter
+1.3, the answer is unfortunately no.</p>
+<p>Only Home Automation supports:</p>
+<ul>
+<li>airQualitySensor (Matter 1.2)</li>
+</ul>
+<p>and (probably only like BooleanState cluster)</p>
+<ul>
+<li>waterFreezeDetector (Matter 1.3)</li>
+<li>waterLeakDetector (Matter 1.3)</li>
+<li>rainSensor (Matter 1.3)</li>
+</ul>
 <h3>Changed</h3>
 <ul>
 <li>[matterbridge]: Updated dependencies</li>
 <li>[matterbridge]: Default config and schema for the new plugin
-matterbridge-shelly</li>
+matterbridge-shelly (will be published after this release)</li>
+</ul>
+<h3>Added</h3>
+<ul>
+<li>[matterbridgeDevice]: Added waterFreezeDetector, waterLeakDetector,
+rainSensor, smokeCoAlarm, electricalSensor and deviceEnergyManagement
+device types as conformance to Matter 1.3</li>
+<li>[matterbridgeDevice]: Added all clusters needed for the above Matter
+1.3 device types</li>
+<li>[matterbridgeDevice]: Added FanControl cluster (rev. 2) helper
+methods for the Fan device type</li>
+<li>[matterbridge]: Added parameter -matterlogger [debug | info | notice
+| warn | error | fatal] to set the matter.js Logger separately from the
+Matterbridge log</li>
+<li>[frontend]: Added logger level settings to reflect -matterlogger
+[debug | info | notice | warn | error | fatal]</li>
 </ul>
 <!-- raw HTML omitted -->
 </blockquote>
@@ -55,32 +98,42 @@ matterbridge-shelly</li>
 <summary>Commits</summary>
 <ul>
 <li><a
-href="https://github.com/Luligu/matterbridge/commit/57821768bcba4cf62c00f04ca747324052bc4d06"><code>5782176</code></a>
+href="https://github.com/Luligu/matterbridge/commit/a2b0e853f412ea12ea067fc30bad1e4ecf4e841a"><code>a2b0e85</code></a>
 Merge pull request <a
-href="https://redirect.github.com/Luligu/matterbridge/issues/43">#43</a>
+href="https://redirect.github.com/Luligu/matterbridge/issues/52">#52</a>
 from Luligu/dev</li>
 <li><a
-href="https://github.com/Luligu/matterbridge/commit/ecc36b178f7cae9e08c9f61d10cb2d98b26f980e"><code>ecc36b1</code></a>
-1.2.22</li>
+href="https://github.com/Luligu/matterbridge/commit/592dba12fb4cbc062049f9f1f38f00d2fbf5542a"><code>592dba1</code></a>
+Release 1.3.0</li>
 <li><a
-href="https://github.com/Luligu/matterbridge/commit/46143d596ce6050026e2864919ad86646caa78bb"><code>46143d5</code></a>
-Release 1.2.22</li>
+href="https://github.com/Luligu/matterbridge/commit/1ef1c683ffda12584fd2a3a2092ecdc6543e58e3"><code>1ef1c68</code></a>
+feat: Add parameter to set matter.js Logger separately from the
+Matterbridge log</li>
 <li><a
-href="https://github.com/Luligu/matterbridge/commit/47d870d75b7abc55b58e160403d1b8cba0816a69"><code>47d870d</code></a>
-Update readme</li>
+href="https://github.com/Luligu/matterbridge/commit/1fc15e6f153e86c42205a8633a880f5c09975af6"><code>1fc15e6</code></a>
+Added param matterlogger to set matter Logger</li>
 <li><a
-href="https://github.com/Luligu/matterbridge/commit/609c1fbb879f6829ed01555316c78a5c27148254"><code>609c1fb</code></a>
-Merge pull request <a
-href="https://redirect.github.com/Luligu/matterbridge/issues/41">#41</a>
-from Luligu/dev</li>
+href="https://github.com/Luligu/matterbridge/commit/6fa3f2658e01567441c34243e606abc9864abb47"><code>6fa3f26</code></a>
+Release 1.3.0</li>
 <li><a
-href="https://github.com/Luligu/matterbridge/commit/9c80df1f446a6e73e27d30a8282e30b8699c81b2"><code>9c80df1</code></a>
-Removed update of npm from dockerfile</li>
+href="https://github.com/Luligu/matterbridge/commit/89b40d0dbebda6af1cf7110a62adc85ce8ca4ad8"><code>89b40d0</code></a>
+feat: Deprecate deprecated methods in MatterbridgeDevice</li>
 <li><a
-href="https://github.com/Luligu/matterbridge/commit/ef6048ee86a969473dded0d882101b05675ccc3d"><code>ef6048e</code></a>
-Release 1.2.21</li>
-<li>See full diff in <a
-href="https://github.com/Luligu/matterbridge/compare/1.2.21...1.2.22">compare
+href="https://github.com/Luligu/matterbridge/commit/a3821c25f8987071e5db8130587cc536c278de8a"><code>a3821c2</code></a>
+feat: Add FanControlCluster rev. 4 and getDefaultFanControlClusterServer
+to M...</li>
+<li><a
+href="https://github.com/Luligu/matterbridge/commit/4b10da5b255de1a1f907316fce8edb5d8b2849d5"><code>4b10da5</code></a>
+Refactor MatterbridgeV8.ts to remove commented out code and unused
+imports</li>
+<li><a
+href="https://github.com/Luligu/matterbridge/commit/9eb95a62e4f18a0f6b5c7d542fe8675cfe863025"><code>9eb95a6</code></a>
+MatterbridgeV8</li>
+<li><a
+href="https://github.com/Luligu/matterbridge/commit/3b1da70a7b7b4f4d3ecd7ba83e34120d73826461"><code>3b1da70</code></a>
+New clusters for the new Matter 1.3 device types</li>
+<li>Additional commits viewable in <a
+href="https://github.com/Luligu/matterbridge/compare/1.2.22...1.3.0">compare
 view</a></li>
 </ul>
 </details>
@@ -88,7 +141,7 @@ view</a></li>
 
 
 [![Dependabot compatibility
-score](https://dependabot-badges.githubapp.com/badges/compatibility_score?dependency-name=matterbridge&package-manager=npm_and_yarn&previous-version=1.2.21&new-version=1.2.22)](https://docs.github.com/en/github/managing-security-vulnerabilities/about-dependabot-security-updates#about-compatibility-scores)
+score](https://dependabot-badges.githubapp.com/badges/compatibility_score?dependency-name=matterbridge&package-manager=npm_and_yarn&previous-version=1.2.22&new-version=1.3.0)](https://docs.github.com/en/github/managing-security-vulnerabilities/about-dependabot-security-updates#about-compatibility-scores)
 
 Dependabot will resolve any conflicts with this PR as long as you don't
 alter it yourself. You can also trigger a rebase manually by commenting
