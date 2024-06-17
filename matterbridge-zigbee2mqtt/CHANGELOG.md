@@ -1,51 +1,27 @@
 Changes in this Release
 
-<details><summary>5e81c7a chore: bump matterbridge from 1.2.22 to 1.3.0 in /matterbridge-zigbee2mqtt (#25)</summary>
-chore: bump matterbridge from 1.2.22 to 1.3.0 in /matterbridge-zigbee2mqtt (#25)
+<details><summary>a2d64d8 chore: bump matterbridge-zigbee2mqtt from 2.0.16 to 2.0.17 in /matterbridge-zigbee2mqtt (#26)</summary>
+chore: bump matterbridge-zigbee2mqtt from 2.0.16 to 2.0.17 in /matterbridge-zigbee2mqtt (#26)
 
-Bumps [matterbridge](https://github.com/Luligu/matterbridge) from 1.2.22
-to 1.3.0.
+Bumps
+[matterbridge-zigbee2mqtt](https://github.com/Luligu/matterbridge-zigbee2mqtt)
+from 2.0.16 to 2.0.17.
 <details>
 <summary>Release notes</summary>
 <p><em>Sourced from <a
-href="https://github.com/Luligu/matterbridge/releases">matterbridge's
+href="https://github.com/Luligu/matterbridge-zigbee2mqtt/releases">matterbridge-zigbee2mqtt's
 releases</a>.</em></p>
 <blockquote>
-<h2>Release 1.3.0</h2>
-<h2>[1.3.0] - 2024-06-16</h2>
-<p>This release is all about Matter 1.3</p>
-<p>If you are wondering whether the controllers already support Matter
-1.3, the answer is unfortunately no.</p>
-<p>Only Home Automation supports:</p>
+<h2>Release 2.0.17</h2>
+<h2>[2.0.17] - 2024-06-16</h2>
+<h3>Fixed</h3>
 <ul>
-<li>airQualitySensor (Matter 1.2)</li>
-</ul>
-<p>and (probably only like BooleanState cluster)</p>
-<ul>
-<li>waterFreezeDetector (Matter 1.3)</li>
-<li>waterLeakDetector (Matter 1.3)</li>
-<li>rainSensor (Matter 1.3)</li>
-</ul>
-<h3>Changed</h3>
-<ul>
-<li>[matterbridge]: Updated dependencies</li>
-<li>[matterbridge]: Default config and schema for the new plugin
-matterbridge-shelly (will be published after this release)</li>
+<li>[LevelControl]: Fixed the issue that caused LevelControl missing in
+child endpoint (Thanks jpadie).</li>
 </ul>
 <h3>Added</h3>
 <ul>
-<li>[matterbridgeDevice]: Added waterFreezeDetector, waterLeakDetector,
-rainSensor, smokeCoAlarm, electricalSensor and deviceEnergyManagement
-device types as conformance to Matter 1.3</li>
-<li>[matterbridgeDevice]: Added all clusters needed for the above Matter
-1.3 device types</li>
-<li>[matterbridgeDevice]: Added FanControl cluster (rev. 2) helper
-methods for the Fan device type</li>
-<li>[matterbridge]: Added parameter -matterlogger [debug | info | notice
-| warn | error | fatal] to set the matter.js Logger separately from the
-Matterbridge log</li>
-<li>[frontend]: Added logger level settings to reflect -matterlogger
-[debug | info | notice | warn | error | fatal]</li>
+<li>[dependencies]: Update dependencies</li>
 </ul>
 <!-- raw HTML omitted -->
 </blockquote>
@@ -53,43 +29,18 @@ Matterbridge log</li>
 <details>
 <summary>Changelog</summary>
 <p><em>Sourced from <a
-href="https://github.com/Luligu/matterbridge/blob/main/CHANGELOG.md">matterbridge's
+href="https://github.com/Luligu/matterbridge-zigbee2mqtt/blob/main/CHANGELOG.md">matterbridge-zigbee2mqtt's
 changelog</a>.</em></p>
 <blockquote>
-<h2>[1.3.0] - 2024-06-16</h2>
-<p>This release is all about Matter 1.3</p>
-<p>If you are wondering whether the controllers already support Matter
-1.3, the answer is unfortunately no.</p>
-<p>Only Home Automation supports:</p>
+<h2>[2.0.17] - 2024-06-16</h2>
+<h3>Fixed</h3>
 <ul>
-<li>airQualitySensor (Matter 1.2)</li>
-</ul>
-<p>and (probably only like BooleanState cluster)</p>
-<ul>
-<li>waterFreezeDetector (Matter 1.3)</li>
-<li>waterLeakDetector (Matter 1.3)</li>
-<li>rainSensor (Matter 1.3)</li>
-</ul>
-<h3>Changed</h3>
-<ul>
-<li>[matterbridge]: Updated dependencies</li>
-<li>[matterbridge]: Default config and schema for the new plugin
-matterbridge-shelly (will be published after this release)</li>
+<li>[LevelControl]: Fixed the issue that caused LevelControl missing in
+child endpoint (Thanks jpadie).</li>
 </ul>
 <h3>Added</h3>
 <ul>
-<li>[matterbridgeDevice]: Added waterFreezeDetector, waterLeakDetector,
-rainSensor, smokeCoAlarm, electricalSensor and deviceEnergyManagement
-device types as conformance to Matter 1.3</li>
-<li>[matterbridgeDevice]: Added all clusters needed for the above Matter
-1.3 device types</li>
-<li>[matterbridgeDevice]: Added FanControl cluster (rev. 2) helper
-methods for the Fan device type</li>
-<li>[matterbridge]: Added parameter -matterlogger [debug | info | notice
-| warn | error | fatal] to set the matter.js Logger separately from the
-Matterbridge log</li>
-<li>[frontend]: Added logger level settings to reflect -matterlogger
-[debug | info | notice | warn | error | fatal]</li>
+<li>[dependencies]: Update dependencies</li>
 </ul>
 <!-- raw HTML omitted -->
 </blockquote>
@@ -98,42 +49,39 @@ Matterbridge log</li>
 <summary>Commits</summary>
 <ul>
 <li><a
-href="https://github.com/Luligu/matterbridge/commit/a2b0e853f412ea12ea067fc30bad1e4ecf4e841a"><code>a2b0e85</code></a>
+href="https://github.com/Luligu/matterbridge-zigbee2mqtt/commit/dd8fdc2165a740f897fa87060c2e027b277e7f09"><code>dd8fdc2</code></a>
 Merge pull request <a
-href="https://redirect.github.com/Luligu/matterbridge/issues/52">#52</a>
+href="https://redirect.github.com/Luligu/matterbridge-zigbee2mqtt/issues/26">#26</a>
 from Luligu/dev</li>
 <li><a
-href="https://github.com/Luligu/matterbridge/commit/592dba12fb4cbc062049f9f1f38f00d2fbf5542a"><code>592dba1</code></a>
-Release 1.3.0</li>
+href="https://github.com/Luligu/matterbridge-zigbee2mqtt/commit/b31a8f7bf467a57675063b49242e29b323586bad"><code>b31a8f7</code></a>
+Release 2.0.17</li>
 <li><a
-href="https://github.com/Luligu/matterbridge/commit/1ef1c683ffda12584fd2a3a2092ecdc6543e58e3"><code>1ef1c68</code></a>
-feat: Add parameter to set matter.js Logger separately from the
-Matterbridge log</li>
+href="https://github.com/Luligu/matterbridge-zigbee2mqtt/commit/ad0e8e0918e026f29547a4b7fe12cfff2a14efe2"><code>ad0e8e0</code></a>
+Update readme</li>
 <li><a
-href="https://github.com/Luligu/matterbridge/commit/1fc15e6f153e86c42205a8633a880f5c09975af6"><code>1fc15e6</code></a>
-Added param matterlogger to set matter Logger</li>
+href="https://github.com/Luligu/matterbridge-zigbee2mqtt/commit/1ef9536f14e0e23993c5f8b8e4eba17bf4d3a831"><code>1ef9536</code></a>
+Fix issue causing LevelControl to be missing in child endpoints</li>
 <li><a
-href="https://github.com/Luligu/matterbridge/commit/6fa3f2658e01567441c34243e606abc9864abb47"><code>6fa3f26</code></a>
-Release 1.3.0</li>
+href="https://github.com/Luligu/matterbridge-zigbee2mqtt/commit/00ff4abb91fd31176e9a43a33948b7ffec2d2bd7"><code>00ff4ab</code></a>
+Fix LevelControl missing in child endpoints</li>
 <li><a
-href="https://github.com/Luligu/matterbridge/commit/89b40d0dbebda6af1cf7110a62adc85ce8ca4ad8"><code>89b40d0</code></a>
-feat: Deprecate deprecated methods in MatterbridgeDevice</li>
+href="https://github.com/Luligu/matterbridge-zigbee2mqtt/commit/0392a53d84c3a57151571b659458432bd853de71"><code>0392a53</code></a>
+Fixed issue on LevelControl missing in child endpoints</li>
 <li><a
-href="https://github.com/Luligu/matterbridge/commit/a3821c25f8987071e5db8130587cc536c278de8a"><code>a3821c2</code></a>
-feat: Add FanControlCluster rev. 4 and getDefaultFanControlClusterServer
-to M...</li>
+href="https://github.com/Luligu/matterbridge-zigbee2mqtt/commit/31ac70029805be6c81b7e993d9e3c3e32d19d5d5"><code>31ac700</code></a>
+chore: Update Docker badges in README.md</li>
 <li><a
-href="https://github.com/Luligu/matterbridge/commit/4b10da5b255de1a1f907316fce8edb5d8b2849d5"><code>4b10da5</code></a>
-Refactor MatterbridgeV8.ts to remove commented out code and unused
-imports</li>
+href="https://github.com/Luligu/matterbridge-zigbee2mqtt/commit/e8ee8185c3092528501685fbe481941f9f559f19"><code>e8ee818</code></a>
+chore: Update .prettierignore to ignore HTML files</li>
 <li><a
-href="https://github.com/Luligu/matterbridge/commit/9eb95a62e4f18a0f6b5c7d542fe8675cfe863025"><code>9eb95a6</code></a>
-MatterbridgeV8</li>
+href="https://github.com/Luligu/matterbridge-zigbee2mqtt/commit/4b11164fc994a4c8ca043db50b506c30044a35d2"><code>4b11164</code></a>
+Changed eslint@latest</li>
 <li><a
-href="https://github.com/Luligu/matterbridge/commit/3b1da70a7b7b4f4d3ecd7ba83e34120d73826461"><code>3b1da70</code></a>
-New clusters for the new Matter 1.3 device types</li>
-<li>Additional commits viewable in <a
-href="https://github.com/Luligu/matterbridge/compare/1.2.22...1.3.0">compare
+href="https://github.com/Luligu/matterbridge-zigbee2mqtt/commit/8526a6e08a7e549bce127fea5fb2cd4139b35027"><code>8526a6e</code></a>
+Change jest prettier</li>
+<li>See full diff in <a
+href="https://github.com/Luligu/matterbridge-zigbee2mqtt/compare/2.0.16...2.0.17">compare
 view</a></li>
 </ul>
 </details>
@@ -141,7 +89,7 @@ view</a></li>
 
 
 [![Dependabot compatibility
-score](https://dependabot-badges.githubapp.com/badges/compatibility_score?dependency-name=matterbridge&package-manager=npm_and_yarn&previous-version=1.2.22&new-version=1.3.0)](https://docs.github.com/en/github/managing-security-vulnerabilities/about-dependabot-security-updates#about-compatibility-scores)
+score](https://dependabot-badges.githubapp.com/badges/compatibility_score?dependency-name=matterbridge-zigbee2mqtt&package-manager=npm_and_yarn&previous-version=2.0.16&new-version=2.0.17)](https://docs.github.com/en/github/managing-security-vulnerabilities/about-dependabot-security-updates#about-compatibility-scores)
 
 Dependabot will resolve any conflicts with this PR as long as you don't
 alter it yourself. You can also trigger a rebase manually by commenting
