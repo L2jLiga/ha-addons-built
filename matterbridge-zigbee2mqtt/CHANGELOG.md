@@ -1,42 +1,25 @@
 Changes in this Release
 
-<details><summary>2f5552f chore: bump matterbridge-zigbee2mqtt from 2.0.17 to 2.1.0 in /matterbridge-zigbee2mqtt (#27)</summary>
-chore: bump matterbridge-zigbee2mqtt from 2.0.17 to 2.1.0 in /matterbridge-zigbee2mqtt (#27)
+<details><summary>605adbf chore: bump matterbridge from 1.3.0 to 1.3.1 in /matterbridge-zigbee2mqtt (#28)</summary>
+chore: bump matterbridge from 1.3.0 to 1.3.1 in /matterbridge-zigbee2mqtt (#28)
 
-Bumps
-[matterbridge-zigbee2mqtt](https://github.com/Luligu/matterbridge-zigbee2mqtt)
-from 2.0.17 to 2.1.0.
+Bumps [matterbridge](https://github.com/Luligu/matterbridge) from 1.3.0
+to 1.3.1.
 <details>
 <summary>Release notes</summary>
 <p><em>Sourced from <a
-href="https://github.com/Luligu/matterbridge-zigbee2mqtt/releases">matterbridge-zigbee2mqtt's
+href="https://github.com/Luligu/matterbridge/releases">matterbridge's
 releases</a>.</em></p>
 <blockquote>
-<h2>Release 2.1.0</h2>
-<h2>[2.1.0] - 2024-06-19</h2>
-<h3>Added</h3>
-<ul>
-<li>[dependencies]: Update dependencies.</li>
-<li>[schema]: Added schema to the root directory of the plugin.</li>
-<li>[z2m]: Added soil_moisture property as humidity sensor.</li>
-<li>[z2m]: Added transition if the zigbee device supports it and the
-controller sends it. You can disable this globally adding transition to
-the featureBlackList or only for the single device adding transition to
-the deviceFeatureBlackList. (Thanks Stefan Schweiger).</li>
-</ul>
+<h2>Release 1.3.1</h2>
+<h2>[1.3.1] - 2024-06-20</h2>
 <h3>Changed</h3>
 <ul>
-<li>[matter]: Removed PowerSourceConfiguration cluster that is
-deprecated in Matter 1.3.</li>
-</ul>
-<h3>Fixed</h3>
-<ul>
-<li>[schema]: Username and password are no more required fields (Thanks
-Stefan Schweiger).</li>
-<li>[LevelControl]: Fixed the commandHandler for LevelControl in child
-endpoint (Thanks jpadie).</li>
-<li>[availability]: Fixed the issue that caused the availability event
-sent before the start to be ignored.</li>
+<li>[matterbridge]: Updated dependencies</li>
+<li>[matterbridge]: Refactor the loading of schemas, now they load from
+the plugin directory.</li>
+<li>[matterbridge]: Moved getPluginVersion to the start also for
+disabled plugins.</li>
 </ul>
 <!-- raw HTML omitted -->
 </blockquote>
@@ -44,33 +27,17 @@ sent before the start to be ignored.</li>
 <details>
 <summary>Changelog</summary>
 <p><em>Sourced from <a
-href="https://github.com/Luligu/matterbridge-zigbee2mqtt/blob/main/CHANGELOG.md">matterbridge-zigbee2mqtt's
+href="https://github.com/Luligu/matterbridge/blob/main/CHANGELOG.md">matterbridge's
 changelog</a>.</em></p>
 <blockquote>
-<h2>[2.1.0] - 2024-06-19</h2>
-<h3>Added</h3>
-<ul>
-<li>[dependencies]: Update dependencies.</li>
-<li>[schema]: Added schema to the root directory of the plugin.</li>
-<li>[z2m]: Added soil_moisture property as humidity sensor.</li>
-<li>[z2m]: Added transition if the zigbee device supports it and the
-controller sends it. You can disable this globally adding transition to
-the featureBlackList or only for the single device adding transition to
-the deviceFeatureBlackList. (Thanks Stefan Schweiger).</li>
-</ul>
+<h2>[1.3.1] - 2024-06-20</h2>
 <h3>Changed</h3>
 <ul>
-<li>[matter]: Removed PowerSourceConfiguration cluster that is
-deprecated in Matter 1.3.</li>
-</ul>
-<h3>Fixed</h3>
-<ul>
-<li>[schema]: Username and password are no more required fields (Thanks
-Stefan Schweiger).</li>
-<li>[LevelControl]: Fixed the commandHandler for LevelControl in child
-endpoint (Thanks jpadie).</li>
-<li>[availability]: Fixed the issue that caused the availability event
-sent before the start to be ignored.</li>
+<li>[matterbridge]: Updated dependencies</li>
+<li>[matterbridge]: Refactor the loading of schemas, now they load from
+the plugin directory.</li>
+<li>[matterbridge]: Moved getPluginVersion to the start also for
+disabled plugins.</li>
 </ul>
 <!-- raw HTML omitted -->
 </blockquote>
@@ -79,39 +46,44 @@ sent before the start to be ignored.</li>
 <summary>Commits</summary>
 <ul>
 <li><a
-href="https://github.com/Luligu/matterbridge-zigbee2mqtt/commit/c4b49c41d573a43973bb3b203980b40c21732680"><code>c4b49c4</code></a>
+href="https://github.com/Luligu/matterbridge/commit/1f277fc989eccc43af69be4a36c4bb09c287af13"><code>1f277fc</code></a>
 Merge pull request <a
-href="https://redirect.github.com/Luligu/matterbridge-zigbee2mqtt/issues/29">#29</a>
+href="https://redirect.github.com/Luligu/matterbridge/issues/54">#54</a>
 from Luligu/dev</li>
 <li><a
-href="https://github.com/Luligu/matterbridge-zigbee2mqtt/commit/621aeec941714821f9c56ee8bf2bad06933673a7"><code>621aeec</code></a>
-Release 2.1.0</li>
+href="https://github.com/Luligu/matterbridge/commit/a45e065cc8af38c6f14a6d89965f09141a2fa7fd"><code>a45e065</code></a>
+Release 1.3.1</li>
 <li><a
-href="https://github.com/Luligu/matterbridge-zigbee2mqtt/commit/bfe112b14c7f494586af99160719a0c86dacecdd"><code>bfe112b</code></a>
-Release 2.1.0</li>
+href="https://github.com/Luligu/matterbridge/commit/646cdf2eee8d84d6d17e60540db2b73abf5fe411"><code>646cdf2</code></a>
+Refactor plugin schema loading logic and move getPluginVersion to the
+start f...</li>
 <li><a
-href="https://github.com/Luligu/matterbridge-zigbee2mqtt/commit/aea1b26a4b4f2ab13df4f0cece029e7d046ccff3"><code>aea1b26</code></a>
-Release 2.0.18</li>
+href="https://github.com/Luligu/matterbridge/commit/f697c66da8579d5d7d8fee9049277fff6d615ad4"><code>f697c66</code></a>
+Added getPluginLatestVersion to the start also for disabled plugins</li>
 <li><a
-href="https://github.com/Luligu/matterbridge-zigbee2mqtt/commit/b5f98fc5f8db3446f6f2e21622d7a2412430dc44"><code>b5f98fc</code></a>
-Refactor BridgeDevice to use methods from MatterbridgeDevice</li>
+href="https://github.com/Luligu/matterbridge/commit/fc7d0ad3f07d1a7e4fd86806f4a64d7f96c2f246"><code>fc7d0ad</code></a>
+Refactor addChildDeviceTypeWithClusterServer to use uniqueStorageKey to
+find ...</li>
 <li><a
-href="https://github.com/Luligu/matterbridge-zigbee2mqtt/commit/9de8622a39d7a449346b2ea0defb2503727d1ed1"><code>9de8622</code></a>
-Release 2.0.18</li>
+href="https://github.com/Luligu/matterbridge/commit/7ae03e83989c43ec6e4830d87f13a5708678610a"><code>7ae03e8</code></a>
+Refactor plugin schema loading logic and update z2m required fields</li>
 <li><a
-href="https://github.com/Luligu/matterbridge-zigbee2mqtt/commit/8e0a6b9b9a5a2358735a48beacd2509905b40fa1"><code>8e0a6b9</code></a>
-Release 2.0.18</li>
+href="https://github.com/Luligu/matterbridge/commit/8356f7e2e01901264aeb0da7f3fbcf1e46ca4b67"><code>8356f7e</code></a>
+Refactor plugin schema loading logic. Changed z2m required fields.</li>
 <li><a
-href="https://github.com/Luligu/matterbridge-zigbee2mqtt/commit/3b78c7e675ca70bb3e566e1e25f868c30da1d03b"><code>3b78c7e</code></a>
-Added soil_moisture as humidity sensor</li>
+href="https://github.com/Luligu/matterbridge/commit/a6c0ab47f7967d27f4ac734498638bd7762885c5"><code>a6c0ab4</code></a>
+Refactor plugin schema loading logic to delete the schema file from
+.matterbr...</li>
 <li><a
-href="https://github.com/Luligu/matterbridge-zigbee2mqtt/commit/ac021486e2c59a1d8efab47d42714d4daff34103"><code>ac02148</code></a>
-Update dependencies</li>
+href="https://github.com/Luligu/matterbridge/commit/3f47a977c0cf48eb816ec12cc9a7ee004c8a758a"><code>3f47a97</code></a>
+Refactor plugin schema loading logic to support plugin directory first
+and ma...</li>
 <li><a
-href="https://github.com/Luligu/matterbridge-zigbee2mqtt/commit/c4028d63d1988910a7eac9b4af4b5dfa9180b98c"><code>c4028d6</code></a>
-Create matterbridge-zigbee2mqtt.schema.json</li>
-<li>Additional commits viewable in <a
-href="https://github.com/Luligu/matterbridge-zigbee2mqtt/compare/2.0.17...2.1.0">compare
+href="https://github.com/Luligu/matterbridge/commit/68a97b08def1e36b0dcbd16caae04d10e98ce57b"><code>68a97b0</code></a>
+feat: Update plugin configuration and schema saving and loading
+logic</li>
+<li>See full diff in <a
+href="https://github.com/Luligu/matterbridge/compare/1.3.0...1.3.1">compare
 view</a></li>
 </ul>
 </details>
@@ -119,7 +91,7 @@ view</a></li>
 
 
 [![Dependabot compatibility
-score](https://dependabot-badges.githubapp.com/badges/compatibility_score?dependency-name=matterbridge-zigbee2mqtt&package-manager=npm_and_yarn&previous-version=2.0.17&new-version=2.1.0)](https://docs.github.com/en/github/managing-security-vulnerabilities/about-dependabot-security-updates#about-compatibility-scores)
+score](https://dependabot-badges.githubapp.com/badges/compatibility_score?dependency-name=matterbridge&package-manager=npm_and_yarn&previous-version=1.3.0&new-version=1.3.1)](https://docs.github.com/en/github/managing-security-vulnerabilities/about-dependabot-security-updates#about-compatibility-scores)
 
 Dependabot will resolve any conflicts with this PR as long as you don't
 alter it yourself. You can also trigger a rebase manually by commenting
