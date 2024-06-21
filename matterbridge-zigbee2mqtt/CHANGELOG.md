@@ -1,38 +1,23 @@
 Changes in this Release
 
-<details><summary>f6b7e7e chore: bump matterbridge-zigbee2mqtt from 2.1.0 to 2.1.1 in /matterbridge-zigbee2mqtt (#29)</summary>
-chore: bump matterbridge-zigbee2mqtt from 2.1.0 to 2.1.1 in /matterbridge-zigbee2mqtt (#29)
-
-[//]: # (dependabot-start)
-⚠️  **Dependabot is rebasing this PR** ⚠️ 
-
-Rebasing might not happen immediately, so don't worry if this takes some
-time.
-
-Note: if you make any changes to this PR yourself, they will take
-precedence over the rebase.
-
----
-
-[//]: # (dependabot-end)
+<details><summary>0c008ea chore: bump matterbridge-zigbee2mqtt from 2.1.1 to 2.1.2 in /matterbridge-zigbee2mqtt (#30)</summary>
+chore: bump matterbridge-zigbee2mqtt from 2.1.1 to 2.1.2 in /matterbridge-zigbee2mqtt (#30)
 
 Bumps
 [matterbridge-zigbee2mqtt](https://github.com/Luligu/matterbridge-zigbee2mqtt)
-from 2.1.0 to 2.1.1.
+from 2.1.1 to 2.1.2.
 <details>
 <summary>Release notes</summary>
 <p><em>Sourced from <a
 href="https://github.com/Luligu/matterbridge-zigbee2mqtt/releases">matterbridge-zigbee2mqtt's
 releases</a>.</em></p>
 <blockquote>
-<h2>Release 2.1.1</h2>
-<h2>[2.1.1] - 2024-06-20</h2>
+<h2>Release 2.1.2</h2>
+<h2>[2.1.2] - 2024-06-21</h2>
 <h3>Added</h3>
 <ul>
-<li>[dependencies]: Update dependencies (mqtt to 5.7.2).</li>
-<li>[schema]: Added info log when the plugin starts to register devices
-and groups. Added empty bridge/config and bridge/definitions
-handlers.</li>
+<li>[dependencies]: Update dependencies.</li>
+<li>[start]: Refactor start sequence.</li>
 </ul>
 <!-- raw HTML omitted -->
 </blockquote>
@@ -43,13 +28,11 @@ handlers.</li>
 href="https://github.com/Luligu/matterbridge-zigbee2mqtt/blob/main/CHANGELOG.md">matterbridge-zigbee2mqtt's
 changelog</a>.</em></p>
 <blockquote>
-<h2>[2.1.1] - 2024-06-20</h2>
+<h2>[2.1.2] - 2024-06-21</h2>
 <h3>Added</h3>
 <ul>
-<li>[dependencies]: Update dependencies (mqtt to 5.7.2).</li>
-<li>[schema]: Added info log when the plugin starts to register devices
-and groups. Added empty bridge/config and bridge/definitions
-handlers.</li>
+<li>[dependencies]: Update dependencies.</li>
+<li>[start]: Refactor start sequence.</li>
 </ul>
 <!-- raw HTML omitted -->
 </blockquote>
@@ -58,25 +41,25 @@ handlers.</li>
 <summary>Commits</summary>
 <ul>
 <li><a
-href="https://github.com/Luligu/matterbridge-zigbee2mqtt/commit/4c9e2d52182a64e985344424271dd5320ce8eff8"><code>4c9e2d5</code></a>
+href="https://github.com/Luligu/matterbridge-zigbee2mqtt/commit/861e4000504580c9e6b8c2d70cde0459fcb9475a"><code>861e400</code></a>
 Merge pull request <a
-href="https://redirect.github.com/Luligu/matterbridge-zigbee2mqtt/issues/31">#31</a>
+href="https://redirect.github.com/Luligu/matterbridge-zigbee2mqtt/issues/32">#32</a>
 from Luligu/dev</li>
 <li><a
-href="https://github.com/Luligu/matterbridge-zigbee2mqtt/commit/014cff07c7a918343a9ac917162687f7a0900440"><code>014cff0</code></a>
-Release 2.1.1</li>
+href="https://github.com/Luligu/matterbridge-zigbee2mqtt/commit/263b9bd5ecfe5268dca40d9bba665b7a49b605d3"><code>263b9bd</code></a>
+Release 2.1.2</li>
 <li><a
-href="https://github.com/Luligu/matterbridge-zigbee2mqtt/commit/85bdb4478b6a51895334ec3a465349259252558e"><code>85bdb44</code></a>
-Added empty handler for /bridge</li>
+href="https://github.com/Luligu/matterbridge-zigbee2mqtt/commit/d5f9b413f9d5177a20bfb09237df82e2504b30f5"><code>d5f9b41</code></a>
+Refactor start</li>
 <li><a
-href="https://github.com/Luligu/matterbridge-zigbee2mqtt/commit/6418322c9d1d49c8da13027965f487faaaac2dc8"><code>6418322</code></a>
-Update dependencies (mqtt to 5.7.2)</li>
+href="https://github.com/Luligu/matterbridge-zigbee2mqtt/commit/08b39a40faad9b5c0e76c6df76b4f9145bcba86b"><code>08b39a4</code></a>
+Update dependencies</li>
 <li><a
-href="https://github.com/Luligu/matterbridge-zigbee2mqtt/commit/16e545e0e9c800ccd6f2203c3451dedc961f85bd"><code>16e545e</code></a>
-Added info log when the plugin starts to register devices and groups.
-Added e...</li>
+href="https://github.com/Luligu/matterbridge-zigbee2mqtt/commit/f21575e335a1848c1fdb006f6a16d2691fa29d2c"><code>f21575e</code></a>
+chore: Update matterbridge-zigbee2mqtt schema with default values for
+debug a...</li>
 <li>See full diff in <a
-href="https://github.com/Luligu/matterbridge-zigbee2mqtt/compare/2.1.0...2.1.1">compare
+href="https://github.com/Luligu/matterbridge-zigbee2mqtt/compare/2.1.1...2.1.2">compare
 view</a></li>
 </ul>
 </details>
@@ -84,7 +67,7 @@ view</a></li>
 
 
 [![Dependabot compatibility
-score](https://dependabot-badges.githubapp.com/badges/compatibility_score?dependency-name=matterbridge-zigbee2mqtt&package-manager=npm_and_yarn&previous-version=2.1.0&new-version=2.1.1)](https://docs.github.com/en/github/managing-security-vulnerabilities/about-dependabot-security-updates#about-compatibility-scores)
+score](https://dependabot-badges.githubapp.com/badges/compatibility_score?dependency-name=matterbridge-zigbee2mqtt&package-manager=npm_and_yarn&previous-version=2.1.1&new-version=2.1.2)](https://docs.github.com/en/github/managing-security-vulnerabilities/about-dependabot-security-updates#about-compatibility-scores)
 
 Dependabot will resolve any conflicts with this PR as long as you don't
 alter it yourself. You can also trigger a rebase manually by commenting
