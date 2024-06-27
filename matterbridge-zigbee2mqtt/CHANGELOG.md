@@ -1,52 +1,39 @@
 Changes in this Release
 
-<details><summary>91186eb chore: bump matterbridge-zigbee2mqtt from 2.1.2 to 2.1.3 in /matterbridge-zigbee2mqtt (#32)</summary>
-chore: bump matterbridge-zigbee2mqtt from 2.1.2 to 2.1.3 in /matterbridge-zigbee2mqtt (#32)
+<details><summary>6fdf35f chore: bump matterbridge from 1.3.4 to 1.3.5 in /matterbridge-zigbee2mqtt (#33)</summary>
+chore: bump matterbridge from 1.3.4 to 1.3.5 in /matterbridge-zigbee2mqtt (#33)
 
-[//]: # (dependabot-start)
-⚠️  **Dependabot is rebasing this PR** ⚠️ 
-
-Rebasing might not happen immediately, so don't worry if this takes some
-time.
-
-Note: if you make any changes to this PR yourself, they will take
-precedence over the rebase.
-
----
-
-[//]: # (dependabot-end)
-
-Bumps
-[matterbridge-zigbee2mqtt](https://github.com/Luligu/matterbridge-zigbee2mqtt)
-from 2.1.2 to 2.1.3.
+Bumps [matterbridge](https://github.com/Luligu/matterbridge) from 1.3.4
+to 1.3.5.
 <details>
 <summary>Release notes</summary>
 <p><em>Sourced from <a
-href="https://github.com/Luligu/matterbridge-zigbee2mqtt/releases">matterbridge-zigbee2mqtt's
+href="https://github.com/Luligu/matterbridge/releases">matterbridge's
 releases</a>.</em></p>
 <blockquote>
-<h2>Release 2.1.3</h2>
-<h2>[2.1.3] - 2024-06-23</h2>
+<h2>Release 1.3.5</h2>
+<h2>[1.3.5] - 2024-06-26</h2>
 <h3>Added</h3>
 <ul>
-<li>[zigbee]: Added new properties: co -
-CarbonMonoxideConcentrationMeasurement, co2 -
-CarbonDioxideConcentrationMeasurement, formaldehyd -
-FormaldehydeConcentrationMeasurement, pm1 - Pm1ConcentrationMeasurement,
-pm25 - Pm25ConcentrationMeasurement, pm10 -
-Pm10ConcentrationMeasurement</li>
+<li>[matterbridgeDevice]: Added createDefaultLatchingSwitchClusterServer
+and getDefaultLatchingSwitchClusterServer for (<a
+href="https://github.com/Luligu/matterbridge-shelly">https://github.com/Luligu/matterbridge-shelly</a>)</li>
+<li>[frontend]: Added interfaceName</li>
 </ul>
 <h3>Changed</h3>
 <ul>
-<li>[bridge/info]: Log error when advanced.output is set to
-'attribute'.</li>
-</ul>
-<h3>Fixed</h3>
-<ul>
-<li>[bridge/info]: Fixed the issue when advanced.output is set
-'attribute_and_json'. (Thanks copystring).</li>
-<li>[bridge/info]: Fixed the issue when include_device_information is
-set to true. (Thanks copystring).</li>
+<li>[package]: Updated to eslint 9.5.0 and adopted the flat config</li>
+<li>[package]: Updated to use prettier and jest with the flat
+config</li>
+<li>[matterbridge]: Updated dependencies</li>
+<li>[matterbridgeDevice]: Updated ColorControl commandHandlers for
+improved compatibility with (<a
+href="https://github.com/Luligu/matterbridge-shelly">https://github.com/Luligu/matterbridge-shelly</a>)</li>
+<li>[matterbridge]: The &quot;plugin disable&quot; and &quot;plugin
+remove&quot; methods now also remove the registered devices from the
+bridge</li>
+<li>[matterbridge]: The &quot;plugin add&quot; method now loads, starts,
+and configures the plugin</li>
 </ul>
 <!-- raw HTML omitted -->
 </blockquote>
@@ -54,30 +41,31 @@ set to true. (Thanks copystring).</li>
 <details>
 <summary>Changelog</summary>
 <p><em>Sourced from <a
-href="https://github.com/Luligu/matterbridge-zigbee2mqtt/blob/main/CHANGELOG.md">matterbridge-zigbee2mqtt's
+href="https://github.com/Luligu/matterbridge/blob/main/CHANGELOG.md">matterbridge's
 changelog</a>.</em></p>
 <blockquote>
-<h2>[2.1.3] - 2024-06-23</h2>
+<h2>[1.3.5] - 2024-06-26</h2>
 <h3>Added</h3>
 <ul>
-<li>[zigbee]: Added new properties: co -
-CarbonMonoxideConcentrationMeasurement, co2 -
-CarbonDioxideConcentrationMeasurement, formaldehyd -
-FormaldehydeConcentrationMeasurement, pm1 - Pm1ConcentrationMeasurement,
-pm25 - Pm25ConcentrationMeasurement, pm10 -
-Pm10ConcentrationMeasurement</li>
+<li>[matterbridgeDevice]: Added createDefaultLatchingSwitchClusterServer
+and getDefaultLatchingSwitchClusterServer for (<a
+href="https://github.com/Luligu/matterbridge-shelly">https://github.com/Luligu/matterbridge-shelly</a>)</li>
+<li>[frontend]: Added interfaceName</li>
 </ul>
 <h3>Changed</h3>
 <ul>
-<li>[bridge/info]: Log error when advanced.output is set to
-'attribute'.</li>
-</ul>
-<h3>Fixed</h3>
-<ul>
-<li>[bridge/info]: Fixed the issue when advanced.output is set
-'attribute_and_json'. (Thanks copystring).</li>
-<li>[bridge/info]: Fixed the issue when include_device_information is
-set to true. (Thanks copystring).</li>
+<li>[package]: Updated to eslint 9.5.0 and adopted the flat config</li>
+<li>[package]: Updated to use prettier and jest with the flat
+config</li>
+<li>[matterbridge]: Updated dependencies</li>
+<li>[matterbridgeDevice]: Updated ColorControl commandHandlers for
+improved compatibility with (<a
+href="https://github.com/Luligu/matterbridge-shelly">https://github.com/Luligu/matterbridge-shelly</a>)</li>
+<li>[matterbridge]: The &quot;plugin disable&quot; and &quot;plugin
+remove&quot; methods now also remove the registered devices from the
+bridge</li>
+<li>[matterbridge]: The &quot;plugin add&quot; method now loads, starts,
+and configures the plugin</li>
 </ul>
 <!-- raw HTML omitted -->
 </blockquote>
@@ -86,15 +74,39 @@ set to true. (Thanks copystring).</li>
 <summary>Commits</summary>
 <ul>
 <li><a
-href="https://github.com/Luligu/matterbridge-zigbee2mqtt/commit/0be85bca10dd73e607c5e4ab3184ee6366c614d5"><code>0be85bc</code></a>
+href="https://github.com/Luligu/matterbridge/commit/6bb9136d367dc021980837c26a4193b7720dfbe0"><code>6bb9136</code></a>
 Merge pull request <a
-href="https://redirect.github.com/Luligu/matterbridge-zigbee2mqtt/issues/34">#34</a>
+href="https://redirect.github.com/Luligu/matterbridge/issues/66">#66</a>
 from Luligu/dev</li>
 <li><a
-href="https://github.com/Luligu/matterbridge-zigbee2mqtt/commit/59e1ab86c61b96b2495907565383466f23ccfd8a"><code>59e1ab8</code></a>
-Release 2.1.3</li>
-<li>See full diff in <a
-href="https://github.com/Luligu/matterbridge-zigbee2mqtt/compare/2.1.2...2.1.3">compare
+href="https://github.com/Luligu/matterbridge/commit/c10581e4c1e82e0ca09935a263c5a0f05bb70aef"><code>c10581e</code></a>
+Docker 1.3.5</li>
+<li><a
+href="https://github.com/Luligu/matterbridge/commit/14e6847ed5ac2aa5cf79c88c6269368c8dd4900e"><code>14e6847</code></a>
+Release 1.3.5</li>
+<li><a
+href="https://github.com/Luligu/matterbridge/commit/28c948f6bd56eb435c9aa9081decec9b8aec8748"><code>28c948f</code></a>
+Added interfaceName</li>
+<li><a
+href="https://github.com/Luligu/matterbridge/commit/0452b2e101bbb37d62676f7b43b857dc46fa4a45"><code>0452b2e</code></a>
+Release 1.3.5</li>
+<li><a
+href="https://github.com/Luligu/matterbridge/commit/ac9b9694571f2c4fe7a06a3951b25ea9eb9ca516"><code>ac9b969</code></a>
+Release 1.3.5</li>
+<li><a
+href="https://github.com/Luligu/matterbridge/commit/457a9892b90fd02150e2e1aa17bc8d33ead81d1a"><code>457a989</code></a>
+Release 1.3.5</li>
+<li><a
+href="https://github.com/Luligu/matterbridge/commit/0a524b9460a7c2cdac4f98002ee5926e5bea257e"><code>0a524b9</code></a>
+Release 1.3.5</li>
+<li><a
+href="https://github.com/Luligu/matterbridge/commit/495f6f409b52709526d7c5e0de6f8ea80e5270dd"><code>495f6f4</code></a>
+README.md</li>
+<li><a
+href="https://github.com/Luligu/matterbridge/commit/d5c628d6ee334b8b4211252d7e7b1356049ec6e3"><code>d5c628d</code></a>
+chore: Update ColorControl commandHandlers for matterbridgeDevice</li>
+<li>Additional commits viewable in <a
+href="https://github.com/Luligu/matterbridge/compare/1.3.4...1.3.5">compare
 view</a></li>
 </ul>
 </details>
@@ -102,7 +114,7 @@ view</a></li>
 
 
 [![Dependabot compatibility
-score](https://dependabot-badges.githubapp.com/badges/compatibility_score?dependency-name=matterbridge-zigbee2mqtt&package-manager=npm_and_yarn&previous-version=2.1.2&new-version=2.1.3)](https://docs.github.com/en/github/managing-security-vulnerabilities/about-dependabot-security-updates#about-compatibility-scores)
+score](https://dependabot-badges.githubapp.com/badges/compatibility_score?dependency-name=matterbridge&package-manager=npm_and_yarn&previous-version=1.3.4&new-version=1.3.5)](https://docs.github.com/en/github/managing-security-vulnerabilities/about-dependabot-security-updates#about-compatibility-scores)
 
 Dependabot will resolve any conflicts with this PR as long as you don't
 alter it yourself. You can also trigger a rebase manually by commenting
