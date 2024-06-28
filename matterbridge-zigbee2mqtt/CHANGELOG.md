@@ -1,39 +1,34 @@
 Changes in this Release
 
-<details><summary>6fdf35f chore: bump matterbridge from 1.3.4 to 1.3.5 in /matterbridge-zigbee2mqtt (#33)</summary>
-chore: bump matterbridge from 1.3.4 to 1.3.5 in /matterbridge-zigbee2mqtt (#33)
+<details><summary>75a66e2 chore: bump matterbridge from 1.3.5 to 1.3.6 in /matterbridge-zigbee2mqtt (#34)</summary>
+chore: bump matterbridge from 1.3.5 to 1.3.6 in /matterbridge-zigbee2mqtt (#34)
 
-Bumps [matterbridge](https://github.com/Luligu/matterbridge) from 1.3.4
-to 1.3.5.
+Bumps [matterbridge](https://github.com/Luligu/matterbridge) from 1.3.5
+to 1.3.6.
 <details>
 <summary>Release notes</summary>
 <p><em>Sourced from <a
 href="https://github.com/Luligu/matterbridge/releases">matterbridge's
 releases</a>.</em></p>
 <blockquote>
-<h2>Release 1.3.5</h2>
-<h2>[1.3.5] - 2024-06-26</h2>
-<h3>Added</h3>
-<ul>
-<li>[matterbridgeDevice]: Added createDefaultLatchingSwitchClusterServer
-and getDefaultLatchingSwitchClusterServer for (<a
-href="https://github.com/Luligu/matterbridge-shelly">https://github.com/Luligu/matterbridge-shelly</a>)</li>
-<li>[frontend]: Added interfaceName</li>
-</ul>
+<h2>Release 1.3.6</h2>
+<h2>[1.3.6] - 2024-06-28</h2>
 <h3>Changed</h3>
 <ul>
-<li>[package]: Updated to eslint 9.5.0 and adopted the flat config</li>
-<li>[package]: Updated to use prettier and jest with the flat
-config</li>
-<li>[matterbridge]: Updated dependencies</li>
-<li>[matterbridgeDevice]: Updated ColorControl commandHandlers for
-improved compatibility with (<a
-href="https://github.com/Luligu/matterbridge-shelly">https://github.com/Luligu/matterbridge-shelly</a>)</li>
-<li>[matterbridge]: The &quot;plugin disable&quot; and &quot;plugin
-remove&quot; methods now also remove the registered devices from the
-bridge</li>
-<li>[matterbridge]: The &quot;plugin add&quot; method now loads, starts,
-and configures the plugin</li>
+<li>[matterbridge]: Unified the http server port for the frontend and
+the WebSockerServer.</li>
+<li>[matterbridge]: Unified the https server port for the frontend and
+the WebSockerServer.</li>
+<li>[certificates]: The certificates for https connections are imported
+from the directory ~/.matterbridge/certs with these names: cert.pem,
+key.pem and ca.pem (optional). Use the -ssl command line parameter to
+activate https for both frontend and WebSocketServer.</li>
+</ul>
+<h3>Fixed</h3>
+<ul>
+<li>[matterbridge]: Fixed exports</li>
+<li>[matterbridgeDevice]: Fixed ElectricalEnergyMeasurement and
+ElectricalPowerMeasurement</li>
 </ul>
 <!-- raw HTML omitted -->
 </blockquote>
@@ -44,28 +39,23 @@ and configures the plugin</li>
 href="https://github.com/Luligu/matterbridge/blob/main/CHANGELOG.md">matterbridge's
 changelog</a>.</em></p>
 <blockquote>
-<h2>[1.3.5] - 2024-06-26</h2>
-<h3>Added</h3>
-<ul>
-<li>[matterbridgeDevice]: Added createDefaultLatchingSwitchClusterServer
-and getDefaultLatchingSwitchClusterServer for (<a
-href="https://github.com/Luligu/matterbridge-shelly">https://github.com/Luligu/matterbridge-shelly</a>)</li>
-<li>[frontend]: Added interfaceName</li>
-</ul>
+<h2>[1.3.6] - 2024-06-28</h2>
 <h3>Changed</h3>
 <ul>
-<li>[package]: Updated to eslint 9.5.0 and adopted the flat config</li>
-<li>[package]: Updated to use prettier and jest with the flat
-config</li>
-<li>[matterbridge]: Updated dependencies</li>
-<li>[matterbridgeDevice]: Updated ColorControl commandHandlers for
-improved compatibility with (<a
-href="https://github.com/Luligu/matterbridge-shelly">https://github.com/Luligu/matterbridge-shelly</a>)</li>
-<li>[matterbridge]: The &quot;plugin disable&quot; and &quot;plugin
-remove&quot; methods now also remove the registered devices from the
-bridge</li>
-<li>[matterbridge]: The &quot;plugin add&quot; method now loads, starts,
-and configures the plugin</li>
+<li>[matterbridge]: Unified the http server port for the frontend and
+the WebSockerServer.</li>
+<li>[matterbridge]: Unified the https server port for the frontend and
+the WebSockerServer.</li>
+<li>[certificates]: The certificates for https connections are imported
+from the directory ~/.matterbridge/certs with these names: cert.pem,
+key.pem and ca.pem (optional). Use the -ssl command line parameter to
+activate https for both frontend and WebSocketServer.</li>
+</ul>
+<h3>Fixed</h3>
+<ul>
+<li>[matterbridge]: Fixed exports</li>
+<li>[matterbridgeDevice]: Fixed ElectricalEnergyMeasurement and
+ElectricalPowerMeasurement</li>
 </ul>
 <!-- raw HTML omitted -->
 </blockquote>
@@ -74,39 +64,38 @@ and configures the plugin</li>
 <summary>Commits</summary>
 <ul>
 <li><a
-href="https://github.com/Luligu/matterbridge/commit/6bb9136d367dc021980837c26a4193b7720dfbe0"><code>6bb9136</code></a>
+href="https://github.com/Luligu/matterbridge/commit/182dc6d50f1aa8731e37f98226d464aa9c9d9e73"><code>182dc6d</code></a>
 Merge pull request <a
-href="https://redirect.github.com/Luligu/matterbridge/issues/66">#66</a>
+href="https://redirect.github.com/Luligu/matterbridge/issues/68">#68</a>
 from Luligu/dev</li>
 <li><a
-href="https://github.com/Luligu/matterbridge/commit/c10581e4c1e82e0ca09935a263c5a0f05bb70aef"><code>c10581e</code></a>
-Docker 1.3.5</li>
+href="https://github.com/Luligu/matterbridge/commit/fd5621c6d5783c742c7285b3dc97b72151ca20f2"><code>fd5621c</code></a>
+Release 1.3.6</li>
 <li><a
-href="https://github.com/Luligu/matterbridge/commit/14e6847ed5ac2aa5cf79c88c6269368c8dd4900e"><code>14e6847</code></a>
-Release 1.3.5</li>
+href="https://github.com/Luligu/matterbridge/commit/f05047429752e33c7197047792ee6d0cdd0e6dd4"><code>f050474</code></a>
+Release 1.3.6</li>
 <li><a
-href="https://github.com/Luligu/matterbridge/commit/28c948f6bd56eb435c9aa9081decec9b8aec8748"><code>28c948f</code></a>
-Added interfaceName</li>
+href="https://github.com/Luligu/matterbridge/commit/edccde525cc6db9860a5c7fa60ef24a7eaee33fd"><code>edccde5</code></a>
+Release 1.3.6</li>
 <li><a
-href="https://github.com/Luligu/matterbridge/commit/0452b2e101bbb37d62676f7b43b857dc46fa4a45"><code>0452b2e</code></a>
-Release 1.3.5</li>
+href="https://github.com/Luligu/matterbridge/commit/d9be2cb667c48d243c7ee067a727c0a583b3827b"><code>d9be2cb</code></a>
+Release 1.3.6</li>
 <li><a
-href="https://github.com/Luligu/matterbridge/commit/ac9b9694571f2c4fe7a06a3951b25ea9eb9ca516"><code>ac9b969</code></a>
-Release 1.3.5</li>
+href="https://github.com/Luligu/matterbridge/commit/4eeba3d6f8dadf09760a7dc675cac8ff528acd25"><code>4eeba3d</code></a>
+Release 1.3.6</li>
 <li><a
-href="https://github.com/Luligu/matterbridge/commit/457a9892b90fd02150e2e1aa17bc8d33ead81d1a"><code>457a989</code></a>
-Release 1.3.5</li>
+href="https://github.com/Luligu/matterbridge/commit/1230f46a38531b5473cf6a6bc38b2633e655ef1e"><code>1230f46</code></a>
+Unified the https server port for the frontend and the
+WebSockerServer</li>
 <li><a
-href="https://github.com/Luligu/matterbridge/commit/0a524b9460a7c2cdac4f98002ee5926e5bea257e"><code>0a524b9</code></a>
-Release 1.3.5</li>
+href="https://github.com/Luligu/matterbridge/commit/c96c04a1163d24ffb60b536288a82177ac053fc4"><code>c96c04a</code></a>
+Unified the frontend and the WebSockerServer on the same port of the
+http server</li>
 <li><a
-href="https://github.com/Luligu/matterbridge/commit/495f6f409b52709526d7c5e0de6f8ea80e5270dd"><code>495f6f4</code></a>
-README.md</li>
-<li><a
-href="https://github.com/Luligu/matterbridge/commit/d5c628d6ee334b8b4211252d7e7b1356049ec6e3"><code>d5c628d</code></a>
-chore: Update ColorControl commandHandlers for matterbridgeDevice</li>
-<li>Additional commits viewable in <a
-href="https://github.com/Luligu/matterbridge/compare/1.3.4...1.3.5">compare
+href="https://github.com/Luligu/matterbridge/commit/7d8276c207f5f67a8c6fe41e83ee1ce47529fbdf"><code>7d8276c</code></a>
+Fixed ElectricalEnergyMeasurement and ElectricalPowerMeasurement</li>
+<li>See full diff in <a
+href="https://github.com/Luligu/matterbridge/compare/1.3.5...1.3.6">compare
 view</a></li>
 </ul>
 </details>
@@ -114,7 +103,7 @@ view</a></li>
 
 
 [![Dependabot compatibility
-score](https://dependabot-badges.githubapp.com/badges/compatibility_score?dependency-name=matterbridge&package-manager=npm_and_yarn&previous-version=1.3.4&new-version=1.3.5)](https://docs.github.com/en/github/managing-security-vulnerabilities/about-dependabot-security-updates#about-compatibility-scores)
+score](https://dependabot-badges.githubapp.com/badges/compatibility_score?dependency-name=matterbridge&package-manager=npm_and_yarn&previous-version=1.3.5&new-version=1.3.6)](https://docs.github.com/en/github/managing-security-vulnerabilities/about-dependabot-security-updates#about-compatibility-scores)
 
 Dependabot will resolve any conflicts with this PR as long as you don't
 alter it yourself. You can also trigger a rebase manually by commenting
