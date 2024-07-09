@@ -1,36 +1,30 @@
 Changes in this Release
 
-<details><summary>e78c771 chore: bump matterbridge from 1.3.9 to 1.3.10 in /matterbridge-zigbee2mqtt (#40)</summary>
-chore: bump matterbridge from 1.3.9 to 1.3.10 in /matterbridge-zigbee2mqtt (#40)
+<details><summary>005a813 chore: bump matterbridge from 1.3.10 to 1.3.11 in /matterbridge-zigbee2mqtt (#41)</summary>
+chore: bump matterbridge from 1.3.10 to 1.3.11 in /matterbridge-zigbee2mqtt (#41)
 
-Bumps [matterbridge](https://github.com/Luligu/matterbridge) from 1.3.9
-to 1.3.10.
+Bumps [matterbridge](https://github.com/Luligu/matterbridge) from 1.3.10
+to 1.3.11.
 <details>
 <summary>Release notes</summary>
 <p><em>Sourced from <a
 href="https://github.com/Luligu/matterbridge/releases">matterbridge's
 releases</a>.</em></p>
 <blockquote>
-<h2>Release 1.3.10</h2>
-<h2>[1.3.10] - 2024-07-05</h2>
+<h2>Release 1.3.11</h2>
+<h2>[1.3.11] - 2024-07-08</h2>
 <h3>Added</h3>
 <ul>
-<li>[fabrics]: Added fabricInfo to matterbridge in bridge mode and to
-the plugins in childbridge mode.</li>
-<li>[sessions]: Added sessionInfo to matterbridge in bridge mode and to
-the plugins in childbridge mode.</li>
-<li>[frontend]: Added fabricInfo in bridge mode and in childbridge mode
-instead of QRCode if already paired.</li>
-<li>[frontend]: Added sessionInfo in bridge mode and in childbridge mode
-instead of QRCode if already paired.</li>
-<li>[matterbridge]: Added parsePlugin to load the updated data from the
-plugin even when is disabled.</li>
-<li>[matterbridge]: Added an automatic plugin reinstall from npm when
-the plugin is not found. (e.g. when the docker image is updated and the
-plugin is not an official plugin)</li>
+<li>[device]: Added addRequiredClusterServers and
+addOptionalClusterServers methods.</li>
+<li>[frontend]: Added separated settings for the two logging systems
+(Matterbridge and Matter.js).</li>
 </ul>
 <h3>Changed</h3>
 <ul>
+<li>[device]: Refactor contructor and loadInstance to accept
+DeviceTypeDefinition | AtLeastOne<!-- raw HTML omitted -->.</li>
+<li>[frontend]: Update to 1.2.0 (initial optimization for mobile)</li>
 <li>[dependencies]: Update dependencies.</li>
 </ul>
 <!-- raw HTML omitted -->
@@ -42,67 +36,60 @@ plugin is not an official plugin)</li>
 href="https://github.com/Luligu/matterbridge/blob/main/CHANGELOG.md">matterbridge's
 changelog</a>.</em></p>
 <blockquote>
-<h2>[1.3.10] - 2024-07-05</h2>
+<h2>[1.3.11] - 2024-07-08</h2>
 <h3>Added</h3>
 <ul>
-<li>[fabrics]: Added fabricInfo to matterbridge in bridge mode and to
-the plugins in childbridge mode.</li>
-<li>[sessions]: Added sessionInfo to matterbridge in bridge mode and to
-the plugins in childbridge mode.</li>
-<li>[frontend]: Added fabricInfo in bridge mode and in childbridge mode
-instead of QRCode if already paired.</li>
-<li>[frontend]: Added sessionInfo in bridge mode and in childbridge mode
-instead of QRCode if already paired.</li>
-<li>[matterbridge]: Added parsePlugin to load the updated data from the
-plugin even when is disabled.</li>
-<li>[matterbridge]: Added an automatic plugin reinstall from npm when
-the plugin is not found. (e.g. when the docker image is updated and the
-plugin is not an official plugin)</li>
+<li>[device]: Added addRequiredClusterServers and
+addOptionalClusterServers methods.</li>
+<li>[frontend]: Added separated settings for the two logging systems
+(Matterbridge and Matter.js).</li>
 </ul>
 <h3>Changed</h3>
 <ul>
+<li>[device]: Refactor contructor and loadInstance to accept
+DeviceTypeDefinition | AtLeastOne<!-- raw HTML omitted -->.</li>
+<li>[frontend]: Update to 1.2.0 (initial optimization for mobile)</li>
 <li>[dependencies]: Update dependencies.</li>
 </ul>
-<!-- raw HTML omitted -->
 </blockquote>
 </details>
 <details>
 <summary>Commits</summary>
 <ul>
 <li><a
-href="https://github.com/Luligu/matterbridge/commit/5a9042eea94a7e1e0dd356ff8ccdf41dd4ec2aaa"><code>5a9042e</code></a>
+href="https://github.com/Luligu/matterbridge/commit/20cb6332dfd39a005784bcb4872f20bc4c3ff8cd"><code>20cb633</code></a>
 Merge pull request <a
-href="https://redirect.github.com/Luligu/matterbridge/issues/78">#78</a>
+href="https://redirect.github.com/Luligu/matterbridge/issues/80">#80</a>
 from Luligu/dev</li>
 <li><a
-href="https://github.com/Luligu/matterbridge/commit/22ed3e8571dcba4ce4a313f0a8ff367f7912fd34"><code>22ed3e8</code></a>
-Frontend 1.1.2</li>
+href="https://github.com/Luligu/matterbridge/commit/121796744ed5e304256eda6afe62d2e72602fe98"><code>1217967</code></a>
+Release 1.3.11</li>
 <li><a
-href="https://github.com/Luligu/matterbridge/commit/69bf843d687738963fb195811edd6dc87a2ba3f3"><code>69bf843</code></a>
-Frontend 1.1.1</li>
+href="https://github.com/Luligu/matterbridge/commit/1fd0a2ef3c71c903b005e91dee6c8cbba698c801"><code>1fd0a2e</code></a>
+Release 1.3.11</li>
 <li><a
-href="https://github.com/Luligu/matterbridge/commit/7aa0bc68ef7572597e0b569cec977c09910efabb"><code>7aa0bc6</code></a>
-Release 1.3.10</li>
+href="https://github.com/Luligu/matterbridge/commit/e6f70d3fa3293ec8b5f3550f5fcd39d0eebd6641"><code>e6f70d3</code></a>
+Release 1.3.11</li>
 <li><a
-href="https://github.com/Luligu/matterbridge/commit/cd14dc3f918524c2b06b77f8792c04c4386cc08b"><code>cd14dc3</code></a>
-Added an automatic plugin reinstall from npm</li>
-<li><a
-href="https://github.com/Luligu/matterbridge/commit/b03dbb16520adf0ae42715b0b490465fb18b7479"><code>b03dbb1</code></a>
-Added an automatic plugin reinstall from npm</li>
-<li><a
-href="https://github.com/Luligu/matterbridge/commit/d273cb56ee6ee9611fdf84dbe870a2dc6b7d6647"><code>d273cb5</code></a>
+href="https://github.com/Luligu/matterbridge/commit/7b052fd096cba880cb2a4932ad64a50a71fd35f6"><code>7b052fd</code></a>
 Jest</li>
 <li><a
-href="https://github.com/Luligu/matterbridge/commit/06341e84e43a5499663f0db78a94b04192f43dba"><code>06341e8</code></a>
+href="https://github.com/Luligu/matterbridge/commit/a06862b9effefb38eeb884cafafd067a8794aeda"><code>a06862b</code></a>
+Release 1.3.11</li>
+<li><a
+href="https://github.com/Luligu/matterbridge/commit/a7231afe332a73ecb691f016e002b928909062b8"><code>a7231af</code></a>
+Update dependencies.</li>
+<li><a
+href="https://github.com/Luligu/matterbridge/commit/d9ae514c29143951cf19a07a07d3e236f671adb1"><code>d9ae514</code></a>
 Jest</li>
 <li><a
-href="https://github.com/Luligu/matterbridge/commit/f2775e7d224439f17be6baf6264025960a2405ac"><code>f2775e7</code></a>
+href="https://github.com/Luligu/matterbridge/commit/f9ee753ba0f46acf4e77a2699e42007c240649fd"><code>f9ee753</code></a>
 Jest</li>
 <li><a
-href="https://github.com/Luligu/matterbridge/commit/43f5779991f1ec5254ecb033dd5faf291ce441cb"><code>43f5779</code></a>
-Fix sesssions</li>
+href="https://github.com/Luligu/matterbridge/commit/31f335a4318471363241d78fe4e3702e50b907be"><code>31f335a</code></a>
+Jest</li>
 <li>Additional commits viewable in <a
-href="https://github.com/Luligu/matterbridge/compare/1.3.9...1.3.10">compare
+href="https://github.com/Luligu/matterbridge/compare/1.3.10...1.3.11">compare
 view</a></li>
 </ul>
 </details>
@@ -110,7 +97,7 @@ view</a></li>
 
 
 [![Dependabot compatibility
-score](https://dependabot-badges.githubapp.com/badges/compatibility_score?dependency-name=matterbridge&package-manager=npm_and_yarn&previous-version=1.3.9&new-version=1.3.10)](https://docs.github.com/en/github/managing-security-vulnerabilities/about-dependabot-security-updates#about-compatibility-scores)
+score](https://dependabot-badges.githubapp.com/badges/compatibility_score?dependency-name=matterbridge&package-manager=npm_and_yarn&previous-version=1.3.10&new-version=1.3.11)](https://docs.github.com/en/github/managing-security-vulnerabilities/about-dependabot-security-updates#about-compatibility-scores)
 
 Dependabot will resolve any conflicts with this PR as long as you don't
 alter it yourself. You can also trigger a rebase manually by commenting
