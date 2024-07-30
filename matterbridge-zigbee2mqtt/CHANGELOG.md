@@ -1,115 +1,29 @@
 Changes in this Release
 
-<details><summary>8ffacc3 chore: bump matterbridge-zigbee2mqtt from 2.1.7 to 2.1.8 in /matterbridge-zigbee2mqtt (#47)</summary>
-chore: bump matterbridge-zigbee2mqtt from 2.1.7 to 2.1.8 in /matterbridge-zigbee2mqtt (#47)
+<details><summary>67416a3 chore: bump matterbridge from 1.4.0 to 1.4.1 in /matterbridge-zigbee2mqtt (#48)</summary>
+chore: bump matterbridge from 1.4.0 to 1.4.1 in /matterbridge-zigbee2mqtt (#48)
 
-Bumps
-[matterbridge-zigbee2mqtt](https://github.com/Luligu/matterbridge-zigbee2mqtt)
-from 2.1.7 to 2.1.8.
-<details>
-<summary>Changelog</summary>
-<p><em>Sourced from <a
-href="https://github.com/Luligu/matterbridge-zigbee2mqtt/blob/main/CHANGELOG.md">matterbridge-zigbee2mqtt's
-changelog</a>.</em></p>
-<blockquote>
-<h2>[2.1.8] - 2024-07-12</h2>
-<h3>Changed</h3>
-<ul>
-<li>[z2m]: Updated matterbridge imports.</li>
-</ul>
-<!-- raw HTML omitted -->
-</blockquote>
-</details>
-<details>
-<summary>Commits</summary>
-<ul>
-<li>See full diff in <a
-href="https://github.com/Luligu/matterbridge-zigbee2mqtt/commits">compare
-view</a></li>
-</ul>
-</details>
-<br />
-
-
-[![Dependabot compatibility
-score](https://dependabot-badges.githubapp.com/badges/compatibility_score?dependency-name=matterbridge-zigbee2mqtt&package-manager=npm_and_yarn&previous-version=2.1.7&new-version=2.1.8)](https://docs.github.com/en/github/managing-security-vulnerabilities/about-dependabot-security-updates#about-compatibility-scores)
-
-Dependabot will resolve any conflicts with this PR as long as you don't
-alter it yourself. You can also trigger a rebase manually by commenting
-`@dependabot rebase`.
-
-[//]: # (dependabot-automerge-start)
-[//]: # (dependabot-automerge-end)
-
----
-
-<details>
-<summary>Dependabot commands and options</summary>
-<br />
-
-You can trigger Dependabot actions by commenting on this PR:
-- `@dependabot rebase` will rebase this PR
-- `@dependabot recreate` will recreate this PR, overwriting any edits
-that have been made to it
-- `@dependabot merge` will merge this PR after your CI passes on it
-- `@dependabot squash and merge` will squash and merge this PR after
-your CI passes on it
-- `@dependabot cancel merge` will cancel a previously requested merge
-and block automerging
-- `@dependabot reopen` will reopen this PR if it is closed
-- `@dependabot close` will close this PR and stop Dependabot recreating
-it. You can achieve the same result by closing it manually
-- `@dependabot show <dependency name> ignore conditions` will show all
-of the ignore conditions of the specified dependency
-- `@dependabot ignore this major version` will close this PR and stop
-Dependabot creating any more for this major version (unless you reopen
-the PR or upgrade to it yourself)
-- `@dependabot ignore this minor version` will close this PR and stop
-Dependabot creating any more for this minor version (unless you reopen
-the PR or upgrade to it yourself)
-- `@dependabot ignore this dependency` will close this PR and stop
-Dependabot creating any more for this dependency (unless you reopen the
-PR or upgrade to it yourself)
-
-
-</details>
-
-Signed-off-by: dependabot[bot] <support@github.com>
-Co-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com></details>
-
-<details><summary>3b9f470 chore: bump matterbridge from 1.3.13 to 1.4.0 in /matterbridge-zigbee2mqtt (#46)</summary>
-chore: bump matterbridge from 1.3.13 to 1.4.0 in /matterbridge-zigbee2mqtt (#46)
-
-Bumps [matterbridge](https://github.com/Luligu/matterbridge) from 1.3.13
-to 1.4.0.
+Bumps [matterbridge](https://github.com/Luligu/matterbridge) from 1.4.0
+to 1.4.1.
 <details>
 <summary>Release notes</summary>
 <p><em>Sourced from <a
 href="https://github.com/Luligu/matterbridge/releases">matterbridge's
 releases</a>.</em></p>
 <blockquote>
-<h2>Release 1.4.0</h2>
-<h2>[1.4.0] - 2024-07-23</h2>
+<h2>Release 1.4.1</h2>
+<h2>[1.4.1] - 2024-07-28</h2>
 <h3>Added</h3>
+<ul>
+<li>[matterbridge]: Added logger levels: debug, info, notice, warn,
+error, fatal (parameter -logger with default info)</li>
+</ul>
 <h3>Changed</h3>
 <ul>
 <li>[package]: Update dependencies.</li>
-<li>[matterbridge]: Added PluginsManager.ts.</li>
-<li>[matterbridge]: Removed timeout on cleanup.</li>
-<li>[matterbridge]: Removed write cache and expired interval for node
-storage.</li>
-<li>[matterbridge]: Added matterbridgeTypes.ts</li>
-<li>[frontend]: The frontend reconnects to WebSocket when the connection
-is closed.</li>
-<li>[frontend]: Removed QR button for plugins in error and not
-enabled.</li>
-<li>[frontend]: The Logs page and the log in the Home page persist till
-you close or reload the frontend (the last 1000 lines are
-available).</li>
-</ul>
-<h3>Fixed</h3>
-<ul>
-<li>[matterbridge]: Fixed utils export</li>
+<li>[logger]: Update node-ansi-logger to 2.0.6.</li>
+<li>[storage]: Update node-persist-manager to 1.0.8.</li>
+<li>[matter]: Update matter.js to 0.9.4.</li>
 </ul>
 <!-- raw HTML omitted -->
 </blockquote>
@@ -120,27 +34,18 @@ available).</li>
 href="https://github.com/Luligu/matterbridge/blob/main/CHANGELOG.md">matterbridge's
 changelog</a>.</em></p>
 <blockquote>
-<h2>[1.4.0] - 2024-07-23</h2>
+<h2>[1.4.1] - 2024-07-28</h2>
 <h3>Added</h3>
+<ul>
+<li>[matterbridge]: Added logger levels: debug, info, notice, warn,
+error, fatal (parameter -logger with default info)</li>
+</ul>
 <h3>Changed</h3>
 <ul>
 <li>[package]: Update dependencies.</li>
-<li>[matterbridge]: Added PluginsManager.ts.</li>
-<li>[matterbridge]: Removed timeout on cleanup.</li>
-<li>[matterbridge]: Removed write cache and expired interval for node
-storage.</li>
-<li>[matterbridge]: Added matterbridgeTypes.ts</li>
-<li>[frontend]: The frontend reconnects to WebSocket when the connection
-is closed.</li>
-<li>[frontend]: Removed QR button for plugins in error and not
-enabled.</li>
-<li>[frontend]: The Logs page and the log in the Home page persist till
-you close or reload the frontend (the last 1000 lines are
-available).</li>
-</ul>
-<h3>Fixed</h3>
-<ul>
-<li>[matterbridge]: Fixed utils export</li>
+<li>[logger]: Update node-ansi-logger to 2.0.6.</li>
+<li>[storage]: Update node-persist-manager to 1.0.8.</li>
+<li>[matter]: Update matter.js to 0.9.4.</li>
 </ul>
 <!-- raw HTML omitted -->
 </blockquote>
@@ -149,39 +54,39 @@ available).</li>
 <summary>Commits</summary>
 <ul>
 <li><a
-href="https://github.com/Luligu/matterbridge/commit/d22fccc034628d5b9aae23c4334ffa641d8539bb"><code>d22fccc</code></a>
+href="https://github.com/Luligu/matterbridge/commit/e3d21e95f9af275662646ab560c479c0d00872bd"><code>e3d21e9</code></a>
 Merge pull request <a
-href="https://redirect.github.com/Luligu/matterbridge/issues/89">#89</a>
+href="https://redirect.github.com/Luligu/matterbridge/issues/93">#93</a>
 from Luligu/dev</li>
 <li><a
-href="https://github.com/Luligu/matterbridge/commit/48562b25bd848e856c4b1224310af70ff072c939"><code>48562b2</code></a>
-Release 1.4.0</li>
+href="https://github.com/Luligu/matterbridge/commit/27265acd9b43650803ed5390bf2f7021ea993094"><code>27265ac</code></a>
+Release 1.4.1</li>
 <li><a
-href="https://github.com/Luligu/matterbridge/commit/3deee7f7f8d3c578d6453c00d89d6221ad37c8c7"><code>3deee7f</code></a>
-Release 1.3.28</li>
+href="https://github.com/Luligu/matterbridge/commit/112b376f7828ebeeefab92ea733c89bed9dd9942"><code>112b376</code></a>
+Release 1.4.1</li>
 <li><a
-href="https://github.com/Luligu/matterbridge/commit/2e5bf19f6dc0a47da222e7f68a733fffd318abc0"><code>2e5bf19</code></a>
-Release 1.3.27</li>
+href="https://github.com/Luligu/matterbridge/commit/08e6a61fe82ac9fcc3e7c95eed1565fcbd98dc9b"><code>08e6a61</code></a>
+Add sanitize WssMessages</li>
 <li><a
-href="https://github.com/Luligu/matterbridge/commit/924e4b5bfd775eb0f7559954b40fd69409e780b2"><code>924e4b5</code></a>
-Jest</li>
+href="https://github.com/Luligu/matterbridge/commit/cd795c5e2c75f791fa257eb574b0f2b29e7bf2c7"><code>cd795c5</code></a>
+Restyle BridgedDevices</li>
 <li><a
-href="https://github.com/Luligu/matterbridge/commit/b45103d94e8761367ea9ce6a77bec376a90c2b2e"><code>b45103d</code></a>
-Release 1.3.27</li>
+href="https://github.com/Luligu/matterbridge/commit/b6713d089c2bc09df1bb7c7087b12b922896c1fb"><code>b6713d0</code></a>
+Adding DeviceManager</li>
 <li><a
-href="https://github.com/Luligu/matterbridge/commit/e9288d0b3954d8fdae2e74565b8051900feafca7"><code>e9288d0</code></a>
-Jest</li>
+href="https://github.com/Luligu/matterbridge/commit/94afe89b61c300746e71b1b6067f3fdb61f12908"><code>94afe89</code></a>
+Add onChangeLoggerLevel</li>
 <li><a
-href="https://github.com/Luligu/matterbridge/commit/8e68f6115d8a5c0762f2168d809f8920267f018e"><code>8e68f61</code></a>
-Jest</li>
+href="https://github.com/Luligu/matterbridge/commit/e160b4885c627fa8ee8beaad0b340d88beab890f"><code>e160b48</code></a>
+Changed wssHost to ssl on the same host as frontend</li>
 <li><a
-href="https://github.com/Luligu/matterbridge/commit/674ee740037153f3c246d13e58c29f0d576c6c0b"><code>674ee74</code></a>
-Jest</li>
+href="https://github.com/Luligu/matterbridge/commit/cd43eeba44fba75d13a200b1c912963727f81b09"><code>cd43eeb</code></a>
+Release 1.4.1</li>
 <li><a
-href="https://github.com/Luligu/matterbridge/commit/3dc3037416951d1b8af3c482756d77d54fc4de1c"><code>3dc3037</code></a>
-Jest</li>
+href="https://github.com/Luligu/matterbridge/commit/b46ecefa9af69907fcf2ad5c27ec7bc0cf832d59"><code>b46ecef</code></a>
+Release 1.4.1</li>
 <li>Additional commits viewable in <a
-href="https://github.com/Luligu/matterbridge/compare/1.3.13...1.4.0">compare
+href="https://github.com/Luligu/matterbridge/compare/1.4.0...1.4.1">compare
 view</a></li>
 </ul>
 </details>
@@ -189,7 +94,7 @@ view</a></li>
 
 
 [![Dependabot compatibility
-score](https://dependabot-badges.githubapp.com/badges/compatibility_score?dependency-name=matterbridge&package-manager=npm_and_yarn&previous-version=1.3.13&new-version=1.4.0)](https://docs.github.com/en/github/managing-security-vulnerabilities/about-dependabot-security-updates#about-compatibility-scores)
+score](https://dependabot-badges.githubapp.com/badges/compatibility_score?dependency-name=matterbridge&package-manager=npm_and_yarn&previous-version=1.4.0&new-version=1.4.1)](https://docs.github.com/en/github/managing-security-vulnerabilities/about-dependabot-security-updates#about-compatibility-scores)
 
 Dependabot will resolve any conflicts with this PR as long as you don't
 alter it yourself. You can also trigger a rebase manually by commenting
@@ -233,15 +138,3 @@ PR or upgrade to it yourself)
 
 Signed-off-by: dependabot[bot] <support@github.com>
 Co-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com></details>
-
-<details><summary>411753d feat: update base image</summary>
-feat: update base image
-</details>
-
-<details><summary>cebf160 feat: update base addon image</summary>
-feat: update base addon image
-</details>
-
-<details><summary>4c48517 chore: improved docker caching</summary>
-chore: improved docker caching
-</details>
