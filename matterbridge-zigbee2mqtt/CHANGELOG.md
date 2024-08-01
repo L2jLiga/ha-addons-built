@@ -1,51 +1,23 @@
 Changes in this Release
 
-<details><summary>67416a3 chore: bump matterbridge from 1.4.0 to 1.4.1 in /matterbridge-zigbee2mqtt (#48)</summary>
-chore: bump matterbridge from 1.4.0 to 1.4.1 in /matterbridge-zigbee2mqtt (#48)
+<details><summary>5f66e33 chore: bump matterbridge-zigbee2mqtt from 2.1.8 to 2.1.9 in /matterbridge-zigbee2mqtt (#49)</summary>
+chore: bump matterbridge-zigbee2mqtt from 2.1.8 to 2.1.9 in /matterbridge-zigbee2mqtt (#49)
 
-Bumps [matterbridge](https://github.com/Luligu/matterbridge) from 1.4.0
-to 1.4.1.
-<details>
-<summary>Release notes</summary>
-<p><em>Sourced from <a
-href="https://github.com/Luligu/matterbridge/releases">matterbridge's
-releases</a>.</em></p>
-<blockquote>
-<h2>Release 1.4.1</h2>
-<h2>[1.4.1] - 2024-07-28</h2>
-<h3>Added</h3>
-<ul>
-<li>[matterbridge]: Added logger levels: debug, info, notice, warn,
-error, fatal (parameter -logger with default info)</li>
-</ul>
-<h3>Changed</h3>
-<ul>
-<li>[package]: Update dependencies.</li>
-<li>[logger]: Update node-ansi-logger to 2.0.6.</li>
-<li>[storage]: Update node-persist-manager to 1.0.8.</li>
-<li>[matter]: Update matter.js to 0.9.4.</li>
-</ul>
-<!-- raw HTML omitted -->
-</blockquote>
-</details>
+Bumps
+[matterbridge-zigbee2mqtt](https://github.com/Luligu/matterbridge-zigbee2mqtt)
+from 2.1.8 to 2.1.9.
 <details>
 <summary>Changelog</summary>
 <p><em>Sourced from <a
-href="https://github.com/Luligu/matterbridge/blob/main/CHANGELOG.md">matterbridge's
+href="https://github.com/Luligu/matterbridge-zigbee2mqtt/blob/main/CHANGELOG.md">matterbridge-zigbee2mqtt's
 changelog</a>.</em></p>
 <blockquote>
-<h2>[1.4.1] - 2024-07-28</h2>
-<h3>Added</h3>
-<ul>
-<li>[matterbridge]: Added logger levels: debug, info, notice, warn,
-error, fatal (parameter -logger with default info)</li>
-</ul>
+<h2>[2.1.9] - 2024-07-28</h2>
 <h3>Changed</h3>
 <ul>
-<li>[package]: Update dependencies.</li>
+<li>[package]: Updated dependencies.</li>
 <li>[logger]: Update node-ansi-logger to 2.0.6.</li>
 <li>[storage]: Update node-persist-manager to 1.0.8.</li>
-<li>[matter]: Update matter.js to 0.9.4.</li>
 </ul>
 <!-- raw HTML omitted -->
 </blockquote>
@@ -53,40 +25,8 @@ error, fatal (parameter -logger with default info)</li>
 <details>
 <summary>Commits</summary>
 <ul>
-<li><a
-href="https://github.com/Luligu/matterbridge/commit/e3d21e95f9af275662646ab560c479c0d00872bd"><code>e3d21e9</code></a>
-Merge pull request <a
-href="https://redirect.github.com/Luligu/matterbridge/issues/93">#93</a>
-from Luligu/dev</li>
-<li><a
-href="https://github.com/Luligu/matterbridge/commit/27265acd9b43650803ed5390bf2f7021ea993094"><code>27265ac</code></a>
-Release 1.4.1</li>
-<li><a
-href="https://github.com/Luligu/matterbridge/commit/112b376f7828ebeeefab92ea733c89bed9dd9942"><code>112b376</code></a>
-Release 1.4.1</li>
-<li><a
-href="https://github.com/Luligu/matterbridge/commit/08e6a61fe82ac9fcc3e7c95eed1565fcbd98dc9b"><code>08e6a61</code></a>
-Add sanitize WssMessages</li>
-<li><a
-href="https://github.com/Luligu/matterbridge/commit/cd795c5e2c75f791fa257eb574b0f2b29e7bf2c7"><code>cd795c5</code></a>
-Restyle BridgedDevices</li>
-<li><a
-href="https://github.com/Luligu/matterbridge/commit/b6713d089c2bc09df1bb7c7087b12b922896c1fb"><code>b6713d0</code></a>
-Adding DeviceManager</li>
-<li><a
-href="https://github.com/Luligu/matterbridge/commit/94afe89b61c300746e71b1b6067f3fdb61f12908"><code>94afe89</code></a>
-Add onChangeLoggerLevel</li>
-<li><a
-href="https://github.com/Luligu/matterbridge/commit/e160b4885c627fa8ee8beaad0b340d88beab890f"><code>e160b48</code></a>
-Changed wssHost to ssl on the same host as frontend</li>
-<li><a
-href="https://github.com/Luligu/matterbridge/commit/cd43eeba44fba75d13a200b1c912963727f81b09"><code>cd43eeb</code></a>
-Release 1.4.1</li>
-<li><a
-href="https://github.com/Luligu/matterbridge/commit/b46ecefa9af69907fcf2ad5c27ec7bc0cf832d59"><code>b46ecef</code></a>
-Release 1.4.1</li>
-<li>Additional commits viewable in <a
-href="https://github.com/Luligu/matterbridge/compare/1.4.0...1.4.1">compare
+<li>See full diff in <a
+href="https://github.com/Luligu/matterbridge-zigbee2mqtt/commits">compare
 view</a></li>
 </ul>
 </details>
@@ -94,7 +34,7 @@ view</a></li>
 
 
 [![Dependabot compatibility
-score](https://dependabot-badges.githubapp.com/badges/compatibility_score?dependency-name=matterbridge&package-manager=npm_and_yarn&previous-version=1.4.0&new-version=1.4.1)](https://docs.github.com/en/github/managing-security-vulnerabilities/about-dependabot-security-updates#about-compatibility-scores)
+score](https://dependabot-badges.githubapp.com/badges/compatibility_score?dependency-name=matterbridge-zigbee2mqtt&package-manager=npm_and_yarn&previous-version=2.1.8&new-version=2.1.9)](https://docs.github.com/en/github/managing-security-vulnerabilities/about-dependabot-security-updates#about-compatibility-scores)
 
 Dependabot will resolve any conflicts with this PR as long as you don't
 alter it yourself. You can also trigger a rebase manually by commenting
