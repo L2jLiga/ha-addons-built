@@ -1,60 +1,24 @@
 Changes in this Release
 
-<details><summary>d187040 chore: bump matterbridge from 1.4.3 to 1.5.0 in /matterbridge-zigbee2mqtt (#60)</summary>
-chore: bump matterbridge from 1.4.3 to 1.5.0 in /matterbridge-zigbee2mqtt (#60)
+<details><summary>298717d chore: bump matterbridge from 1.5.0 to 1.5.1 in /matterbridge-zigbee2mqtt (#61)</summary>
+chore: bump matterbridge from 1.5.0 to 1.5.1 in /matterbridge-zigbee2mqtt (#61)
 
-Bumps [matterbridge](https://github.com/Luligu/matterbridge) from 1.4.3
-to 1.5.0.
+Bumps [matterbridge](https://github.com/Luligu/matterbridge) from 1.5.0
+to 1.5.1.
 <details>
 <summary>Release notes</summary>
 <p><em>Sourced from <a
 href="https://github.com/Luligu/matterbridge/releases">matterbridge's
 releases</a>.</em></p>
 <blockquote>
-<h2>Release 1.5.0</h2>
-<h2>[1.5.0] - 2024-08-27</h2>
-<h3>Breaking Changes</h3>
-<ul>
-<li>[-bridge -childbridge]: You don't need anymore to add the parmeter
--bridge or -childbridge on the command line or systemctl configuration
-or docker command: the default is bridge mode and if no parameter is
-added, Matterbridge uses the settings from the frontend that are
-saved.</li>
-<li>[-logger]: You don't need anymore to add the parmeter -logger
-[level]: the default is info and if no parameter is added, Matterbridge
-uses the settings from the frontend that are saved.</li>
-<li>[-filelogger]: You don't need anymore to add the parmeter
--filelogger: the default is false and if no parameter is added,
-Matterbridge uses the settings from the frontend that are saved.</li>
-<li>[-matterlogger]: You don't need anymore to add the parmeter
--matterlogger [level]: the default is info and if no parameter is added,
-Matterbridge uses the settings from the frontend that are saved.</li>
-<li>[-matterfilelogger]: You don't need anymore to add the parmeter
--matterfilelogger: the default is false and if no parameter is added,
-Matterbridge uses the settings from the frontend that are saved.</li>
-</ul>
-<h3>Breaking Changes for developers</h3>
-<ul>
-<li>please read this <a
-href="https://github.com/Luligu/matterbridge/blob/main/README-DEV.md">Development
-guide lines</a></li>
-</ul>
+<h2>Release 1.5.1</h2>
+<h2>[1.5.1] - 2024-08-28</h2>
 <h3>Added</h3>
-<ul>
-<li>[frontend]: Added menu item &quot;Update&quot;.</li>
-<li>[frontend]: Added menu item &quot;Restart&quot;.</li>
-<li>[frontend]: Added menu item &quot;Shutdown&quot;.</li>
-<li>[frontend]: Added menu item &quot;Download&quot;.</li>
-<li>[frontend]: Added menu item &quot;Backup&quot;.</li>
-<li>[frontend]: Added menu item &quot;Unregister all devices&quot; with
-a confirmation dialog.</li>
-<li>[frontend]: Added menu item &quot;Reset commissioning&quot; with a
-confirmation dialog.</li>
-<li>[frontend]: Added menu item &quot;Factory reset&quot; with a
-confirmation dialog.</li>
-</ul>
 <h3>Changed</h3>
 <ul>
+<li>[matterbridgeDevice]: refactor WindowCovering cluster (removed
+AbsolutePosition).</li>
+<li>[matterbridge]: Removed deprecated methods.</li>
 <li>[package]: Update dependencies.</li>
 </ul>
 <!-- raw HTML omitted -->
@@ -66,49 +30,13 @@ confirmation dialog.</li>
 href="https://github.com/Luligu/matterbridge/blob/main/CHANGELOG.md">matterbridge's
 changelog</a>.</em></p>
 <blockquote>
-<h2>[1.5.0] - 2024-08-27</h2>
-<h3>Breaking Changes</h3>
-<ul>
-<li>[-bridge -childbridge]: You don't need anymore to add the parmeter
--bridge or -childbridge on the command line or systemctl configuration
-or docker command: the default is bridge mode and if no parameter is
-added, Matterbridge uses the settings from the frontend that are
-saved.</li>
-<li>[-logger]: You don't need anymore to add the parmeter -logger
-[level]: the default is info and if no parameter is added, Matterbridge
-uses the settings from the frontend that are saved.</li>
-<li>[-filelogger]: You don't need anymore to add the parmeter
--filelogger: the default is false and if no parameter is added,
-Matterbridge uses the settings from the frontend that are saved.</li>
-<li>[-matterlogger]: You don't need anymore to add the parmeter
--matterlogger [level]: the default is info and if no parameter is added,
-Matterbridge uses the settings from the frontend that are saved.</li>
-<li>[-matterfilelogger]: You don't need anymore to add the parmeter
--matterfilelogger: the default is false and if no parameter is added,
-Matterbridge uses the settings from the frontend that are saved.</li>
-</ul>
-<h3>Breaking Changes for developers</h3>
-<ul>
-<li>please read this <a
-href="https://github.com/Luligu/matterbridge/blob/main/README-DEV.md">Development
-guide lines</a></li>
-</ul>
+<h2>[1.5.1] - 2024-08-28</h2>
 <h3>Added</h3>
-<ul>
-<li>[frontend]: Added menu item &quot;Update&quot;.</li>
-<li>[frontend]: Added menu item &quot;Restart&quot;.</li>
-<li>[frontend]: Added menu item &quot;Shutdown&quot;.</li>
-<li>[frontend]: Added menu item &quot;Download&quot;.</li>
-<li>[frontend]: Added menu item &quot;Backup&quot;.</li>
-<li>[frontend]: Added menu item &quot;Unregister all devices&quot; with
-a confirmation dialog.</li>
-<li>[frontend]: Added menu item &quot;Reset commissioning&quot; with a
-confirmation dialog.</li>
-<li>[frontend]: Added menu item &quot;Factory reset&quot; with a
-confirmation dialog.</li>
-</ul>
 <h3>Changed</h3>
 <ul>
+<li>[matterbridgeDevice]: refactor WindowCovering cluster (removed
+AbsolutePosition).</li>
+<li>[matterbridge]: Removed deprecated methods.</li>
 <li>[package]: Update dependencies.</li>
 </ul>
 <!-- raw HTML omitted -->
@@ -118,39 +46,27 @@ confirmation dialog.</li>
 <summary>Commits</summary>
 <ul>
 <li><a
-href="https://github.com/Luligu/matterbridge/commit/85131cff7745ac63fd9dfb075c717bb94f061512"><code>85131cf</code></a>
+href="https://github.com/Luligu/matterbridge/commit/509f930d066bdbae166a505ba42751ac78a77b5d"><code>509f930</code></a>
 Merge pull request <a
-href="https://redirect.github.com/Luligu/matterbridge/issues/111">#111</a>
+href="https://redirect.github.com/Luligu/matterbridge/issues/113">#113</a>
 from Luligu/dev</li>
 <li><a
-href="https://github.com/Luligu/matterbridge/commit/ef2745296379206b0b24a133205d90fa467e2f15"><code>ef27452</code></a>
-Release 1.5.0</li>
+href="https://github.com/Luligu/matterbridge/commit/d179611cc6b09730fa2d9b91b7d5b3939746548b"><code>d179611</code></a>
+Release 1.5.1</li>
 <li><a
-href="https://github.com/Luligu/matterbridge/commit/a76f9fc86cc7c3c9d5ca466149fbaabda497708e"><code>a76f9fc</code></a>
-Refactor README.md</li>
+href="https://github.com/Luligu/matterbridge/commit/47a57ddfe0963db84827dc4ed9db1eeea0e3c698"><code>47a57dd</code></a>
+1.5.1-beta3</li>
 <li><a
-href="https://github.com/Luligu/matterbridge/commit/1479debf3d75e360fd936f489d0fdf1343f07f79"><code>1479deb</code></a>
-Release 1.5.0</li>
+href="https://github.com/Luligu/matterbridge/commit/75099ee8be5954a469858edf37f696a1d70324d8"><code>75099ee</code></a>
+1.5.1-beta2</li>
 <li><a
-href="https://github.com/Luligu/matterbridge/commit/3456b4ab7a805f261bbce4aa60f8eb32964eb19d"><code>3456b4a</code></a>
-Refactor README.md</li>
+href="https://github.com/Luligu/matterbridge/commit/0d6001469cfdfa728fe746a52f99d1206d2cc2df"><code>0d60014</code></a>
+1.5.1-beta1</li>
 <li><a
-href="https://github.com/Luligu/matterbridge/commit/bd0c7d288335be68cdb0bc5bdfc3a6085ede5690"><code>bd0c7d2</code></a>
-Refactor README.md</li>
-<li><a
-href="https://github.com/Luligu/matterbridge/commit/965daa5e404eadc34447f1377603057ce4ef51a1"><code>965daa5</code></a>
-Add ipv4address and ipv6address parameters</li>
-<li><a
-href="https://github.com/Luligu/matterbridge/commit/dc1e5dee60e8fad83ac97162c87b2a183bc6f950"><code>dc1e5de</code></a>
-1.5.0-beta10</li>
-<li><a
-href="https://github.com/Luligu/matterbridge/commit/4cc093e8aa7492cd4c269d533a651862ebd4e976"><code>4cc093e</code></a>
-1.5.0-beta10</li>
-<li><a
-href="https://github.com/Luligu/matterbridge/commit/35ef935ed6038f5f291403c530dde59fc4cdc23a"><code>35ef935</code></a>
-1.5.0-beta10</li>
-<li>Additional commits viewable in <a
-href="https://github.com/Luligu/matterbridge/compare/1.4.3...1.5.0">compare
+href="https://github.com/Luligu/matterbridge/commit/a3094a29064f5181cc45a91b2cca3513d2d09fb1"><code>a3094a2</code></a>
+1.5.1-beta1</li>
+<li>See full diff in <a
+href="https://github.com/Luligu/matterbridge/compare/1.5.0...1.5.1">compare
 view</a></li>
 </ul>
 </details>
@@ -158,7 +74,7 @@ view</a></li>
 
 
 [![Dependabot compatibility
-score](https://dependabot-badges.githubapp.com/badges/compatibility_score?dependency-name=matterbridge&package-manager=npm_and_yarn&previous-version=1.4.3&new-version=1.5.0)](https://docs.github.com/en/github/managing-security-vulnerabilities/about-dependabot-security-updates#about-compatibility-scores)
+score](https://dependabot-badges.githubapp.com/badges/compatibility_score?dependency-name=matterbridge&package-manager=npm_and_yarn&previous-version=1.5.0&new-version=1.5.1)](https://docs.github.com/en/github/managing-security-vulnerabilities/about-dependabot-security-updates#about-compatibility-scores)
 
 Dependabot will resolve any conflicts with this PR as long as you don't
 alter it yourself. You can also trigger a rebase manually by commenting
