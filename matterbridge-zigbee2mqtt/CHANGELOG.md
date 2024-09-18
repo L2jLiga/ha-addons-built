@@ -1,46 +1,31 @@
 Changes in this Release
 
-<details><summary>47d0ab4 chore: bump matterbridge from 1.5.5 to 1.5.6 in /matterbridge-zigbee2mqtt (#69)</summary>
-chore: bump matterbridge from 1.5.5 to 1.5.6 in /matterbridge-zigbee2mqtt (#69)
+<details><summary>b73d04f chore: bump matterbridge from 1.5.6 to 1.5.7 in /matterbridge-zigbee2mqtt (#70)</summary>
+chore: bump matterbridge from 1.5.6 to 1.5.7 in /matterbridge-zigbee2mqtt (#70)
 
-Bumps [matterbridge](https://github.com/Luligu/matterbridge) from 1.5.5
-to 1.5.6.
+Bumps [matterbridge](https://github.com/Luligu/matterbridge) from 1.5.6
+to 1.5.7.
 <details>
 <summary>Release notes</summary>
 <p><em>Sourced from <a
 href="https://github.com/Luligu/matterbridge/releases">matterbridge's
 releases</a>.</em></p>
 <blockquote>
-<h2>Release 1.5.6</h2>
-<h3>Home Assistant Community Add-ons</h3>
-<p>The Home Assistant Community Add-ons and plugins are not verified to
-work with Matterbridge. I strongly advise against using them. If you do
-use them and encounter an issue (which is likely because some do not
-meet the Matterbridge guidelines), please do not open an issue in the
-Matterbridge repository.</p>
-<h2>[1.5.6] - 2024-09-13</h2>
+<h2>Release 1.5.7</h2>
+<h2>[1.5.7] - 2024-09-17</h2>
 <h3>Added</h3>
 <ul>
-<li>[matterbridge]: Updated to support ingress (will be released soon in
-the <a
+<li>[matterbridge]: Added the <a
 href="https://github.com/Luligu/matterbridge-home-assistant-addon">Official
-Matterbridge Home Assistant Add-on</a>).</li>
-<li>[frontend]: Updated to support ingress.</li>
+Matterbridge Home Assistant Add-on</a></li>
 </ul>
 <h3>Changed</h3>
 <ul>
-<li>[package]: Updated typescript to 5.6.2.</li>
-<li>[package]: Updated express to 4.21.0.</li>
-<li>[package]: Updated dependencies.</li>
-</ul>
-<!-- raw HTML omitted -->
-<h2>[1.5.5] - 2024-09-09</h2>
-<h3>Changed</h3>
-<ul>
-<li>[matterbridge]: Changed startMatterInterval from 30 to 60
-seconds.</li>
-<li>[package]: Update matter-node.js to 0.10.1.</li>
-<li>[package]: Update matter-history to 1.1.11.</li>
+<li>[electricalSensor]: Refactor the
+getDefaultElectricalEnergyMeasurementClusterServer and
+getDefaultElectricalPowerMeasurementClusterServer</li>
+<li>[package]: Update matter-node.js to 0.10.3.</li>
+<li>[package]: Update matter-history to 1.1.14.</li>
 <li>[package]: Update dependencies.</li>
 </ul>
 <!-- raw HTML omitted -->
@@ -52,20 +37,21 @@ seconds.</li>
 href="https://github.com/Luligu/matterbridge/blob/main/CHANGELOG.md">matterbridge's
 changelog</a>.</em></p>
 <blockquote>
-<h2>[1.5.6] - 2024-09-13</h2>
+<h2>[1.5.7] - 2024-09-17</h2>
 <h3>Added</h3>
 <ul>
-<li>[matterbridge]: Updated to support ingress (will be released soon in
-the <a
+<li>[matterbridge]: Added the <a
 href="https://github.com/Luligu/matterbridge-home-assistant-addon">Official
-Matterbridge Home Assistant Add-on</a>).</li>
-<li>[frontend]: Updated to support ingress.</li>
+Matterbridge Home Assistant Add-on</a></li>
 </ul>
 <h3>Changed</h3>
 <ul>
-<li>[package]: Updated typescript to 5.6.2.</li>
-<li>[package]: Updated express to 4.21.0.</li>
-<li>[package]: Updated dependencies.</li>
+<li>[electricalSensor]: Refactor the
+getDefaultElectricalEnergyMeasurementClusterServer and
+getDefaultElectricalPowerMeasurementClusterServer</li>
+<li>[package]: Update matter-node.js to 0.10.3.</li>
+<li>[package]: Update matter-history to 1.1.14.</li>
+<li>[package]: Update dependencies.</li>
 </ul>
 <!-- raw HTML omitted -->
 </blockquote>
@@ -74,39 +60,39 @@ Matterbridge Home Assistant Add-on</a>).</li>
 <summary>Commits</summary>
 <ul>
 <li><a
-href="https://github.com/Luligu/matterbridge/commit/1489cefee59027a78f751380d90bd64d215a19ab"><code>1489cef</code></a>
+href="https://github.com/Luligu/matterbridge/commit/9ac134c2c44a99a3bc706e0be6ae8cb170297233"><code>9ac134c</code></a>
 Merge pull request <a
-href="https://redirect.github.com/Luligu/matterbridge/issues/130">#130</a>
+href="https://redirect.github.com/Luligu/matterbridge/issues/132">#132</a>
 from Luligu/dev</li>
 <li><a
-href="https://github.com/Luligu/matterbridge/commit/754efe049915c21aaca8bfcea9f754d51db0f498"><code>754efe0</code></a>
-Release 1.5.6</li>
+href="https://github.com/Luligu/matterbridge/commit/8264ce31455fcad52580e4a5b809c49403688cdc"><code>8264ce3</code></a>
+Fix jsdoc</li>
 <li><a
-href="https://github.com/Luligu/matterbridge/commit/4012ae68ec145af341a54efd719fdfcae51bdb71"><code>4012ae6</code></a>
-Release 1.5.6</li>
+href="https://github.com/Luligu/matterbridge/commit/81582e72328fb78eb27a38599699c263563afa1f"><code>81582e7</code></a>
+Fix jsdoc</li>
 <li><a
-href="https://github.com/Luligu/matterbridge/commit/cb89a28cd34e39660114b676b3bf3c85a4f8f674"><code>cb89a28</code></a>
-1.5.6-dev.7</li>
+href="https://github.com/Luligu/matterbridge/commit/c3d40d1cca0f82c86d1389514b673907fd7c2404"><code>c3d40d1</code></a>
+Release 1.5.7</li>
 <li><a
-href="https://github.com/Luligu/matterbridge/commit/79e19983dc1fd2256dec740c06d53e7a0b080bbc"><code>79e1998</code></a>
-Docker</li>
+href="https://github.com/Luligu/matterbridge/commit/776a41ffb00571040f4cdd5bbf795b349b15f2c5"><code>776a41f</code></a>
+Update to docker/login-action@v3</li>
 <li><a
-href="https://github.com/Luligu/matterbridge/commit/81734b2e804484e0a55265e95a34d9d8a8f86c47"><code>81734b2</code></a>
-Docker</li>
+href="https://github.com/Luligu/matterbridge/commit/062f3d2628730d1c1ba3fcb7f6e09636675c455f"><code>062f3d2</code></a>
+Update to docker/login-action@v3</li>
 <li><a
-href="https://github.com/Luligu/matterbridge/commit/0729b85d2e67d54a817fbb80faf38b554e5edc6c"><code>0729b85</code></a>
-Docker</li>
+href="https://github.com/Luligu/matterbridge/commit/5b617ea2a8666e71d92f861a4f8da98f2d4da30c"><code>5b617ea</code></a>
+Dev 1.5.7-dev.2</li>
 <li><a
-href="https://github.com/Luligu/matterbridge/commit/a145eb496cdf1cdf7b22142d8db2aa90d0688bad"><code>a145eb4</code></a>
-Docker</li>
+href="https://github.com/Luligu/matterbridge/commit/e3c238a09585dfc98837f5f3f30a68134558ea66"><code>e3c238a</code></a>
+Dev 1.5.7-dev.1</li>
 <li><a
-href="https://github.com/Luligu/matterbridge/commit/0386a246b6bb36190d194a5dfc5609325e018ad8"><code>0386a24</code></a>
-Docker</li>
+href="https://github.com/Luligu/matterbridge/commit/3d524c297b8f61ad2eed60970d43c3e6d9b23a68"><code>3d524c2</code></a>
+CHANGELOG.md</li>
 <li><a
-href="https://github.com/Luligu/matterbridge/commit/5b4b118a40e48931775dcc7d13d7af0cdfb4c2d4"><code>5b4b118</code></a>
-Docker</li>
+href="https://github.com/Luligu/matterbridge/commit/afd2f8f6cc9eea954324928209a0a01b3e218f0f"><code>afd2f8f</code></a>
+Fixed default valu to null for electrical sensor</li>
 <li>Additional commits viewable in <a
-href="https://github.com/Luligu/matterbridge/compare/1.5.5...1.5.6">compare
+href="https://github.com/Luligu/matterbridge/compare/1.5.6...1.5.7">compare
 view</a></li>
 </ul>
 </details>
@@ -114,7 +100,7 @@ view</a></li>
 
 
 [![Dependabot compatibility
-score](https://dependabot-badges.githubapp.com/badges/compatibility_score?dependency-name=matterbridge&package-manager=npm_and_yarn&previous-version=1.5.5&new-version=1.5.6)](https://docs.github.com/en/github/managing-security-vulnerabilities/about-dependabot-security-updates#about-compatibility-scores)
+score](https://dependabot-badges.githubapp.com/badges/compatibility_score?dependency-name=matterbridge&package-manager=npm_and_yarn&previous-version=1.5.6&new-version=1.5.7)](https://docs.github.com/en/github/managing-security-vulnerabilities/about-dependabot-security-updates#about-compatibility-scores)
 
 Dependabot will resolve any conflicts with this PR as long as you don't
 alter it yourself. You can also trigger a rebase manually by commenting
