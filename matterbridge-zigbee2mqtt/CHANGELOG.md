@@ -1,41 +1,41 @@
 Changes in this Release
 
-<details><summary>e21b70a chore: bump matterbridge-zigbee2mqtt from 2.1.19 to 2.2.1 in /matterbridge-zigbee2mqtt (#77)</summary>
-chore: bump matterbridge-zigbee2mqtt from 2.1.19 to 2.2.1 in /matterbridge-zigbee2mqtt (#77)
+<details><summary>dbdd4ef chore: bump matterbridge from 1.5.10 to 1.6.0 in /matterbridge-zigbee2mqtt (#78)</summary>
+chore: bump matterbridge from 1.5.10 to 1.6.0 in /matterbridge-zigbee2mqtt (#78)
 
-Bumps
-[matterbridge-zigbee2mqtt](https://github.com/Luligu/matterbridge-zigbee2mqtt)
-from 2.1.19 to 2.2.1.
+Bumps [matterbridge](https://github.com/Luligu/matterbridge) from 1.5.10
+to 1.6.0.
 <details>
 <summary>Release notes</summary>
 <p><em>Sourced from <a
-href="https://github.com/Luligu/matterbridge-zigbee2mqtt/releases">matterbridge-zigbee2mqtt's
+href="https://github.com/Luligu/matterbridge/releases">matterbridge's
 releases</a>.</em></p>
 <blockquote>
-<h2>Release 2.2.1</h2>
-<h2>[2.2.1] - 2024-10-11</h2>
-<h3>Fixed</h3>
-<ul>
-<li>[entity]: Fixed propertyMap.</li>
-<li>[entity]: Fixed energy kWh.</li>
-<li>[entity]: Fixed log.</li>
-</ul>
-<!-- raw HTML omitted -->
-<h2>Release 2.2.0</h2>
-<h2>[2.2.0] - 2024-10-10</h2>
+<h2>Release 1.6.0</h2>
+<h2>[1.6.0] - 2024-10-28</h2>
 <h3>Added</h3>
 <ul>
-<li>[groups]: Refactor the group to support also covers.</li>
+<li>[matterbridge]: Added WebSocket for the Matetrbridge cockpit
+dashboard (Shelly gateway).</li>
 </ul>
 <h3>Changed</h3>
 <ul>
-<li>[matterbridge]: Removed EveHistory energy measurement in favor of
-Matter 1.3 ElectricalPowerMeasurement and ElectricalEnergyMeasurement
-(supported by Home Assistant from version 2024.10).</li>
-<li>[matterbridge]: Updated to new child endpoints MatterbridgeDevice
-methods.</li>
-<li>[entity]: Code optimization.</li>
-<li>[package]: Updated dependencies.</li>
+<li>[discord]: Discord group link: <a
+href="https://discord.gg/QX58CDe6hd">https://discord.gg/QX58CDe6hd</a>.</li>
+<li>[matterbridge]: Completed phase 1 of transition to edge (matter.js
+new API).</li>
+<li>[matterbridgeDevice]: Refactor Thermostat cluster method to accept
+minHeatSetpointLimit, maxHeatSetpointLimit, minCoolSetpointLimit and
+maxCoolSetpointLimit.</li>
+<li>[config]: The plugins config is rewritten only after onStart and no
+more after onConfigure (after the plugin starts is possible to change
+the plugins config and it will not be rewritten after the plugin
+configuration).</li>
+<li>[matterbridgeDevice]: Removed deprecated methods of ColorControl
+cluster.</li>
+<li>[package]: Removed EveHistory (it will be used only by single
+plugins).</li>
+<li>[package]: Update dependencies.</li>
 </ul>
 <!-- raw HTML omitted -->
 </blockquote>
@@ -43,31 +43,33 @@ methods.</li>
 <details>
 <summary>Changelog</summary>
 <p><em>Sourced from <a
-href="https://github.com/Luligu/matterbridge-zigbee2mqtt/blob/main/CHANGELOG.md">matterbridge-zigbee2mqtt's
+href="https://github.com/Luligu/matterbridge/blob/main/CHANGELOG.md">matterbridge's
 changelog</a>.</em></p>
 <blockquote>
-<h2>[2.2.1] - 2024-10-11</h2>
-<h3>Fixed</h3>
-<ul>
-<li>[entity]: Fixed propertyMap.</li>
-<li>[entity]: Fixed energy kWh.</li>
-<li>[entity]: Fixed log.</li>
-</ul>
-<!-- raw HTML omitted -->
-<h2>[2.2.0] - 2024-10-10</h2>
+<h2>[1.6.0] - 2024-10-28</h2>
 <h3>Added</h3>
 <ul>
-<li>[groups]: Refactor the group to support also covers.</li>
+<li>[matterbridge]: Added WebSocket for the Matetrbridge cockpit
+dashboard (Shelly gateway).</li>
 </ul>
 <h3>Changed</h3>
 <ul>
-<li>[matterbridge]: Removed EveHistory energy measurement in favor of
-Matter 1.3 ElectricalPowerMeasurement and ElectricalEnergyMeasurement
-(supported by Home Assistant from version 2024.10).</li>
-<li>[matterbridge]: Updated to new child endpoints MatterbridgeDevice
-methods.</li>
-<li>[entity]: Code optimization.</li>
-<li>[package]: Updated dependencies.</li>
+<li>[discord]: Discord group link: <a
+href="https://discord.gg/QX58CDe6hd">https://discord.gg/QX58CDe6hd</a>.</li>
+<li>[matterbridge]: Completed phase 1 of transition to edge (matter.js
+new API).</li>
+<li>[matterbridgeDevice]: Refactor Thermostat cluster method to accept
+minHeatSetpointLimit, maxHeatSetpointLimit, minCoolSetpointLimit and
+maxCoolSetpointLimit.</li>
+<li>[config]: The plugins config is rewritten only after onStart and no
+more after onConfigure (after the plugin starts is possible to change
+the plugins config and it will not be rewritten after the plugin
+configuration).</li>
+<li>[matterbridgeDevice]: Removed deprecated methods of ColorControl
+cluster.</li>
+<li>[package]: Removed EveHistory (it will be used only by single
+plugins).</li>
+<li>[package]: Update dependencies.</li>
 </ul>
 <!-- raw HTML omitted -->
 </blockquote>
@@ -76,43 +78,39 @@ methods.</li>
 <summary>Commits</summary>
 <ul>
 <li><a
-href="https://github.com/Luligu/matterbridge-zigbee2mqtt/commit/dc90fec0f8d318e38ba8a82c1119cc0dde389f11"><code>dc90fec</code></a>
+href="https://github.com/Luligu/matterbridge/commit/c005936d73c37a7a840491b2f4d19df138807e9b"><code>c005936</code></a>
 Merge pull request <a
-href="https://redirect.github.com/Luligu/matterbridge-zigbee2mqtt/issues/76">#76</a>
+href="https://redirect.github.com/Luligu/matterbridge/issues/152">#152</a>
 from Luligu/dev</li>
 <li><a
-href="https://github.com/Luligu/matterbridge-zigbee2mqtt/commit/ad4d69a5fa8fba4d2c65c238733b66b32f015330"><code>ad4d69a</code></a>
-Release 2.2.1</li>
+href="https://github.com/Luligu/matterbridge/commit/925dd3678ae2826a4f757e0c1fd666ce68bb45c0"><code>925dd36</code></a>
+Release 1.6.0</li>
 <li><a
-href="https://github.com/Luligu/matterbridge-zigbee2mqtt/commit/f897741c75e19e98d4d3771ed382c08415d2f58a"><code>f897741</code></a>
-Merge pull request <a
-href="https://redirect.github.com/Luligu/matterbridge-zigbee2mqtt/issues/75">#75</a>
-from Luligu/dev</li>
+href="https://github.com/Luligu/matterbridge/commit/cb8762c80308cbaa37b5e7393c8ca5eac6012974"><code>cb8762c</code></a>
+Dev 1.6.0-dev.17</li>
 <li><a
-href="https://github.com/Luligu/matterbridge-zigbee2mqtt/commit/b667c2437f543eb0f5c65c44e72e6730bd943286"><code>b667c24</code></a>
-Release 2.2.1</li>
+href="https://github.com/Luligu/matterbridge/commit/b01f916c2b2b670bef1297a472e7713db6c6a222"><code>b01f916</code></a>
+Dev 1.6.0-dev.17</li>
 <li><a
-href="https://github.com/Luligu/matterbridge-zigbee2mqtt/commit/66e7326bdf4e53437cccc52f591393ba4458e1c6"><code>66e7326</code></a>
-Merge pull request <a
-href="https://redirect.github.com/Luligu/matterbridge-zigbee2mqtt/issues/74">#74</a>
-from Luligu/dev</li>
+href="https://github.com/Luligu/matterbridge/commit/cc7e42d3af696632b81f568eb406ef94401e2961"><code>cc7e42d</code></a>
+Dev 1.6.0-dev.16</li>
 <li><a
-href="https://github.com/Luligu/matterbridge-zigbee2mqtt/commit/a561c5ab6cdf839b0b477bc18a4c31a5dc8dde66"><code>a561c5a</code></a>
-Release 2.2.0</li>
+href="https://github.com/Luligu/matterbridge/commit/f040119c8d1faafe523fc4470d9c4534c66b2e89"><code>f040119</code></a>
+Dev 1.6.0-dev.16</li>
 <li><a
-href="https://github.com/Luligu/matterbridge-zigbee2mqtt/commit/9e45078c80b5aad027c3b2a33801a9aebe281fa4"><code>9e45078</code></a>
-Release 2.2.0</li>
+href="https://github.com/Luligu/matterbridge/commit/ef23e7985c20cde51fdbe8d897b35bc5c01d5da2"><code>ef23e79</code></a>
+Dev 1.6.0-dev.16</li>
 <li><a
-href="https://github.com/Luligu/matterbridge-zigbee2mqtt/commit/49fb62f0ad21befec8666715f6728f90ea08fbb1"><code>49fb62f</code></a>
-Dev 2.2.20-dev.3</li>
+href="https://github.com/Luligu/matterbridge/commit/3ddc53d77078f817b4a7227d856c9029e83fc223"><code>3ddc53d</code></a>
+Dev 1.6.0-dev.15</li>
 <li><a
-href="https://github.com/Luligu/matterbridge-zigbee2mqtt/commit/f018e4081882c8095875ce04a3ebfc203fa1bd2e"><code>f018e40</code></a>
-Dev 2.2.20-dev.3</li>
+href="https://github.com/Luligu/matterbridge/commit/c620083e2244c822a99634c1d328f41af836b1f0"><code>c620083</code></a>
+Websocket api</li>
 <li><a
-href="https://github.com/Luligu/matterbridge-zigbee2mqtt/commit/fbc67125fe4a74e5d102e3b30ee83872b251bd7b"><code>fbc6712</code></a>
-Dev 2.2.20-dev.2</li>
+href="https://github.com/Luligu/matterbridge/commit/3e83119a4df7b944c00e2e238413506f14ce86a1"><code>3e83119</code></a>
+Dev 1.6.0-dev.14</li>
 <li>Additional commits viewable in <a
-href="https://github.com/Luligu/matterbridge-zigbee2mqtt/compare/2.1.19...2.2.1">compare
+href="https://github.com/Luligu/matterbridge/compare/1.5.10...1.6.0">compare
 view</a></li>
 </ul>
 </details>
@@ -120,7 +118,7 @@ view</a></li>
 
 
 [![Dependabot compatibility
-score](https://dependabot-badges.githubapp.com/badges/compatibility_score?dependency-name=matterbridge-zigbee2mqtt&package-manager=npm_and_yarn&previous-version=2.1.19&new-version=2.2.1)](https://docs.github.com/en/github/managing-security-vulnerabilities/about-dependabot-security-updates#about-compatibility-scores)
+score](https://dependabot-badges.githubapp.com/badges/compatibility_score?dependency-name=matterbridge&package-manager=npm_and_yarn&previous-version=1.5.10&new-version=1.6.0)](https://docs.github.com/en/github/managing-security-vulnerabilities/about-dependabot-security-updates#about-compatibility-scores)
 
 Dependabot will resolve any conflicts with this PR as long as you don't
 alter it yourself. You can also trigger a rebase manually by commenting
