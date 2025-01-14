@@ -1,44 +1,58 @@
 Changes in this Release
 
-<details><summary>03d81b1 chore: bump matterbridge from 1.7.0 to 1.7.1 in /matterbridge-zigbee2mqtt (#96)</summary>
-chore: bump matterbridge from 1.7.0 to 1.7.1 in /matterbridge-zigbee2mqtt (#96)
+<details><summary>edd6296 chore: bump matterbridge from 1.7.1 to 1.7.3 in /matterbridge-zigbee2mqtt (#99)</summary>
+chore: bump matterbridge from 1.7.1 to 1.7.3 in /matterbridge-zigbee2mqtt (#99)
 
-Bumps [matterbridge](https://github.com/Luligu/matterbridge) from 1.7.0
-to 1.7.1.
+Bumps [matterbridge](https://github.com/Luligu/matterbridge) from 1.7.1
+to 1.7.3.
 <details>
 <summary>Release notes</summary>
 <p><em>Sourced from <a
 href="https://github.com/Luligu/matterbridge/releases">matterbridge's
 releases</a>.</em></p>
 <blockquote>
-<h2>Release 1.7.1</h2>
-<h3>Breaking Changes</h3>
-<p>Matterbridge edge is now released. The default mode is still the
-normal mode to allow the storage conversion. See <a
-href="https://github.com/Luligu/matterbridge/blob/dev/README-EDGE.md">https://github.com/Luligu/matterbridge/blob/dev/README-EDGE.md</a>
-to manually switch to edge mode after the conversion is done.</p>
-<p>The frontend has a new dark and light mode. The dark mode is now the
-default mode.
-It is possible to change the mode (Classic, Dark or Light) in Settings,
-Matterbridge settings.</p>
-<h2>[1.7.1] - 2025-01-07</h2>
+<h2>Release 1.7.3</h2>
+<h2>[1.7.3] - 2025-01-11</h2>
 <h3>Added</h3>
 <ul>
-<li>[platform]: Added selectDevice to get the device names from a list
-in the config editor.</li>
-<li>[websocket]: Added api /api/select.</li>
-<li>[frontend]: Added configUrl to Devices page.</li>
-<li>[frontend]: Added config button to Devices page.</li>
-<li>[frontend]: Added id and deviceTypes to Devices page.</li>
+<li>[platform]: Added selectDevice list to deviceFeatureBlackList to get
+the device names from a list in the config editor.</li>
 </ul>
 <h3>Changed</h3>
 <ul>
-<li>[websocket]: Added params to /api/clusters.</li>
-<li>[frontend]: Frontend v.2.3.3</li>
+<li>[frontend]: Frontend v.2.3.11</li>
+<li>[package]: Workflows use node 22.x.</li>
+</ul>
+<!-- raw HTML omitted -->
+<h2>Release 1.7.2</h2>
+<h2>[1.7.2] - 2025-01-11</h2>
+<h3>Added</h3>
+<ul>
+<li>[platform]: Added selectEntity to get the entity names from a list
+in the config editor.</li>
+<li>[websocket]: Added api /api/select/entities.</li>
+<li>[frontend]: Added the possibility to reorder the items in the config
+editor lists.</li>
+<li>[frontend]: Added custom error messages for ErrorListTemplate and
+FieldErrorTemplate in react-jsonschema-form for validation in the config
+editor.</li>
+<li>[frontend]: Added filter by device name and serial number to Devices
+page.</li>
+<li>[frontend]: Added Icon view to the Devices page (beta).</li>
+<li>[frontend]: Added the possibility to select the entities/components
+from a list in the config editor.</li>
+<li>[matterbridge]: Added /health endpoint for watchdog.</li>
+</ul>
+<h3>Changed</h3>
+<ul>
+<li>[frontend]: Frontend v.2.3.10</li>
+<li>[package]: Update dependencies.</li>
 </ul>
 <h3>Fixed</h3>
 <ul>
-<li>[frontend]: Fixed WebSocketProvider online.</li>
+<li>[edge]: Fixed ValveConfigurationAndControlServer behavior.</li>
+<li>[frontend]: Fixed restart that was not working correctly in
+Ingress.</li>
 </ul>
 <!-- raw HTML omitted -->
 </blockquote>
@@ -49,24 +63,46 @@ in the config editor.</li>
 href="https://github.com/Luligu/matterbridge/blob/main/CHANGELOG.md">matterbridge's
 changelog</a>.</em></p>
 <blockquote>
-<h2>[1.7.1] - 2025-01-07</h2>
+<h2>[1.7.3] - 2025-01-11</h2>
 <h3>Added</h3>
 <ul>
-<li>[platform]: Added selectDevice to get the device names from a list
-in the config editor.</li>
-<li>[websocket]: Added api /api/select.</li>
-<li>[frontend]: Added configUrl to Devices page.</li>
-<li>[frontend]: Added config button to Devices page.</li>
-<li>[frontend]: Added id and deviceTypes to Devices page.</li>
+<li>[platform]: Added selectDevice list to deviceFeatureBlackList to get
+the device names from a list in the config editor.</li>
 </ul>
 <h3>Changed</h3>
 <ul>
-<li>[websocket]: Added params to /api/clusters.</li>
-<li>[frontend]: Frontend v.2.3.3</li>
+<li>[frontend]: Frontend v.2.3.11</li>
+<li>[package]: Workflows use node 22.x.</li>
+</ul>
+<!-- raw HTML omitted -->
+<h2>[1.7.2] - 2025-01-11</h2>
+<h3>Added</h3>
+<ul>
+<li>[platform]: Added selectEntity to get the entity names from a list
+in the config editor.</li>
+<li>[websocket]: Added api /api/select/entities.</li>
+<li>[frontend]: Added the possibility to reorder the items in the config
+editor lists.</li>
+<li>[frontend]: Added custom error messages for ErrorListTemplate and
+FieldErrorTemplate in react-jsonschema-form for validation in the config
+editor.</li>
+<li>[frontend]: Added filter by device name and serial number to Devices
+page.</li>
+<li>[frontend]: Added Icon view to the Devices page (beta).</li>
+<li>[frontend]: Added the possibility to select the entities/components
+from a list in the config editor.</li>
+<li>[matterbridge]: Added /health endpoint for watchdog.</li>
+</ul>
+<h3>Changed</h3>
+<ul>
+<li>[frontend]: Frontend v.2.3.10</li>
+<li>[package]: Update dependencies.</li>
 </ul>
 <h3>Fixed</h3>
 <ul>
-<li>[frontend]: Fixed WebSocketProvider online.</li>
+<li>[edge]: Fixed ValveConfigurationAndControlServer behavior.</li>
+<li>[frontend]: Fixed restart that was not working correctly in
+Ingress.</li>
 </ul>
 <!-- raw HTML omitted -->
 </blockquote>
@@ -75,43 +111,41 @@ in the config editor.</li>
 <summary>Commits</summary>
 <ul>
 <li><a
-href="https://github.com/Luligu/matterbridge/commit/db225a5771c75f77d97f24bad2f5ef7ea5dfc6d3"><code>db225a5</code></a>
+href="https://github.com/Luligu/matterbridge/commit/97d96296d42c14fa6f6072a5154b6c882c62739c"><code>97d9629</code></a>
 Merge pull request <a
-href="https://redirect.github.com/Luligu/matterbridge/issues/201">#201</a>
+href="https://redirect.github.com/Luligu/matterbridge/issues/205">#205</a>
 from Luligu/dev</li>
 <li><a
-href="https://github.com/Luligu/matterbridge/commit/67f93a882230f1bd2cc03e7e606b232e47683e0a"><code>67f93a8</code></a>
-Frontend 2.3.3</li>
+href="https://github.com/Luligu/matterbridge/commit/4bc2f2d651580751a0e3e018253263b38001fb49"><code>4bc2f2d</code></a>
+Release 1.7.3</li>
 <li><a
-href="https://github.com/Luligu/matterbridge/commit/87936fb6e2d07fefc3e41beed5d96cbae4851b48"><code>87936fb</code></a>
-Fix table z-index</li>
+href="https://github.com/Luligu/matterbridge/commit/a8a0ab54b5d419a911900d8cc4c1e589383ff9f6"><code>a8a0ab5</code></a>
+Update Node.js version in build workflows</li>
 <li><a
-href="https://github.com/Luligu/matterbridge/commit/263790b63fe68a705b17de524063dfbab94f0216"><code>263790b</code></a>
-Update CHANGELOG.md to include new config button for Devices page</li>
+href="https://github.com/Luligu/matterbridge/commit/363a85d5e6c661fe5a31f8a9efe12638805ecb4c"><code>363a85d</code></a>
+Merge pull request <a
+href="https://redirect.github.com/Luligu/matterbridge/issues/203">#203</a>
+from Luligu/dev</li>
 <li><a
-href="https://github.com/Luligu/matterbridge/commit/47d55bbfd4673c2cdc9f8ca380d7db5c5fe32eeb"><code>47d55bb</code></a>
-Add config button to Devices table</li>
+href="https://github.com/Luligu/matterbridge/commit/8015e021ecd33e1a5256a90c2cdf4aa6d479a76c"><code>8015e02</code></a>
+Release 1.7.2</li>
 <li><a
-href="https://github.com/Luligu/matterbridge/commit/74ab22f1627957784d75d656cceb3aec9092e5b3"><code>74ab22f</code></a>
-Add debug flag to App.js</li>
+href="https://github.com/Luligu/matterbridge/commit/28011fc650851f3a3ecc29e2d04d51d309ee4f9b"><code>28011fc</code></a>
+Frontend 2.3.10</li>
 <li><a
-href="https://github.com/Luligu/matterbridge/commit/518857eb0ee6dd21f585b6e9d0fe48997236bd1c"><code>518857e</code></a>
-Update CHANGELOG.md to include new configUrl, id, and deviceTypes for
-Devices...</li>
+href="https://github.com/Luligu/matterbridge/commit/b25b5d31f53ed3b0d3c516fdc76aa90984cabd65"><code>b25b5d3</code></a>
+Bump version to 1.7.2-dev.8</li>
 <li><a
-href="https://github.com/Luligu/matterbridge/commit/6e422327674ebacb4a20545654402dedaea63d00"><code>6e42232</code></a>
-Add attributeLocalValue to ApiClusters interface for enhanced data
-handling</li>
+href="https://github.com/Luligu/matterbridge/commit/d53aba011511d6e9b801c8288b0454f49576485f"><code>d53aba0</code></a>
+Bump version to 1.7.2-dev.7</li>
 <li><a
-href="https://github.com/Luligu/matterbridge/commit/e8931df2015eb6fda2675d6f25cd8575dc2d27a7"><code>e8931df</code></a>
-Add local attribute value handling in wsMessageHandler for improved
-logging</li>
+href="https://github.com/Luligu/matterbridge/commit/7ad47b16f31663587f8674566afc5bf1f0ea06f7"><code>7ad47b1</code></a>
+Bump version to 1.7.2-dev.6</li>
 <li><a
-href="https://github.com/Luligu/matterbridge/commit/5883e126f88c09a8c541ed837e53409b26bf749e"><code>5883e12</code></a>
-Bump frontend version to 2.3.2, enhance Settings and Header components
-with o...</li>
+href="https://github.com/Luligu/matterbridge/commit/71e2a3f67985f7f1dbb2ceb57ebd3a087f703d78"><code>71e2a3f</code></a>
+Bump version to 1.7.2-dev.6</li>
 <li>Additional commits viewable in <a
-href="https://github.com/Luligu/matterbridge/compare/1.7.0...1.7.1">compare
+href="https://github.com/Luligu/matterbridge/compare/1.7.1...1.7.3">compare
 view</a></li>
 </ul>
 </details>
@@ -119,7 +153,7 @@ view</a></li>
 
 
 [![Dependabot compatibility
-score](https://dependabot-badges.githubapp.com/badges/compatibility_score?dependency-name=matterbridge&package-manager=npm_and_yarn&previous-version=1.7.0&new-version=1.7.1)](https://docs.github.com/en/github/managing-security-vulnerabilities/about-dependabot-security-updates#about-compatibility-scores)
+score](https://dependabot-badges.githubapp.com/badges/compatibility_score?dependency-name=matterbridge&package-manager=npm_and_yarn&previous-version=1.7.1&new-version=1.7.3)](https://docs.github.com/en/github/managing-security-vulnerabilities/about-dependabot-security-updates#about-compatibility-scores)
 
 Dependabot will resolve any conflicts with this PR as long as you don't
 alter it yourself. You can also trigger a rebase manually by commenting
@@ -164,31 +198,39 @@ PR or upgrade to it yourself)
 Signed-off-by: dependabot[bot] <support@github.com>
 Co-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com></details>
 
-<details><summary>50d95f7 chore: bump matterbridge-zigbee2mqtt from 2.3.2 to 2.4.0 in /matterbridge-zigbee2mqtt (#97)</summary>
-chore: bump matterbridge-zigbee2mqtt from 2.3.2 to 2.4.0 in /matterbridge-zigbee2mqtt (#97)
+<details><summary>2ebd893 chore: bump matterbridge-zigbee2mqtt from 2.4.0 to 2.4.2 in /matterbridge-zigbee2mqtt (#98)</summary>
+chore: bump matterbridge-zigbee2mqtt from 2.4.0 to 2.4.2 in /matterbridge-zigbee2mqtt (#98)
 
 Bumps
 [matterbridge-zigbee2mqtt](https://github.com/Luligu/matterbridge-zigbee2mqtt)
-from 2.3.2 to 2.4.0.
+from 2.4.0 to 2.4.2.
 <details>
 <summary>Release notes</summary>
 <p><em>Sourced from <a
 href="https://github.com/Luligu/matterbridge-zigbee2mqtt/releases">matterbridge-zigbee2mqtt's
 releases</a>.</em></p>
 <blockquote>
-<h2>Release 2.4.0</h2>
-<h2>[2.4.0] - 2025-01-08</h2>
+<h2>Release 2.4.2</h2>
+<h2>[2.4.2] - 2025-01-11</h2>
+<h3>Fixed</h3>
+<ul>
+<li>[endpoint]: Fixed blacklist of child endpoints.</li>
+</ul>
+<!-- raw HTML omitted -->
+<h2>Release 2.4.1</h2>
+<h2>[2.4.1] - 2025-01-11</h2>
 <h3>Added</h3>
 <ul>
-<li>[selectDevice]: Added selectDevice to get the device names from a
+<li>[selectEntity]: Added selectEntity to get the features names from a
 list in the config editor.</li>
-<li>[configUrl]: Added configUrl to get a link to the zigbee2mqtt
-frontend from the Matterbridge frontend Devices page.</li>
+<li>[configUrl]: Added zigbeeFrontend in the config to prefix configUrl
+to get a link to the zigbee2mqtt frontend from the Matterbridge frontend
+Devices page. This allows to open the device configuration from the
+frontend.</li>
 </ul>
 <h3>Changed</h3>
 <ul>
-<li>[illuminace_lux]: Follow removal of illuminace_lux <a
-href="https://redirect.github.com/Koenkk/zigbee-herdsman-converters/pull/8304">Koenkk/zigbee-herdsman-converters#8304</a></li>
+<li>[plugin]: Requires Matterbridge 1.7.2.</li>
 <li>[package]: Updated dependencies.</li>
 </ul>
 <!-- raw HTML omitted -->
@@ -200,18 +242,25 @@ href="https://redirect.github.com/Koenkk/zigbee-herdsman-converters/pull/8304">K
 href="https://github.com/Luligu/matterbridge-zigbee2mqtt/blob/main/CHANGELOG.md">matterbridge-zigbee2mqtt's
 changelog</a>.</em></p>
 <blockquote>
-<h2>[2.4.0] - 2025-01-08</h2>
+<h2>[2.4.2] - 2025-01-11</h2>
+<h3>Fixed</h3>
+<ul>
+<li>[endpoint]: Fixed blacklist of child endpoints.</li>
+</ul>
+<!-- raw HTML omitted -->
+<h2>[2.4.1] - 2025-01-11</h2>
 <h3>Added</h3>
 <ul>
-<li>[selectDevice]: Added selectDevice to get the device names from a
+<li>[selectEntity]: Added selectEntity to get the features names from a
 list in the config editor.</li>
-<li>[configUrl]: Added configUrl to get a link to the zigbee2mqtt
-frontend from the Matterbridge frontend Devices page.</li>
+<li>[configUrl]: Added zigbeeFrontend in the config to prefix configUrl
+to get a link to the zigbee2mqtt frontend from the Matterbridge frontend
+Devices page. This allows to open the device configuration from the
+frontend.</li>
 </ul>
 <h3>Changed</h3>
 <ul>
-<li>[illuminace_lux]: Follow removal of illuminace_lux <a
-href="https://redirect.github.com/Koenkk/zigbee-herdsman-converters/pull/8304">Koenkk/zigbee-herdsman-converters#8304</a></li>
+<li>[plugin]: Requires Matterbridge 1.7.2.</li>
 <li>[package]: Updated dependencies.</li>
 </ul>
 <!-- raw HTML omitted -->
@@ -221,21 +270,24 @@ href="https://redirect.github.com/Koenkk/zigbee-herdsman-converters/pull/8304">K
 <summary>Commits</summary>
 <ul>
 <li><a
-href="https://github.com/Luligu/matterbridge-zigbee2mqtt/commit/bd6c1aaef35e7ddce742ca00af0ec09e6baac229"><code>bd6c1aa</code></a>
+href="https://github.com/Luligu/matterbridge-zigbee2mqtt/commit/f956503990b6ed8c6fc38518d03a29ee11c3a42f"><code>f956503</code></a>
 Merge pull request <a
-href="https://redirect.github.com/Luligu/matterbridge-zigbee2mqtt/issues/90">#90</a>
+href="https://redirect.github.com/Luligu/matterbridge-zigbee2mqtt/issues/93">#93</a>
 from Luligu/dev</li>
 <li><a
-href="https://github.com/Luligu/matterbridge-zigbee2mqtt/commit/1c7d2ee34d9c2042f65b82fecf0379d8d97c0f01"><code>1c7d2ee</code></a>
-Release 2.4.0</li>
+href="https://github.com/Luligu/matterbridge-zigbee2mqtt/commit/5411708ad304ef90bb410edf69b30d1b849224f0"><code>5411708</code></a>
+Release version 2.4.2; fix blacklist of child endpoints and update
+logging to...</li>
 <li><a
-href="https://github.com/Luligu/matterbridge-zigbee2mqtt/commit/c53664c2a8d98c00c4d3dd573d8502415c12574c"><code>c53664c</code></a>
-Add configUrl to devices and groups for frontend links in CHANGELOG</li>
+href="https://github.com/Luligu/matterbridge-zigbee2mqtt/commit/a839a72b64c3f11d53cb64e46bca8ed20b8dca92"><code>a839a72</code></a>
+Merge pull request <a
+href="https://redirect.github.com/Luligu/matterbridge-zigbee2mqtt/issues/92">#92</a>
+from Luligu/dev</li>
 <li><a
-href="https://github.com/Luligu/matterbridge-zigbee2mqtt/commit/92d7c2fadb33aff1bdce0f27f2ca6e5d3b45123a"><code>92d7c2f</code></a>
-Release 2.4.0</li>
+href="https://github.com/Luligu/matterbridge-zigbee2mqtt/commit/b7bea34a70785f444b2b799c6d13d8478c1ed577"><code>b7bea34</code></a>
+Release 2.4.1</li>
 <li>See full diff in <a
-href="https://github.com/Luligu/matterbridge-zigbee2mqtt/compare/2.3.2...2.4.0">compare
+href="https://github.com/Luligu/matterbridge-zigbee2mqtt/compare/2.4.0...2.4.2">compare
 view</a></li>
 </ul>
 </details>
@@ -243,7 +295,7 @@ view</a></li>
 
 
 [![Dependabot compatibility
-score](https://dependabot-badges.githubapp.com/badges/compatibility_score?dependency-name=matterbridge-zigbee2mqtt&package-manager=npm_and_yarn&previous-version=2.3.2&new-version=2.4.0)](https://docs.github.com/en/github/managing-security-vulnerabilities/about-dependabot-security-updates#about-compatibility-scores)
+score](https://dependabot-badges.githubapp.com/badges/compatibility_score?dependency-name=matterbridge-zigbee2mqtt&package-manager=npm_and_yarn&previous-version=2.4.0&new-version=2.4.2)](https://docs.github.com/en/github/managing-security-vulnerabilities/about-dependabot-security-updates#about-compatibility-scores)
 
 Dependabot will resolve any conflicts with this PR as long as you don't
 alter it yourself. You can also trigger a rebase manually by commenting
