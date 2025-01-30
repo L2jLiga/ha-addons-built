@@ -1,58 +1,23 @@
 Changes in this Release
 
-<details><summary>edd6296 chore: bump matterbridge from 1.7.1 to 1.7.3 in /matterbridge-zigbee2mqtt (#99)</summary>
-chore: bump matterbridge from 1.7.1 to 1.7.3 in /matterbridge-zigbee2mqtt (#99)
+<details><summary>5a8c878 chore: bump matterbridge-zigbee2mqtt from 2.4.2 to 2.4.3 in /matterbridge-zigbee2mqtt (#100)</summary>
+chore: bump matterbridge-zigbee2mqtt from 2.4.2 to 2.4.3 in /matterbridge-zigbee2mqtt (#100)
 
-Bumps [matterbridge](https://github.com/Luligu/matterbridge) from 1.7.1
-to 1.7.3.
+Bumps
+[matterbridge-zigbee2mqtt](https://github.com/Luligu/matterbridge-zigbee2mqtt)
+from 2.4.2 to 2.4.3.
 <details>
 <summary>Release notes</summary>
 <p><em>Sourced from <a
-href="https://github.com/Luligu/matterbridge/releases">matterbridge's
+href="https://github.com/Luligu/matterbridge-zigbee2mqtt/releases">matterbridge-zigbee2mqtt's
 releases</a>.</em></p>
 <blockquote>
-<h2>Release 1.7.3</h2>
-<h2>[1.7.3] - 2025-01-11</h2>
-<h3>Added</h3>
-<ul>
-<li>[platform]: Added selectDevice list to deviceFeatureBlackList to get
-the device names from a list in the config editor.</li>
-</ul>
-<h3>Changed</h3>
-<ul>
-<li>[frontend]: Frontend v.2.3.11</li>
-<li>[package]: Workflows use node 22.x.</li>
-</ul>
-<!-- raw HTML omitted -->
-<h2>Release 1.7.2</h2>
-<h2>[1.7.2] - 2025-01-11</h2>
-<h3>Added</h3>
-<ul>
-<li>[platform]: Added selectEntity to get the entity names from a list
-in the config editor.</li>
-<li>[websocket]: Added api /api/select/entities.</li>
-<li>[frontend]: Added the possibility to reorder the items in the config
-editor lists.</li>
-<li>[frontend]: Added custom error messages for ErrorListTemplate and
-FieldErrorTemplate in react-jsonschema-form for validation in the config
-editor.</li>
-<li>[frontend]: Added filter by device name and serial number to Devices
-page.</li>
-<li>[frontend]: Added Icon view to the Devices page (beta).</li>
-<li>[frontend]: Added the possibility to select the entities/components
-from a list in the config editor.</li>
-<li>[matterbridge]: Added /health endpoint for watchdog.</li>
-</ul>
-<h3>Changed</h3>
-<ul>
-<li>[frontend]: Frontend v.2.3.10</li>
-<li>[package]: Update dependencies.</li>
-</ul>
+<h2>Release 2.4.3</h2>
+<h2>[2.4.3] - 2025-01-20</h2>
 <h3>Fixed</h3>
 <ul>
-<li>[edge]: Fixed ValveConfigurationAndControlServer behavior.</li>
-<li>[frontend]: Fixed restart that was not working correctly in
-Ingress.</li>
+<li>[plugin]: Requires Matterbridge 1.7.3.</li>
+<li>[package]: Updated dependencies.</li>
 </ul>
 <!-- raw HTML omitted -->
 </blockquote>
@@ -60,49 +25,14 @@ Ingress.</li>
 <details>
 <summary>Changelog</summary>
 <p><em>Sourced from <a
-href="https://github.com/Luligu/matterbridge/blob/main/CHANGELOG.md">matterbridge's
+href="https://github.com/Luligu/matterbridge-zigbee2mqtt/blob/main/CHANGELOG.md">matterbridge-zigbee2mqtt's
 changelog</a>.</em></p>
 <blockquote>
-<h2>[1.7.3] - 2025-01-11</h2>
-<h3>Added</h3>
-<ul>
-<li>[platform]: Added selectDevice list to deviceFeatureBlackList to get
-the device names from a list in the config editor.</li>
-</ul>
-<h3>Changed</h3>
-<ul>
-<li>[frontend]: Frontend v.2.3.11</li>
-<li>[package]: Workflows use node 22.x.</li>
-</ul>
-<!-- raw HTML omitted -->
-<h2>[1.7.2] - 2025-01-11</h2>
-<h3>Added</h3>
-<ul>
-<li>[platform]: Added selectEntity to get the entity names from a list
-in the config editor.</li>
-<li>[websocket]: Added api /api/select/entities.</li>
-<li>[frontend]: Added the possibility to reorder the items in the config
-editor lists.</li>
-<li>[frontend]: Added custom error messages for ErrorListTemplate and
-FieldErrorTemplate in react-jsonschema-form for validation in the config
-editor.</li>
-<li>[frontend]: Added filter by device name and serial number to Devices
-page.</li>
-<li>[frontend]: Added Icon view to the Devices page (beta).</li>
-<li>[frontend]: Added the possibility to select the entities/components
-from a list in the config editor.</li>
-<li>[matterbridge]: Added /health endpoint for watchdog.</li>
-</ul>
-<h3>Changed</h3>
-<ul>
-<li>[frontend]: Frontend v.2.3.10</li>
-<li>[package]: Update dependencies.</li>
-</ul>
+<h2>[2.4.3] - 2025-01-20</h2>
 <h3>Fixed</h3>
 <ul>
-<li>[edge]: Fixed ValveConfigurationAndControlServer behavior.</li>
-<li>[frontend]: Fixed restart that was not working correctly in
-Ingress.</li>
+<li>[plugin]: Requires Matterbridge 1.7.3.</li>
+<li>[package]: Updated dependencies.</li>
 </ul>
 <!-- raw HTML omitted -->
 </blockquote>
@@ -111,41 +41,15 @@ Ingress.</li>
 <summary>Commits</summary>
 <ul>
 <li><a
-href="https://github.com/Luligu/matterbridge/commit/97d96296d42c14fa6f6072a5154b6c882c62739c"><code>97d9629</code></a>
+href="https://github.com/Luligu/matterbridge-zigbee2mqtt/commit/3d9b9cbbf3fd8785113e738d71fb2a4d3ca78e11"><code>3d9b9cb</code></a>
 Merge pull request <a
-href="https://redirect.github.com/Luligu/matterbridge/issues/205">#205</a>
+href="https://redirect.github.com/Luligu/matterbridge-zigbee2mqtt/issues/94">#94</a>
 from Luligu/dev</li>
 <li><a
-href="https://github.com/Luligu/matterbridge/commit/4bc2f2d651580751a0e3e018253263b38001fb49"><code>4bc2f2d</code></a>
-Release 1.7.3</li>
-<li><a
-href="https://github.com/Luligu/matterbridge/commit/a8a0ab54b5d419a911900d8cc4c1e589383ff9f6"><code>a8a0ab5</code></a>
-Update Node.js version in build workflows</li>
-<li><a
-href="https://github.com/Luligu/matterbridge/commit/363a85d5e6c661fe5a31f8a9efe12638805ecb4c"><code>363a85d</code></a>
-Merge pull request <a
-href="https://redirect.github.com/Luligu/matterbridge/issues/203">#203</a>
-from Luligu/dev</li>
-<li><a
-href="https://github.com/Luligu/matterbridge/commit/8015e021ecd33e1a5256a90c2cdf4aa6d479a76c"><code>8015e02</code></a>
-Release 1.7.2</li>
-<li><a
-href="https://github.com/Luligu/matterbridge/commit/28011fc650851f3a3ecc29e2d04d51d309ee4f9b"><code>28011fc</code></a>
-Frontend 2.3.10</li>
-<li><a
-href="https://github.com/Luligu/matterbridge/commit/b25b5d31f53ed3b0d3c516fdc76aa90984cabd65"><code>b25b5d3</code></a>
-Bump version to 1.7.2-dev.8</li>
-<li><a
-href="https://github.com/Luligu/matterbridge/commit/d53aba011511d6e9b801c8288b0454f49576485f"><code>d53aba0</code></a>
-Bump version to 1.7.2-dev.7</li>
-<li><a
-href="https://github.com/Luligu/matterbridge/commit/7ad47b16f31663587f8674566afc5bf1f0ea06f7"><code>7ad47b1</code></a>
-Bump version to 1.7.2-dev.6</li>
-<li><a
-href="https://github.com/Luligu/matterbridge/commit/71e2a3f67985f7f1dbb2ceb57ebd3a087f703d78"><code>71e2a3f</code></a>
-Bump version to 1.7.2-dev.6</li>
-<li>Additional commits viewable in <a
-href="https://github.com/Luligu/matterbridge/compare/1.7.1...1.7.3">compare
+href="https://github.com/Luligu/matterbridge-zigbee2mqtt/commit/fa593b3fce1bcccf6d64a3ed6b239b9fc021879e"><code>fa593b3</code></a>
+Release 2.4.3</li>
+<li>See full diff in <a
+href="https://github.com/Luligu/matterbridge-zigbee2mqtt/compare/2.4.2...2.4.3">compare
 view</a></li>
 </ul>
 </details>
@@ -153,7 +57,7 @@ view</a></li>
 
 
 [![Dependabot compatibility
-score](https://dependabot-badges.githubapp.com/badges/compatibility_score?dependency-name=matterbridge&package-manager=npm_and_yarn&previous-version=1.7.1&new-version=1.7.3)](https://docs.github.com/en/github/managing-security-vulnerabilities/about-dependabot-security-updates#about-compatibility-scores)
+score](https://dependabot-badges.githubapp.com/badges/compatibility_score?dependency-name=matterbridge-zigbee2mqtt&package-manager=npm_and_yarn&previous-version=2.4.2&new-version=2.4.3)](https://docs.github.com/en/github/managing-security-vulnerabilities/about-dependabot-security-updates#about-compatibility-scores)
 
 Dependabot will resolve any conflicts with this PR as long as you don't
 alter it yourself. You can also trigger a rebase manually by commenting
@@ -198,40 +102,63 @@ PR or upgrade to it yourself)
 Signed-off-by: dependabot[bot] <support@github.com>
 Co-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com></details>
 
-<details><summary>2ebd893 chore: bump matterbridge-zigbee2mqtt from 2.4.0 to 2.4.2 in /matterbridge-zigbee2mqtt (#98)</summary>
-chore: bump matterbridge-zigbee2mqtt from 2.4.0 to 2.4.2 in /matterbridge-zigbee2mqtt (#98)
+<details><summary>bc214e7 chore: bump matterbridge from 1.7.3 to 2.0.0 in /matterbridge-zigbee2mqtt (#101)</summary>
+chore: bump matterbridge from 1.7.3 to 2.0.0 in /matterbridge-zigbee2mqtt (#101)
 
-Bumps
-[matterbridge-zigbee2mqtt](https://github.com/Luligu/matterbridge-zigbee2mqtt)
-from 2.4.0 to 2.4.2.
+Bumps [matterbridge](https://github.com/Luligu/matterbridge) from 1.7.3
+to 2.0.0.
 <details>
 <summary>Release notes</summary>
 <p><em>Sourced from <a
-href="https://github.com/Luligu/matterbridge-zigbee2mqtt/releases">matterbridge-zigbee2mqtt's
+href="https://github.com/Luligu/matterbridge/releases">matterbridge's
 releases</a>.</em></p>
 <blockquote>
-<h2>Release 2.4.2</h2>
-<h2>[2.4.2] - 2025-01-11</h2>
-<h3>Fixed</h3>
-<ul>
-<li>[endpoint]: Fixed blacklist of child endpoints.</li>
-</ul>
-<!-- raw HTML omitted -->
-<h2>Release 2.4.1</h2>
-<h2>[2.4.1] - 2025-01-11</h2>
+<h2>Release 2.0.0</h2>
+<h3>Breaking Changes</h3>
+<p>Starting from v. 2.0.0 Matterbridge is running only in mode edge (no
+parameter needed).
+The legacy old api have been removed.</p>
+<p>The frontend has a new dark and light mode. The dark mode is now the
+default mode.
+It is possible to change the mode (Classic, Dark or Light) in Settings,
+Matterbridge settings.</p>
+<h2>[2.0.0] - 2025-01-20</h2>
 <h3>Added</h3>
 <ul>
-<li>[selectEntity]: Added selectEntity to get the features names from a
-list in the config editor.</li>
-<li>[configUrl]: Added zigbeeFrontend in the config to prefix configUrl
-to get a link to the zigbee2mqtt frontend from the Matterbridge frontend
-Devices page. This allows to open the device configuration from the
-frontend.</li>
+<li>[behavior]: Added MatterbridgeValveConfigurationAndControlServer
+behavior with open close command.</li>
+<li>[matterbridge]: Added /memory endpoint for debugging memory
+use.</li>
 </ul>
 <h3>Changed</h3>
 <ul>
-<li>[plugin]: Requires Matterbridge 1.7.2.</li>
-<li>[package]: Updated dependencies.</li>
+<li>[legacy]: Removed MatterbridgeDevice and MatterbridgeEdge
+classes.</li>
+<li>[factoryreset]: Now it deletes also the backup files and backup
+directories.</li>
+<li>[mattebridge]: Restyled the Matterbridge class and created the
+Frontend class that manages the frontend express and websocket api
+calls.</li>
+<li>[frontend]: Frontend v.2.3.12.</li>
+<li>[iconView]: Improved render for energySensor adding voltage, current
+and power.</li>
+<li>[iconView]: Improved render for PowerSource adding battery
+voltage.</li>
+<li>[jest]: Refactor all tests for edge.</li>
+<li>[frontend]: WebSocketProvider added a startTimeout of 300 sec. to
+start ping.</li>
+<li>[frontend]: WebSocketProvider changed pingIntervalSeconds to 60 sec.
+and offlineTimeoutSeconds to 50 sec.</li>
+<li>[frontend]: Search on select is no more case sensitive.</li>
+<li>[matterbridge]: Deferred memory intensive tasks after
+initialization.</li>
+<li>[package]: Optimized all imports from matter.js.</li>
+<li>[package]: Update dependencies.</li>
+</ul>
+<h3>Fixed</h3>
+<ul>
+<li>[sessions]: Fixed the case when Active session was not reporting
+correctly.</li>
 </ul>
 <!-- raw HTML omitted -->
 </blockquote>
@@ -239,29 +166,46 @@ frontend.</li>
 <details>
 <summary>Changelog</summary>
 <p><em>Sourced from <a
-href="https://github.com/Luligu/matterbridge-zigbee2mqtt/blob/main/CHANGELOG.md">matterbridge-zigbee2mqtt's
+href="https://github.com/Luligu/matterbridge/blob/main/CHANGELOG.md">matterbridge's
 changelog</a>.</em></p>
 <blockquote>
-<h2>[2.4.2] - 2025-01-11</h2>
-<h3>Fixed</h3>
-<ul>
-<li>[endpoint]: Fixed blacklist of child endpoints.</li>
-</ul>
-<!-- raw HTML omitted -->
-<h2>[2.4.1] - 2025-01-11</h2>
+<h2>[2.0.0] - 2025-01-20</h2>
 <h3>Added</h3>
 <ul>
-<li>[selectEntity]: Added selectEntity to get the features names from a
-list in the config editor.</li>
-<li>[configUrl]: Added zigbeeFrontend in the config to prefix configUrl
-to get a link to the zigbee2mqtt frontend from the Matterbridge frontend
-Devices page. This allows to open the device configuration from the
-frontend.</li>
+<li>[behavior]: Added MatterbridgeValveConfigurationAndControlServer
+behavior with open close command.</li>
+<li>[matterbridge]: Added /memory endpoint for debugging memory
+use.</li>
 </ul>
 <h3>Changed</h3>
 <ul>
-<li>[plugin]: Requires Matterbridge 1.7.2.</li>
-<li>[package]: Updated dependencies.</li>
+<li>[legacy]: Removed MatterbridgeDevice and MatterbridgeEdge
+classes.</li>
+<li>[factoryreset]: Now it deletes also the backup files and backup
+directories.</li>
+<li>[mattebridge]: Restyled the Matterbridge class and created the
+Frontend class that manages the frontend express and websocket api
+calls.</li>
+<li>[frontend]: Frontend v.2.3.12.</li>
+<li>[iconView]: Improved render for energySensor adding voltage, current
+and power.</li>
+<li>[iconView]: Improved render for PowerSource adding battery
+voltage.</li>
+<li>[jest]: Refactor all tests for edge.</li>
+<li>[frontend]: WebSocketProvider added a startTimeout of 300 sec. to
+start ping.</li>
+<li>[frontend]: WebSocketProvider changed pingIntervalSeconds to 60 sec.
+and offlineTimeoutSeconds to 50 sec.</li>
+<li>[frontend]: Search on select is no more case sensitive.</li>
+<li>[matterbridge]: Deferred memory intensive tasks after
+initialization.</li>
+<li>[package]: Optimized all imports from matter.js.</li>
+<li>[package]: Update dependencies.</li>
+</ul>
+<h3>Fixed</h3>
+<ul>
+<li>[sessions]: Fixed the case when Active session was not reporting
+correctly.</li>
 </ul>
 <!-- raw HTML omitted -->
 </blockquote>
@@ -270,24 +214,39 @@ frontend.</li>
 <summary>Commits</summary>
 <ul>
 <li><a
-href="https://github.com/Luligu/matterbridge-zigbee2mqtt/commit/f956503990b6ed8c6fc38518d03a29ee11c3a42f"><code>f956503</code></a>
+href="https://github.com/Luligu/matterbridge/commit/a1e3167ff5531d139d26533ac5b1f84de1f3770b"><code>a1e3167</code></a>
 Merge pull request <a
-href="https://redirect.github.com/Luligu/matterbridge-zigbee2mqtt/issues/93">#93</a>
-from Luligu/dev</li>
+href="https://redirect.github.com/Luligu/matterbridge/issues/212">#212</a>
+from Luligu/edge</li>
 <li><a
-href="https://github.com/Luligu/matterbridge-zigbee2mqtt/commit/5411708ad304ef90bb410edf69b30d1b849224f0"><code>5411708</code></a>
-Release version 2.4.2; fix blacklist of child endpoints and update
-logging to...</li>
+href="https://github.com/Luligu/matterbridge/commit/d6852276cd774b2f4a3fcdc3d1867aac3650ddef"><code>d685227</code></a>
+Release 2.0.0</li>
 <li><a
-href="https://github.com/Luligu/matterbridge-zigbee2mqtt/commit/a839a72b64c3f11d53cb64e46bca8ed20b8dca92"><code>a839a72</code></a>
-Merge pull request <a
-href="https://redirect.github.com/Luligu/matterbridge-zigbee2mqtt/issues/92">#92</a>
-from Luligu/dev</li>
+href="https://github.com/Luligu/matterbridge/commit/e9e7088fece35e790d090df3a7e67448eadd4d32"><code>e9e7088</code></a>
+Release 2.0.0</li>
 <li><a
-href="https://github.com/Luligu/matterbridge-zigbee2mqtt/commit/b7bea34a70785f444b2b799c6d13d8478c1ed577"><code>b7bea34</code></a>
-Release 2.4.1</li>
-<li>See full diff in <a
-href="https://github.com/Luligu/matterbridge-zigbee2mqtt/compare/2.4.0...2.4.2">compare
+href="https://github.com/Luligu/matterbridge/commit/92c8f875af40125b20973b28d720eb2f0495875d"><code>92c8f87</code></a>
+Bump version to 2.0.0-edge.6 and update changelog</li>
+<li><a
+href="https://github.com/Luligu/matterbridge/commit/96d2a8b7e6780f76c3653a5c6310aabb9bd03fd5"><code>96d2a8b</code></a>
+Bump version to 2.0.0-edge.5 and update changelog</li>
+<li><a
+href="https://github.com/Luligu/matterbridge/commit/2d73263c90bfccbd30758b9e540f6982ec79f408"><code>2d73263</code></a>
+Bump version to 2.0.0-edge.4 and update changelog</li>
+<li><a
+href="https://github.com/Luligu/matterbridge/commit/b588a72716fd91d7f6d8b5ca8f9686098a8b36d2"><code>b588a72</code></a>
+Bump version to 2.0.0-edge.3 and update changelog</li>
+<li><a
+href="https://github.com/Luligu/matterbridge/commit/83e3ec7ccb1e4875bd2c2c3180911a3cf728bbd1"><code>83e3ec7</code></a>
+Bump version to 2.0.0-edge.3 and update changelog</li>
+<li><a
+href="https://github.com/Luligu/matterbridge/commit/921b32cae433864a4d5dcb25787f982401528f7e"><code>921b32c</code></a>
+Removed plugin.connected</li>
+<li><a
+href="https://github.com/Luligu/matterbridge/commit/a69b8119365250bff9e3a712dbcb9f412f993de5"><code>a69b811</code></a>
+Removed matterbridgeConnected</li>
+<li>Additional commits viewable in <a
+href="https://github.com/Luligu/matterbridge/compare/1.7.3...2.0.0">compare
 view</a></li>
 </ul>
 </details>
@@ -295,7 +254,7 @@ view</a></li>
 
 
 [![Dependabot compatibility
-score](https://dependabot-badges.githubapp.com/badges/compatibility_score?dependency-name=matterbridge-zigbee2mqtt&package-manager=npm_and_yarn&previous-version=2.4.0&new-version=2.4.2)](https://docs.github.com/en/github/managing-security-vulnerabilities/about-dependabot-security-updates#about-compatibility-scores)
+score](https://dependabot-badges.githubapp.com/badges/compatibility_score?dependency-name=matterbridge&package-manager=npm_and_yarn&previous-version=1.7.3&new-version=2.0.0)](https://docs.github.com/en/github/managing-security-vulnerabilities/about-dependabot-security-updates#about-compatibility-scores)
 
 Dependabot will resolve any conflicts with this PR as long as you don't
 alter it yourself. You can also trigger a rebase manually by commenting
