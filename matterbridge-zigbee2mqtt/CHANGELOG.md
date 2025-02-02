@@ -1,55 +1,83 @@
 Changes in this Release
 
-<details><summary>5a8c878 chore: bump matterbridge-zigbee2mqtt from 2.4.2 to 2.4.3 in /matterbridge-zigbee2mqtt (#100)</summary>
-chore: bump matterbridge-zigbee2mqtt from 2.4.2 to 2.4.3 in /matterbridge-zigbee2mqtt (#100)
+<details><summary>1feac43 chore: bump docker/setup-qemu-action from 3.2.0 to 3.3.0 (#102)</summary>
+chore: bump docker/setup-qemu-action from 3.2.0 to 3.3.0 (#102)
 
 Bumps
-[matterbridge-zigbee2mqtt](https://github.com/Luligu/matterbridge-zigbee2mqtt)
-from 2.4.2 to 2.4.3.
+[docker/setup-qemu-action](https://github.com/docker/setup-qemu-action)
+from 3.2.0 to 3.3.0.
 <details>
 <summary>Release notes</summary>
 <p><em>Sourced from <a
-href="https://github.com/Luligu/matterbridge-zigbee2mqtt/releases">matterbridge-zigbee2mqtt's
+href="https://github.com/docker/setup-qemu-action/releases">docker/setup-qemu-action's
 releases</a>.</em></p>
 <blockquote>
-<h2>Release 2.4.3</h2>
-<h2>[2.4.3] - 2025-01-20</h2>
-<h3>Fixed</h3>
+<h2>v3.3.0</h2>
 <ul>
-<li>[plugin]: Requires Matterbridge 1.7.3.</li>
-<li>[package]: Updated dependencies.</li>
+<li>Add <code>cache-image</code> input to enable/disable caching of
+binfmt image by <a
+href="https://github.com/crazy-max"><code>@​crazy-max</code></a> in <a
+href="https://redirect.github.com/docker/setup-qemu-action/pull/130">docker/setup-qemu-action#130</a></li>
+<li>Bump <code>@​actions/core</code> from 1.10.1 to 1.11.1 in <a
+href="https://redirect.github.com/docker/setup-qemu-action/pull/172">docker/setup-qemu-action#172</a></li>
+<li>Bump <code>@​docker/actions-toolkit</code> from 0.35.0 to 0.49.0 in
+<a
+href="https://redirect.github.com/docker/setup-qemu-action/pull/187">docker/setup-qemu-action#187</a></li>
+<li>Bump cross-spawn from 7.0.3 to 7.0.6 in <a
+href="https://redirect.github.com/docker/setup-qemu-action/pull/182">docker/setup-qemu-action#182</a></li>
+<li>Bump path-to-regexp from 6.2.2 to 6.3.0 in <a
+href="https://redirect.github.com/docker/setup-qemu-action/pull/162">docker/setup-qemu-action#162</a></li>
 </ul>
-<!-- raw HTML omitted -->
-</blockquote>
-</details>
-<details>
-<summary>Changelog</summary>
-<p><em>Sourced from <a
-href="https://github.com/Luligu/matterbridge-zigbee2mqtt/blob/main/CHANGELOG.md">matterbridge-zigbee2mqtt's
-changelog</a>.</em></p>
-<blockquote>
-<h2>[2.4.3] - 2025-01-20</h2>
-<h3>Fixed</h3>
-<ul>
-<li>[plugin]: Requires Matterbridge 1.7.3.</li>
-<li>[package]: Updated dependencies.</li>
-</ul>
-<!-- raw HTML omitted -->
+<p><strong>Full Changelog</strong>: <a
+href="https://github.com/docker/setup-qemu-action/compare/v3.2.0...v3.3.0">https://github.com/docker/setup-qemu-action/compare/v3.2.0...v3.3.0</a></p>
 </blockquote>
 </details>
 <details>
 <summary>Commits</summary>
 <ul>
 <li><a
-href="https://github.com/Luligu/matterbridge-zigbee2mqtt/commit/3d9b9cbbf3fd8785113e738d71fb2a4d3ca78e11"><code>3d9b9cb</code></a>
+href="https://github.com/docker/setup-qemu-action/commit/53851d14592bedcffcf25ea515637cff71ef929a"><code>53851d1</code></a>
 Merge pull request <a
-href="https://redirect.github.com/Luligu/matterbridge-zigbee2mqtt/issues/94">#94</a>
-from Luligu/dev</li>
+href="https://redirect.github.com/docker/setup-qemu-action/issues/187">#187</a>
+from docker/dependabot/npm_and_yarn/docker/actions-to...</li>
 <li><a
-href="https://github.com/Luligu/matterbridge-zigbee2mqtt/commit/fa593b3fce1bcccf6d64a3ed6b239b9fc021879e"><code>fa593b3</code></a>
-Release 2.4.3</li>
-<li>See full diff in <a
-href="https://github.com/Luligu/matterbridge-zigbee2mqtt/compare/2.4.2...2.4.3">compare
+href="https://github.com/docker/setup-qemu-action/commit/7066b9044fd67fae38ee3529e17c426aac7525b7"><code>7066b90</code></a>
+chore: update generated content</li>
+<li><a
+href="https://github.com/docker/setup-qemu-action/commit/75590814eb9485acbd63532d603438ddfb35eab6"><code>7559081</code></a>
+build(deps): bump <code>@​docker/actions-toolkit</code> from 0.35.0 to
+0.49.0</li>
+<li><a
+href="https://github.com/docker/setup-qemu-action/commit/08d11eb48130d5f1debe0b57b29eee10e3e7a0b8"><code>08d11eb</code></a>
+Merge pull request <a
+href="https://redirect.github.com/docker/setup-qemu-action/issues/172">#172</a>
+from docker/dependabot/npm_and_yarn/actions/core-1.11.1</li>
+<li><a
+href="https://github.com/docker/setup-qemu-action/commit/e53506fe6c9a252f5a7137f8cc8b5d110f6d2aee"><code>e53506f</code></a>
+chore: update generated content</li>
+<li><a
+href="https://github.com/docker/setup-qemu-action/commit/610b4428f91a439cb8fc96c1b66372f7ad6eaecc"><code>610b442</code></a>
+build(deps): bump <code>@​actions/core</code> from 1.10.1 to 1.11.1</li>
+<li><a
+href="https://github.com/docker/setup-qemu-action/commit/58a19f851cfcb4969c746f28b70e996e5f2baa2a"><code>58a19f8</code></a>
+Merge pull request <a
+href="https://redirect.github.com/docker/setup-qemu-action/issues/182">#182</a>
+from docker/dependabot/npm_and_yarn/cross-spawn-7.0.6</li>
+<li><a
+href="https://github.com/docker/setup-qemu-action/commit/49a12c4cc89e6dd0858487b98bed3df9fa825615"><code>49a12c4</code></a>
+Merge pull request <a
+href="https://redirect.github.com/docker/setup-qemu-action/issues/180">#180</a>
+from docker/dependabot/github_actions/codecov/codecov...</li>
+<li><a
+href="https://github.com/docker/setup-qemu-action/commit/2b8ac83d96d1cb342b1e7ed85695f93081100257"><code>2b8ac83</code></a>
+ci: fix deprecated input for codecov-action</li>
+<li><a
+href="https://github.com/docker/setup-qemu-action/commit/fdbeaac5ff9cf5a81bfc642fc03727ea5a9dacd7"><code>fdbeaac</code></a>
+Merge pull request <a
+href="https://redirect.github.com/docker/setup-qemu-action/issues/130">#130</a>
+from crazy-max/cache-image</li>
+<li>Additional commits viewable in <a
+href="https://github.com/docker/setup-qemu-action/compare/v3.2.0...v3.3.0">compare
 view</a></li>
 </ul>
 </details>
@@ -57,7 +85,7 @@ view</a></li>
 
 
 [![Dependabot compatibility
-score](https://dependabot-badges.githubapp.com/badges/compatibility_score?dependency-name=matterbridge-zigbee2mqtt&package-manager=npm_and_yarn&previous-version=2.4.2&new-version=2.4.3)](https://docs.github.com/en/github/managing-security-vulnerabilities/about-dependabot-security-updates#about-compatibility-scores)
+score](https://dependabot-badges.githubapp.com/badges/compatibility_score?dependency-name=docker/setup-qemu-action&package-manager=github_actions&previous-version=3.2.0&new-version=3.3.0)](https://docs.github.com/en/github/managing-security-vulnerabilities/about-dependabot-security-updates#about-compatibility-scores)
 
 Dependabot will resolve any conflicts with this PR as long as you don't
 alter it yourself. You can also trigger a rebase manually by commenting
@@ -102,151 +130,95 @@ PR or upgrade to it yourself)
 Signed-off-by: dependabot[bot] <support@github.com>
 Co-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com></details>
 
-<details><summary>bc214e7 chore: bump matterbridge from 1.7.3 to 2.0.0 in /matterbridge-zigbee2mqtt (#101)</summary>
-chore: bump matterbridge from 1.7.3 to 2.0.0 in /matterbridge-zigbee2mqtt (#101)
+<details><summary>45a9cef chore: bump docker/build-push-action from 6.10.0 to 6.13.0 (#103)</summary>
+chore: bump docker/build-push-action from 6.10.0 to 6.13.0 (#103)
 
-Bumps [matterbridge](https://github.com/Luligu/matterbridge) from 1.7.3
-to 2.0.0.
+Bumps
+[docker/build-push-action](https://github.com/docker/build-push-action)
+from 6.10.0 to 6.13.0.
 <details>
 <summary>Release notes</summary>
 <p><em>Sourced from <a
-href="https://github.com/Luligu/matterbridge/releases">matterbridge's
+href="https://github.com/docker/build-push-action/releases">docker/build-push-action's
 releases</a>.</em></p>
 <blockquote>
-<h2>Release 2.0.0</h2>
-<h3>Breaking Changes</h3>
-<p>Starting from v. 2.0.0 Matterbridge is running only in mode edge (no
-parameter needed).
-The legacy old api have been removed.</p>
-<p>The frontend has a new dark and light mode. The dark mode is now the
-default mode.
-It is possible to change the mode (Classic, Dark or Light) in Settings,
-Matterbridge settings.</p>
-<h2>[2.0.0] - 2025-01-20</h2>
-<h3>Added</h3>
+<h2>v6.13.0</h2>
 <ul>
-<li>[behavior]: Added MatterbridgeValveConfigurationAndControlServer
-behavior with open close command.</li>
-<li>[matterbridge]: Added /memory endpoint for debugging memory
-use.</li>
+<li>Bump <code>@​docker/actions-toolkit</code> from 0.51.0 to 0.53.0 in
+<a
+href="https://redirect.github.com/docker/build-push-action/pull/1308">docker/build-push-action#1308</a></li>
 </ul>
-<h3>Changed</h3>
+<p><strong>Full Changelog</strong>: <a
+href="https://github.com/docker/build-push-action/compare/v6.12.0...v6.13.0">https://github.com/docker/build-push-action/compare/v6.12.0...v6.13.0</a></p>
+<h2>v6.12.0</h2>
 <ul>
-<li>[legacy]: Removed MatterbridgeDevice and MatterbridgeEdge
-classes.</li>
-<li>[factoryreset]: Now it deletes also the backup files and backup
-directories.</li>
-<li>[mattebridge]: Restyled the Matterbridge class and created the
-Frontend class that manages the frontend express and websocket api
-calls.</li>
-<li>[frontend]: Frontend v.2.3.12.</li>
-<li>[iconView]: Improved render for energySensor adding voltage, current
-and power.</li>
-<li>[iconView]: Improved render for PowerSource adding battery
-voltage.</li>
-<li>[jest]: Refactor all tests for edge.</li>
-<li>[frontend]: WebSocketProvider added a startTimeout of 300 sec. to
-start ping.</li>
-<li>[frontend]: WebSocketProvider changed pingIntervalSeconds to 60 sec.
-and offlineTimeoutSeconds to 50 sec.</li>
-<li>[frontend]: Search on select is no more case sensitive.</li>
-<li>[matterbridge]: Deferred memory intensive tasks after
-initialization.</li>
-<li>[package]: Optimized all imports from matter.js.</li>
-<li>[package]: Update dependencies.</li>
+<li>Bump <code>@​docker/actions-toolkit</code> from 0.49.0 to 0.51.0 in
+<a
+href="https://redirect.github.com/docker/build-push-action/pull/1300">docker/build-push-action#1300</a></li>
 </ul>
-<h3>Fixed</h3>
+<p><strong>Full Changelog</strong>: <a
+href="https://github.com/docker/build-push-action/compare/v6.11.0...v6.12.0">https://github.com/docker/build-push-action/compare/v6.11.0...v6.12.0</a></p>
+<h2>v6.11.0</h2>
 <ul>
-<li>[sessions]: Fixed the case when Active session was not reporting
-correctly.</li>
+<li>Handlebar <code>defaultContext</code> support for
+<code>build-contexts</code> input by <a
+href="https://github.com/crazy-max"><code>@​crazy-max</code></a> in <a
+href="https://redirect.github.com/docker/build-push-action/pull/1283">docker/build-push-action#1283</a></li>
+<li>Bump <code>@​docker/actions-toolkit</code> from 0.46.0 to 0.49.0 in
+<a
+href="https://redirect.github.com/docker/build-push-action/pull/1281">docker/build-push-action#1281</a></li>
 </ul>
-<!-- raw HTML omitted -->
-</blockquote>
-</details>
-<details>
-<summary>Changelog</summary>
-<p><em>Sourced from <a
-href="https://github.com/Luligu/matterbridge/blob/main/CHANGELOG.md">matterbridge's
-changelog</a>.</em></p>
-<blockquote>
-<h2>[2.0.0] - 2025-01-20</h2>
-<h3>Added</h3>
-<ul>
-<li>[behavior]: Added MatterbridgeValveConfigurationAndControlServer
-behavior with open close command.</li>
-<li>[matterbridge]: Added /memory endpoint for debugging memory
-use.</li>
-</ul>
-<h3>Changed</h3>
-<ul>
-<li>[legacy]: Removed MatterbridgeDevice and MatterbridgeEdge
-classes.</li>
-<li>[factoryreset]: Now it deletes also the backup files and backup
-directories.</li>
-<li>[mattebridge]: Restyled the Matterbridge class and created the
-Frontend class that manages the frontend express and websocket api
-calls.</li>
-<li>[frontend]: Frontend v.2.3.12.</li>
-<li>[iconView]: Improved render for energySensor adding voltage, current
-and power.</li>
-<li>[iconView]: Improved render for PowerSource adding battery
-voltage.</li>
-<li>[jest]: Refactor all tests for edge.</li>
-<li>[frontend]: WebSocketProvider added a startTimeout of 300 sec. to
-start ping.</li>
-<li>[frontend]: WebSocketProvider changed pingIntervalSeconds to 60 sec.
-and offlineTimeoutSeconds to 50 sec.</li>
-<li>[frontend]: Search on select is no more case sensitive.</li>
-<li>[matterbridge]: Deferred memory intensive tasks after
-initialization.</li>
-<li>[package]: Optimized all imports from matter.js.</li>
-<li>[package]: Update dependencies.</li>
-</ul>
-<h3>Fixed</h3>
-<ul>
-<li>[sessions]: Fixed the case when Active session was not reporting
-correctly.</li>
-</ul>
-<!-- raw HTML omitted -->
+<p><strong>Full Changelog</strong>: <a
+href="https://github.com/docker/build-push-action/compare/v6.10.0...v6.11.0">https://github.com/docker/build-push-action/compare/v6.10.0...v6.11.0</a></p>
 </blockquote>
 </details>
 <details>
 <summary>Commits</summary>
 <ul>
 <li><a
-href="https://github.com/Luligu/matterbridge/commit/a1e3167ff5531d139d26533ac5b1f84de1f3770b"><code>a1e3167</code></a>
+href="https://github.com/docker/build-push-action/commit/ca877d9245402d1537745e0e356eab47c3520991"><code>ca877d9</code></a>
 Merge pull request <a
-href="https://redirect.github.com/Luligu/matterbridge/issues/212">#212</a>
-from Luligu/edge</li>
+href="https://redirect.github.com/docker/build-push-action/issues/1308">#1308</a>
+from docker/dependabot/npm_and_yarn/docker/actions-t...</li>
 <li><a
-href="https://github.com/Luligu/matterbridge/commit/d6852276cd774b2f4a3fcdc3d1867aac3650ddef"><code>d685227</code></a>
-Release 2.0.0</li>
+href="https://github.com/docker/build-push-action/commit/d2fe919bb5012a6186426dc91c361c4980d10c2d"><code>d2fe919</code></a>
+chore: update generated content</li>
 <li><a
-href="https://github.com/Luligu/matterbridge/commit/e9e7088fece35e790d090df3a7e67448eadd4d32"><code>e9e7088</code></a>
-Release 2.0.0</li>
+href="https://github.com/docker/build-push-action/commit/f0fc9ece82cf2ace13ec8f35687697ae511bdf74"><code>f0fc9ec</code></a>
+chore(deps): Bump <code>@​docker/actions-toolkit</code> from 0.51.0 to
+0.53.0</li>
 <li><a
-href="https://github.com/Luligu/matterbridge/commit/92c8f875af40125b20973b28d720eb2f0495875d"><code>92c8f87</code></a>
-Bump version to 2.0.0-edge.6 and update changelog</li>
+href="https://github.com/docker/build-push-action/commit/67a2d409c0a876cbe6b11854e3e25193efe4e62d"><code>67a2d40</code></a>
+Merge pull request <a
+href="https://redirect.github.com/docker/build-push-action/issues/1300">#1300</a>
+from docker/dependabot/npm_and_yarn/docker/actions-t...</li>
 <li><a
-href="https://github.com/Luligu/matterbridge/commit/96d2a8b7e6780f76c3653a5c6310aabb9bd03fd5"><code>96d2a8b</code></a>
-Bump version to 2.0.0-edge.5 and update changelog</li>
+href="https://github.com/docker/build-push-action/commit/0b1b1c9c43ec788c199860037a0545356ea03d26"><code>0b1b1c9</code></a>
+chore: update generated content</li>
 <li><a
-href="https://github.com/Luligu/matterbridge/commit/2d73263c90bfccbd30758b9e540f6982ec79f408"><code>2d73263</code></a>
-Bump version to 2.0.0-edge.4 and update changelog</li>
+href="https://github.com/docker/build-push-action/commit/b6a7c2c4eec8151a4dbcd3823747fe1b77d5b280"><code>b6a7c2c</code></a>
+chore(deps): Bump <code>@​docker/actions-toolkit</code> from 0.49.0 to
+0.51.0</li>
 <li><a
-href="https://github.com/Luligu/matterbridge/commit/b588a72716fd91d7f6d8b5ca8f9686098a8b36d2"><code>b588a72</code></a>
-Bump version to 2.0.0-edge.3 and update changelog</li>
+href="https://github.com/docker/build-push-action/commit/31ca4e5d51253d7e4a2317bfe74699cbe3a398a9"><code>31ca4e5</code></a>
+Merge pull request <a
+href="https://redirect.github.com/docker/build-push-action/issues/1296">#1296</a>
+from crazy-max/bake-v6</li>
 <li><a
-href="https://github.com/Luligu/matterbridge/commit/83e3ec7ccb1e4875bd2c2c3180911a3cf728bbd1"><code>83e3ec7</code></a>
-Bump version to 2.0.0-edge.3 and update changelog</li>
+href="https://github.com/docker/build-push-action/commit/e613db9d5a93dda4d07aeb81991e80164577ae4a"><code>e613db9</code></a>
+update bake-action to v6</li>
 <li><a
-href="https://github.com/Luligu/matterbridge/commit/921b32cae433864a4d5dcb25787f982401528f7e"><code>921b32c</code></a>
-Removed plugin.connected</li>
+href="https://github.com/docker/build-push-action/commit/b32b51a8eda65d6793cd0494a773d4f6bcef32dc"><code>b32b51a</code></a>
+Merge pull request <a
+href="https://redirect.github.com/docker/build-push-action/issues/1281">#1281</a>
+from docker/dependabot/npm_and_yarn/docker/actions-t...</li>
 <li><a
-href="https://github.com/Luligu/matterbridge/commit/a69b8119365250bff9e3a712dbcb9f412f993de5"><code>a69b811</code></a>
-Removed matterbridgeConnected</li>
+href="https://github.com/docker/build-push-action/commit/594bf46f0f6d32fd8bd98a553127950004165c96"><code>594bf46</code></a>
+Merge pull request <a
+href="https://redirect.github.com/docker/build-push-action/issues/1294">#1294</a>
+from crazy-max/fix-e2e</li>
 <li>Additional commits viewable in <a
-href="https://github.com/Luligu/matterbridge/compare/1.7.3...2.0.0">compare
+href="https://github.com/docker/build-push-action/compare/v6.10.0...v6.13.0">compare
 view</a></li>
 </ul>
 </details>
@@ -254,7 +226,7 @@ view</a></li>
 
 
 [![Dependabot compatibility
-score](https://dependabot-badges.githubapp.com/badges/compatibility_score?dependency-name=matterbridge&package-manager=npm_and_yarn&previous-version=1.7.3&new-version=2.0.0)](https://docs.github.com/en/github/managing-security-vulnerabilities/about-dependabot-security-updates#about-compatibility-scores)
+score](https://dependabot-badges.githubapp.com/badges/compatibility_score?dependency-name=docker/build-push-action&package-manager=github_actions&previous-version=6.10.0&new-version=6.13.0)](https://docs.github.com/en/github/managing-security-vulnerabilities/about-dependabot-security-updates#about-compatibility-scores)
 
 Dependabot will resolve any conflicts with this PR as long as you don't
 alter it yourself. You can also trigger a rebase manually by commenting
