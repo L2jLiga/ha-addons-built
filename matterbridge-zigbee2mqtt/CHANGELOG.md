@@ -1,61 +1,28 @@
 Changes in this Release
 
-<details><summary>7d30a0e chore: bump matterbridge from 2.1.4 to 2.1.5 in /matterbridge-zigbee2mqtt (#109)</summary>
-chore: bump matterbridge from 2.1.4 to 2.1.5 in /matterbridge-zigbee2mqtt (#109)
+<details><summary>25773da chore: bump matterbridge-zigbee2mqtt from 2.4.5 to 2.4.6 in /matterbridge-zigbee2mqtt (#110)</summary>
+chore: bump matterbridge-zigbee2mqtt from 2.4.5 to 2.4.6 in /matterbridge-zigbee2mqtt (#110)
 
-Bumps [matterbridge](https://github.com/Luligu/matterbridge) from 2.1.4
-to 2.1.5.
+Bumps
+[matterbridge-zigbee2mqtt](https://github.com/Luligu/matterbridge-zigbee2mqtt)
+from 2.4.5 to 2.4.6.
 <details>
 <summary>Release notes</summary>
 <p><em>Sourced from <a
-href="https://github.com/Luligu/matterbridge/releases">matterbridge's
+href="https://github.com/Luligu/matterbridge-zigbee2mqtt/releases">matterbridge-zigbee2mqtt's
 releases</a>.</em></p>
 <blockquote>
-<h2>Release 2.1.5</h2>
-<h3>Breaking Changes</h3>
-<p>Starting from v. 2.0.0, Matterbridge is running only in mode edge (no
-parameter needed and no badge in the frontend).</p>
-<p>Starting from v. 2.1.0, the legacy old api of matter.js have been
-completely removed from Matterbridge and from all plugins.</p>
-<p>For this reason there is no compatibility with the old versions of
-the plugins.</p>
-<p>You need to update all plugins you use and Matterbridge in the same
-moment.</p>
-<p>I suggest to first update all plugins without restarting and then to
-update Matterbridge so when it restarts, all versions will be the
-latest.</p>
-<p>If you use docker, all plugins are already installed in the image so
-you just need to pull the new image.</p>
-<p>Compatibility list:
-matterbridge-shelly v. 1.1.5
-matterbridge-zigbee2mqtt v. 2.4.4
-matterbridge-somfy-tahoma v. 1.2.3
-matterbridge-hass v. 0.0.8</p>
-<h2>[2.1.5] - 2025-02-11</h2>
-<h3>Added</h3>
-<ul>
-<li>[frontend]: Frontend v.2.4.1.</li>
-<li>[frontend]: Optimized rendering of all pages.</li>
-<li>[frontend]: Added cpuUsed, rss and heapUsed to
-SystemInformation.</li>
-<li>[frontend]: Added UiProvider.</li>
-<li>[frontend]: Added wssSendCpuUpdate, wssSendMemoryUpdate and
-wssSendSnackbarMessage.</li>
-<li>[docker]: Added health check to docker images. See README-DOCKER.md
-with the updated configuration.</li>
-</ul>
+<h2>Release 2.4.6</h2>
+<h2>[2.4.6] - 2025-02-20</h2>
 <h3>Changed</h3>
 <ul>
-<li>[matterbridge]: Calls getNpmPackageVersion() instead of npm to get
-latest version to optimize memory and cpu usage.</li>
-<li>[matterbridge]: Memory optimization on MatterbridgeEndpoint.</li>
+<li>[package]: Updated package.</li>
+<li>[package]: Updated dependencies.</li>
 </ul>
 <h3>Fixed</h3>
 <ul>
-<li>[matterbridge]: Refactor shutdown sequences for reset and factory
-reset.</li>
-<li>[matterbridge]: Refactor reset devices adding a wait of 1 sec to
-allow matter to deliver all messages before shutting down.</li>
+<li>[schema]: Fix wrong default in schema (thanks <a
+href="https://github.com/robvanoostenrijk">https://github.com/robvanoostenrijk</a>).</li>
 </ul>
 <!-- raw HTML omitted -->
 </blockquote>
@@ -63,34 +30,19 @@ allow matter to deliver all messages before shutting down.</li>
 <details>
 <summary>Changelog</summary>
 <p><em>Sourced from <a
-href="https://github.com/Luligu/matterbridge/blob/main/CHANGELOG.md">matterbridge's
+href="https://github.com/Luligu/matterbridge-zigbee2mqtt/blob/main/CHANGELOG.md">matterbridge-zigbee2mqtt's
 changelog</a>.</em></p>
 <blockquote>
-<h2>[2.1.5] - 2025-02-11</h2>
-<h3>Added</h3>
-<ul>
-<li>[frontend]: Frontend v.2.4.1.</li>
-<li>[frontend]: Optimized rendering of all pages.</li>
-<li>[frontend]: Added cpuUsed, rss and heapUsed to
-SystemInformation.</li>
-<li>[frontend]: Added UiProvider.</li>
-<li>[frontend]: Added wssSendCpuUpdate, wssSendMemoryUpdate and
-wssSendSnackbarMessage.</li>
-<li>[docker]: Added health check to docker images. See README-DOCKER.md
-with the updated configuration.</li>
-</ul>
+<h2>[2.4.6] - 2025-02-20</h2>
 <h3>Changed</h3>
 <ul>
-<li>[matterbridge]: Calls getNpmPackageVersion() instead of npm to get
-latest version to optimize memory and cpu usage.</li>
-<li>[matterbridge]: Memory optimization on MatterbridgeEndpoint.</li>
+<li>[package]: Updated package.</li>
+<li>[package]: Updated dependencies.</li>
 </ul>
 <h3>Fixed</h3>
 <ul>
-<li>[matterbridge]: Refactor shutdown sequences for reset and factory
-reset.</li>
-<li>[matterbridge]: Refactor reset devices adding a wait of 1 sec to
-allow matter to deliver all messages before shutting down.</li>
+<li>[schema]: Fix wrong default in schema (thanks <a
+href="https://github.com/robvanoostenrijk">https://github.com/robvanoostenrijk</a>).</li>
 </ul>
 <!-- raw HTML omitted -->
 </blockquote>
@@ -99,39 +51,30 @@ allow matter to deliver all messages before shutting down.</li>
 <summary>Commits</summary>
 <ul>
 <li><a
-href="https://github.com/Luligu/matterbridge/commit/338f34cf7abcbf2166f4c12cb16b746f902ad360"><code>338f34c</code></a>
+href="https://github.com/Luligu/matterbridge-zigbee2mqtt/commit/baed9d3b4037a308dc0e851349b5d22cefe50fc3"><code>baed9d3</code></a>
 Merge pull request <a
-href="https://redirect.github.com/Luligu/matterbridge/issues/221">#221</a>
+href="https://redirect.github.com/Luligu/matterbridge-zigbee2mqtt/issues/101">#101</a>
 from Luligu/dev</li>
 <li><a
-href="https://github.com/Luligu/matterbridge/commit/a20618a4f5d2641a936dd5feeee7ba4bc6ce6132"><code>a20618a</code></a>
-Release 2.1.5</li>
+href="https://github.com/Luligu/matterbridge-zigbee2mqtt/commit/5e91ba03d52170f2e41927232433046fa5bb0fb5"><code>5e91ba0</code></a>
+Release 2.4.6</li>
 <li><a
-href="https://github.com/Luligu/matterbridge/commit/41be055bd82ba53560028690e3f88aa5759249d5"><code>41be055</code></a>
-Add curl installation to Dockerfile for docker health on latest</li>
+href="https://github.com/Luligu/matterbridge-zigbee2mqtt/commit/735137dc5743ac73d89deedeabf74e57912db6fd"><code>735137d</code></a>
+Release 2.4.6</li>
 <li><a
-href="https://github.com/Luligu/matterbridge/commit/6f25a2aef66785e95008bd524cf699bf9e06da81"><code>6f25a2a</code></a>
-Add curl installation to Dockerfile for docker health</li>
+href="https://github.com/Luligu/matterbridge-zigbee2mqtt/commit/aadc3ddf120c1b3dc6eef9265fc60dd5a41a8140"><code>aadc3dd</code></a>
+Automator: update package</li>
 <li><a
-href="https://github.com/Luligu/matterbridge/commit/998ccdadc6313a6ab74471662141266c6b5099d5"><code>998ccda</code></a>
-Dev 2.1.5-dev.8</li>
+href="https://github.com/Luligu/matterbridge-zigbee2mqtt/commit/8d1e82594f01ce05694f8b203c24ae50f7163b6b"><code>8d1e825</code></a>
+Automator: update package</li>
 <li><a
-href="https://github.com/Luligu/matterbridge/commit/4f4566117c83af24ba5afc05b81bc4d19e7e19cf"><code>4f45661</code></a>
-Set logger global callback to loger and matterlogger level</li>
+href="https://github.com/Luligu/matterbridge-zigbee2mqtt/commit/0522aca2a5eca0b10fa581cb5ab52117b2de5caa"><code>0522aca</code></a>
+Remove default blackList and whiteList values from schema</li>
 <li><a
-href="https://github.com/Luligu/matterbridge/commit/088ba1eabdb9a946b953d51a417189b3c4455717"><code>088ba1e</code></a>
-Dev 2.1.5-dev.7</li>
-<li><a
-href="https://github.com/Luligu/matterbridge/commit/47d0ae79b3d77d5e7438959a313b1630d3639d9f"><code>47d0ae7</code></a>
-Dev 2.1.5-dev.6</li>
-<li><a
-href="https://github.com/Luligu/matterbridge/commit/336ef647310c4b4d97f14efefc88f0adf7a53768"><code>336ef64</code></a>
-Frontend 2.4.1</li>
-<li><a
-href="https://github.com/Luligu/matterbridge/commit/22f095d3729e4d95730e2f84bbdc607fc9a26a15"><code>22f095d</code></a>
-Dev 2.1.5-dev.5</li>
-<li>Additional commits viewable in <a
-href="https://github.com/Luligu/matterbridge/compare/2.1.4...2.1.5">compare
+href="https://github.com/Luligu/matterbridge-zigbee2mqtt/commit/35788fb914955a9c21132be9f61f0cf675bd5c35"><code>35788fb</code></a>
+Remove default value, instead display default placeholder</li>
+<li>See full diff in <a
+href="https://github.com/Luligu/matterbridge-zigbee2mqtt/compare/2.4.5...2.4.6">compare
 view</a></li>
 </ul>
 </details>
@@ -139,7 +82,7 @@ view</a></li>
 
 
 [![Dependabot compatibility
-score](https://dependabot-badges.githubapp.com/badges/compatibility_score?dependency-name=matterbridge&package-manager=npm_and_yarn&previous-version=2.1.4&new-version=2.1.5)](https://docs.github.com/en/github/managing-security-vulnerabilities/about-dependabot-security-updates#about-compatibility-scores)
+score](https://dependabot-badges.githubapp.com/badges/compatibility_score?dependency-name=matterbridge-zigbee2mqtt&package-manager=npm_and_yarn&previous-version=2.4.5&new-version=2.4.6)](https://docs.github.com/en/github/managing-security-vulnerabilities/about-dependabot-security-updates#about-compatibility-scores)
 
 Dependabot will resolve any conflicts with this PR as long as you don't
 alter it yourself. You can also trigger a rebase manually by commenting
