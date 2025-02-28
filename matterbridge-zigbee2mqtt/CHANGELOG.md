@@ -1,28 +1,52 @@
 Changes in this Release
 
-<details><summary>25773da chore: bump matterbridge-zigbee2mqtt from 2.4.5 to 2.4.6 in /matterbridge-zigbee2mqtt (#110)</summary>
-chore: bump matterbridge-zigbee2mqtt from 2.4.5 to 2.4.6 in /matterbridge-zigbee2mqtt (#110)
+<details><summary>c8ef466 chore: bump matterbridge from 2.1.5 to 2.2.0 in /matterbridge-zigbee2mqtt (#111)</summary>
+chore: bump matterbridge from 2.1.5 to 2.2.0 in /matterbridge-zigbee2mqtt (#111)
 
-Bumps
-[matterbridge-zigbee2mqtt](https://github.com/Luligu/matterbridge-zigbee2mqtt)
-from 2.4.5 to 2.4.6.
+Bumps [matterbridge](https://github.com/Luligu/matterbridge) from 2.1.5
+to 2.2.0.
 <details>
 <summary>Release notes</summary>
 <p><em>Sourced from <a
-href="https://github.com/Luligu/matterbridge-zigbee2mqtt/releases">matterbridge-zigbee2mqtt's
+href="https://github.com/Luligu/matterbridge/releases">matterbridge's
 releases</a>.</em></p>
 <blockquote>
-<h2>Release 2.4.6</h2>
-<h2>[2.4.6] - 2025-02-20</h2>
+<h2>Release 2.2.0</h2>
+<h2>[2.2.0] - 2025-02-27</h2>
+<h3>Added</h3>
+<ul>
+<li>[docker]: Added health check directly in the docker image. No need
+to change configuration of docker compose.</li>
+<li>[platform]: Saving in the storage the selects for faster loading of
+plugins.</li>
+<li>[icon]: Added matterbridge svg icon (thanks: <a
+href="https://github.com/robvanoostenrijk">https://github.com/robvanoostenrijk</a>
+<a
+href="https://github.com/stuntguy3000">https://github.com/stuntguy3000</a>).</li>
+<li>[pluginManager]: Refactor PluginManager to optimize memory and load
+time.</li>
+<li>[frontend]: Frontend v.2.4.6. Please refresh the frontend page after
+the update.</li>
+<li>[frontend]: Added processUptime to SystemInfo.</li>
+<li>[frontend]: Added Share fabrics and Stop sharing to the menu. This
+allows to pair other controllers without the need to share from the
+first controller.</li>
+<li>[frontend]: Added subscriptions to QRDiv.</li>
+<li>[frontend]: Added autoScroll option for the logs. Default is
+enabled.</li>
+<li>[utils]: Optimized memory and loading time.</li>
+<li>[shelly]: Added all shelly api to be used when matterbridge is
+running on the shelly matterbridge board.</li>
+</ul>
 <h3>Changed</h3>
 <ul>
-<li>[package]: Updated package.</li>
-<li>[package]: Updated dependencies.</li>
+<li>[package]: Update matter.js to 0.12.4</li>
+<li>[matterbridge]: The check for available updates now runs at restart
+and each 24 hours after.</li>
 </ul>
 <h3>Fixed</h3>
 <ul>
-<li>[schema]: Fix wrong default in schema (thanks <a
-href="https://github.com/robvanoostenrijk">https://github.com/robvanoostenrijk</a>).</li>
+<li>[matterbridge]: Check endpoint state in /api/devices.</li>
 </ul>
 <!-- raw HTML omitted -->
 </blockquote>
@@ -30,19 +54,44 @@ href="https://github.com/robvanoostenrijk">https://github.com/robvanoostenrijk</
 <details>
 <summary>Changelog</summary>
 <p><em>Sourced from <a
-href="https://github.com/Luligu/matterbridge-zigbee2mqtt/blob/main/CHANGELOG.md">matterbridge-zigbee2mqtt's
+href="https://github.com/Luligu/matterbridge/blob/main/CHANGELOG.md">matterbridge's
 changelog</a>.</em></p>
 <blockquote>
-<h2>[2.4.6] - 2025-02-20</h2>
+<h2>[2.2.0] - 2025-02-27</h2>
+<h3>Added</h3>
+<ul>
+<li>[docker]: Added health check directly in the docker image. No need
+to change configuration of docker compose.</li>
+<li>[platform]: Saving in the storage the selects for faster loading of
+plugins.</li>
+<li>[icon]: Added matterbridge svg icon (thanks: <a
+href="https://github.com/robvanoostenrijk">https://github.com/robvanoostenrijk</a>
+<a
+href="https://github.com/stuntguy3000">https://github.com/stuntguy3000</a>).</li>
+<li>[pluginManager]: Refactor PluginManager to optimize memory and load
+time.</li>
+<li>[frontend]: Frontend v.2.4.6. Please refresh the frontend page after
+the update.</li>
+<li>[frontend]: Added processUptime to SystemInfo.</li>
+<li>[frontend]: Added Share fabrics and Stop sharing to the menu. This
+allows to pair other controllers without the need to share from the
+first controller.</li>
+<li>[frontend]: Added subscriptions to QRDiv.</li>
+<li>[frontend]: Added autoScroll option for the logs. Default is
+enabled.</li>
+<li>[utils]: Optimized memory and loading time.</li>
+<li>[shelly]: Added all shelly api to be used when matterbridge is
+running on the shelly matterbridge board.</li>
+</ul>
 <h3>Changed</h3>
 <ul>
-<li>[package]: Updated package.</li>
-<li>[package]: Updated dependencies.</li>
+<li>[package]: Update matter.js to 0.12.4</li>
+<li>[matterbridge]: The check for available updates now runs at restart
+and each 24 hours after.</li>
 </ul>
 <h3>Fixed</h3>
 <ul>
-<li>[schema]: Fix wrong default in schema (thanks <a
-href="https://github.com/robvanoostenrijk">https://github.com/robvanoostenrijk</a>).</li>
+<li>[matterbridge]: Check endpoint state in /api/devices.</li>
 </ul>
 <!-- raw HTML omitted -->
 </blockquote>
@@ -51,30 +100,11 @@ href="https://github.com/robvanoostenrijk">https://github.com/robvanoostenrijk</
 <summary>Commits</summary>
 <ul>
 <li><a
-href="https://github.com/Luligu/matterbridge-zigbee2mqtt/commit/baed9d3b4037a308dc0e851349b5d22cefe50fc3"><code>baed9d3</code></a>
-Merge pull request <a
-href="https://redirect.github.com/Luligu/matterbridge-zigbee2mqtt/issues/101">#101</a>
-from Luligu/dev</li>
-<li><a
-href="https://github.com/Luligu/matterbridge-zigbee2mqtt/commit/5e91ba03d52170f2e41927232433046fa5bb0fb5"><code>5e91ba0</code></a>
-Release 2.4.6</li>
-<li><a
-href="https://github.com/Luligu/matterbridge-zigbee2mqtt/commit/735137dc5743ac73d89deedeabf74e57912db6fd"><code>735137d</code></a>
-Release 2.4.6</li>
-<li><a
-href="https://github.com/Luligu/matterbridge-zigbee2mqtt/commit/aadc3ddf120c1b3dc6eef9265fc60dd5a41a8140"><code>aadc3dd</code></a>
-Automator: update package</li>
-<li><a
-href="https://github.com/Luligu/matterbridge-zigbee2mqtt/commit/8d1e82594f01ce05694f8b203c24ae50f7163b6b"><code>8d1e825</code></a>
-Automator: update package</li>
-<li><a
-href="https://github.com/Luligu/matterbridge-zigbee2mqtt/commit/0522aca2a5eca0b10fa581cb5ab52117b2de5caa"><code>0522aca</code></a>
-Remove default blackList and whiteList values from schema</li>
-<li><a
-href="https://github.com/Luligu/matterbridge-zigbee2mqtt/commit/35788fb914955a9c21132be9f61f0cf675bd5c35"><code>35788fb</code></a>
-Remove default value, instead display default placeholder</li>
+href="https://github.com/Luligu/matterbridge/commit/42ccb9405390664d79da8945e8d8d832864119f0"><code>42ccb94</code></a>
+Release 2.2.0 (<a
+href="https://redirect.github.com/Luligu/matterbridge/issues/233">#233</a>)</li>
 <li>See full diff in <a
-href="https://github.com/Luligu/matterbridge-zigbee2mqtt/compare/2.4.5...2.4.6">compare
+href="https://github.com/Luligu/matterbridge/compare/2.1.5...2.2.0">compare
 view</a></li>
 </ul>
 </details>
@@ -82,7 +112,7 @@ view</a></li>
 
 
 [![Dependabot compatibility
-score](https://dependabot-badges.githubapp.com/badges/compatibility_score?dependency-name=matterbridge-zigbee2mqtt&package-manager=npm_and_yarn&previous-version=2.4.5&new-version=2.4.6)](https://docs.github.com/en/github/managing-security-vulnerabilities/about-dependabot-security-updates#about-compatibility-scores)
+score](https://dependabot-badges.githubapp.com/badges/compatibility_score?dependency-name=matterbridge&package-manager=npm_and_yarn&previous-version=2.1.5&new-version=2.2.0)](https://docs.github.com/en/github/managing-security-vulnerabilities/about-dependabot-security-updates#about-compatibility-scores)
 
 Dependabot will resolve any conflicts with this PR as long as you don't
 alter it yourself. You can also trigger a rebase manually by commenting
