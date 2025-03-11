@@ -1,25 +1,27 @@
 Changes in this Release
 
-<details><summary>724fcde chore: bump matterbridge from 2.2.2 to 2.2.3 in /matterbridge-zigbee2mqtt (#118)</summary>
-chore: bump matterbridge from 2.2.2 to 2.2.3 in /matterbridge-zigbee2mqtt (#118)
+<details><summary>9cf7870 chore: bump matterbridge from 2.2.3 to 2.2.4 in /matterbridge-zigbee2mqtt (#119)</summary>
+chore: bump matterbridge from 2.2.3 to 2.2.4 in /matterbridge-zigbee2mqtt (#119)
 
-Bumps [matterbridge](https://github.com/Luligu/matterbridge) from 2.2.2
-to 2.2.3.
+Bumps [matterbridge](https://github.com/Luligu/matterbridge) from 2.2.3
+to 2.2.4.
 <details>
 <summary>Release notes</summary>
 <p><em>Sourced from <a
 href="https://github.com/Luligu/matterbridge/releases">matterbridge's
 releases</a>.</em></p>
 <blockquote>
-<h2>Release 2.2.3</h2>
-<h2>[2.2.3] - 2025-03-05</h2>
+<h2>Release 2.2.4</h2>
+<h2>[2.2.4] - 2025-03-10</h2>
+<h3>Added</h3>
+<ul>
+<li>[frontend]: Frontend v.2.5.2.</li>
+<li>[frontend]: Added push updates for reachability in the Home page
+Devices panel.</li>
+</ul>
 <h3>Changed</h3>
 <ul>
-<li>[matterbridge]: Timeout on shelly board.</li>
-</ul>
-<h3>Fixed</h3>
-<ul>
-<li>[matterbridge]: False error notification on configure plugin.</li>
+<li>[package]: Update dependencies.</li>
 </ul>
 <!-- raw HTML omitted -->
 </blockquote>
@@ -30,14 +32,16 @@ releases</a>.</em></p>
 href="https://github.com/Luligu/matterbridge/blob/main/CHANGELOG.md">matterbridge's
 changelog</a>.</em></p>
 <blockquote>
-<h2>[2.2.3] - 2025-03-05</h2>
+<h2>[2.2.4] - 2025-03-10</h2>
+<h3>Added</h3>
+<ul>
+<li>[frontend]: Frontend v.2.5.2.</li>
+<li>[frontend]: Added push updates for reachability in the Home page
+Devices panel.</li>
+</ul>
 <h3>Changed</h3>
 <ul>
-<li>[matterbridge]: Timeout on shelly board.</li>
-</ul>
-<h3>Fixed</h3>
-<ul>
-<li>[matterbridge]: False error notification on configure plugin.</li>
+<li>[package]: Update dependencies.</li>
 </ul>
 <!-- raw HTML omitted -->
 </blockquote>
@@ -46,15 +50,21 @@ changelog</a>.</em></p>
 <summary>Commits</summary>
 <ul>
 <li><a
-href="https://github.com/Luligu/matterbridge/commit/ff91a98222d2343408365f00b9cf4a150ed5aff2"><code>ff91a98</code></a>
+href="https://github.com/Luligu/matterbridge/commit/4d8ef0c882dba117140e7aadadeba03636467484"><code>4d8ef0c</code></a>
 Merge pull request <a
-href="https://redirect.github.com/Luligu/matterbridge/issues/240">#240</a>
+href="https://redirect.github.com/Luligu/matterbridge/issues/241">#241</a>
 from Luligu/dev</li>
 <li><a
-href="https://github.com/Luligu/matterbridge/commit/67d639d2020e8641c29f17f581def2f4844b9057"><code>67d639d</code></a>
-Release 2.2.3</li>
+href="https://github.com/Luligu/matterbridge/commit/427af7f33276422322e75bb94b406b672e080f1d"><code>427af7f</code></a>
+Release 2.2.4</li>
+<li><a
+href="https://github.com/Luligu/matterbridge/commit/9cabedc9c6fad32e5611dacb84fb88167ed46efb"><code>9cabedc</code></a>
+Frontend v.2.5.2</li>
+<li><a
+href="https://github.com/Luligu/matterbridge/commit/32d6cc6c40a0380d11e1fb3287ee9d08c1a32976"><code>32d6cc6</code></a>
+Fix version check of browserRefresh for new setups</li>
 <li>See full diff in <a
-href="https://github.com/Luligu/matterbridge/compare/2.2.2...2.2.3">compare
+href="https://github.com/Luligu/matterbridge/compare/2.2.3...2.2.4">compare
 view</a></li>
 </ul>
 </details>
@@ -62,7 +72,7 @@ view</a></li>
 
 
 [![Dependabot compatibility
-score](https://dependabot-badges.githubapp.com/badges/compatibility_score?dependency-name=matterbridge&package-manager=npm_and_yarn&previous-version=2.2.2&new-version=2.2.3)](https://docs.github.com/en/github/managing-security-vulnerabilities/about-dependabot-security-updates#about-compatibility-scores)
+score](https://dependabot-badges.githubapp.com/badges/compatibility_score?dependency-name=matterbridge&package-manager=npm_and_yarn&previous-version=2.2.3&new-version=2.2.4)](https://docs.github.com/en/github/managing-security-vulnerabilities/about-dependabot-security-updates#about-compatibility-scores)
 
 Dependabot will resolve any conflicts with this PR as long as you don't
 alter it yourself. You can also trigger a rebase manually by commenting
