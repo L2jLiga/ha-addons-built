@@ -1,92 +1,186 @@
 Changes in this Release
 
-<details><summary>a07cf85 chore: bump docker/login-action from 3.3.0 to 3.4.0 (#123)</summary>
-chore: bump docker/login-action from 3.3.0 to 3.4.0 (#123)
+<details><summary>40587b9 chore: bump matterbridge from 2.2.4 to 2.2.7 in /matterbridge-zigbee2mqtt (#125)</summary>
+chore: bump matterbridge from 2.2.4 to 2.2.7 in /matterbridge-zigbee2mqtt (#125)
 
-Bumps [docker/login-action](https://github.com/docker/login-action) from
-3.3.0 to 3.4.0.
+Bumps [matterbridge](https://github.com/Luligu/matterbridge) from 2.2.4
+to 2.2.7.
 <details>
 <summary>Release notes</summary>
 <p><em>Sourced from <a
-href="https://github.com/docker/login-action/releases">docker/login-action's
+href="https://github.com/Luligu/matterbridge/releases">matterbridge's
 releases</a>.</em></p>
 <blockquote>
-<h2>v3.4.0</h2>
+<h2>Release 2.2.7</h2>
+<h2>[2.2.7] - 2025-04-06</h2>
+<h3>Added</h3>
 <ul>
-<li>Bump <code>@​actions/core</code> from 1.10.1 to 1.11.1 in <a
-href="https://redirect.github.com/docker/login-action/pull/791">docker/login-action#791</a></li>
-<li>Bump <code>@​aws-sdk/client-ecr</code> to 3.766.0 in <a
-href="https://redirect.github.com/docker/login-action/pull/789">docker/login-action#789</a>
-<a
-href="https://redirect.github.com/docker/login-action/pull/856">docker/login-action#856</a></li>
-<li>Bump <code>@​aws-sdk/client-ecr-public</code> to 3.758.0 in <a
-href="https://redirect.github.com/docker/login-action/pull/789">docker/login-action#789</a>
-<a
-href="https://redirect.github.com/docker/login-action/pull/856">docker/login-action#856</a></li>
-<li>Bump <code>@​docker/actions-toolkit</code> from 0.35.0 to 0.57.0 in
-<a
-href="https://redirect.github.com/docker/login-action/pull/801">docker/login-action#801</a>
-<a
-href="https://redirect.github.com/docker/login-action/pull/806">docker/login-action#806</a>
-<a
-href="https://redirect.github.com/docker/login-action/pull/858">docker/login-action#858</a></li>
-<li>Bump cross-spawn from 7.0.3 to 7.0.6 in <a
-href="https://redirect.github.com/docker/login-action/pull/814">docker/login-action#814</a></li>
-<li>Bump https-proxy-agent from 7.0.5 to 7.0.6 in <a
-href="https://redirect.github.com/docker/login-action/pull/823">docker/login-action#823</a></li>
-<li>Bump path-to-regexp from 6.2.2 to 6.3.0 in <a
-href="https://redirect.github.com/docker/login-action/pull/777">docker/login-action#777</a></li>
+<li>[package]: Process author, homepage, repository, funding, README.md
+and CHANGELOG.md for third-party plugins. If the default implementation
+doesn't fit, it is possible to add a custom property &quot;help&quot;
+and &quot;changelog&quot; to the package.json.</li>
+<li>[frontend]: Added a link to the plugin homepage (click on the plugin
+name or on the plugin description).</li>
 </ul>
-<p><strong>Full Changelog</strong>: <a
-href="https://github.com/docker/login-action/compare/v3.3.0...v3.4.0">https://github.com/docker/login-action/compare/v3.3.0...v3.4.0</a></p>
+<h3>Changed</h3>
+<ul>
+<li>[frontend]: Frontend v.2.6.1.</li>
+<li>[package]: Update dependencies.</li>
+</ul>
+<h3>Fixed</h3>
+<ul>
+<li>[author]: Fixed case when author is an object in the
+package.json.</li>
+<li>[platform]: Fix getSelectDevices and getSelectEntities on node &lt;
+22.</li>
+</ul>
+<!-- raw HTML omitted -->
+<h2>Release 2.2.6</h2>
+<h2>[2.2.6] - 2025-04-01</h2>
+<h3>Added</h3>
+<ul>
+<li>[matterbridge]: New plugin matterbridge-webhooks.</li>
+<li>[ipv4address]: The ipv4address entered by the user on the command
+line or on the frontend is validated on startup. If the value is not
+correct an error message is logged and the parameter is discarded.</li>
+<li>[ipv6address]: The ipv6address entered by the user on the command
+line or on the frontend is validated on startup. If the value is not
+correct an error message is logged and the parameter is discarded.</li>
+<li>[shelly-board]: For Shelly board only: added Network configuration
+reset and Factory reset.</li>
+</ul>
+<h3>Changed</h3>
+<ul>
+<li>[commissionig]: If the bridge is not paired, when the advertising
+stops (after 15 minutes from start) the QR code is hidden and a
+notification is displayed.</li>
+<li>[package]: Update dependencies.</li>
+<li>[package]: Update matter.js to 0.12.6.</li>
+</ul>
+<h3>Fixed</h3>
+<ul>
+<li>[ipv6address]: The ipv6address can be entered in the frontend with
+the scopeid. On Windows the format is ipv6%scopeid (i.e.
+fe80::5a71:b2f6:7bc8:d00b%8). On Linux the format is ipv6%interfaceName
+(i.e. fe80::5a71:b2f6:7bc8:d00b%eth0)</li>
+<li>[onOff]: The onOff cluster created from createOnOffClusterServer()
+is now correct (no Lighting feature).</li>
+</ul>
+<!-- raw HTML omitted -->
+<h2>Release 2.2.5</h2>
+<h2>[2.2.5] - 2025-03-19</h2>
+<!-- raw HTML omitted -->
 </blockquote>
+<p>... (truncated)</p>
+</details>
+<details>
+<summary>Changelog</summary>
+<p><em>Sourced from <a
+href="https://github.com/Luligu/matterbridge/blob/main/CHANGELOG.md">matterbridge's
+changelog</a>.</em></p>
+<blockquote>
+<h2>[2.2.7] - 2025-04-06</h2>
+<h3>Added</h3>
+<ul>
+<li>[package]: Process author, homepage, repository, funding, README.md
+and CHANGELOG.md for third-party plugins. If the default implementation
+doesn't fit, it is possible to add a custom property &quot;help&quot;
+and &quot;changelog&quot; to the package.json.</li>
+<li>[frontend]: Added a link the plugin homepage (click on the plugin
+name or on the plugin description).</li>
+</ul>
+<h3>Changed</h3>
+<ul>
+<li>[frontend]: Frontend v.2.6.1.</li>
+<li>[package]: Update dependencies.</li>
+</ul>
+<h3>Fixed</h3>
+<ul>
+<li>[author]: Fixed case when author is an object in the
+package.json.</li>
+<li>[platform]: Fix getSelectDevices and getSelectEntities on node &lt;
+22.</li>
+</ul>
+<!-- raw HTML omitted -->
+<h2>[2.2.6] - 2025-04-01</h2>
+<h3>Added</h3>
+<ul>
+<li>[matterbridge]: New plugin matterbridge-webhooks.</li>
+<li>[ipv4address]: The ipv4address entered by the user on the command
+line or on the frontend is validated on startup. If the value is not
+correct an error message is logged and the parameter is discarded.</li>
+<li>[ipv6address]: The ipv6address entered by the user on the command
+line or on the frontend is validated on startup. If the value is not
+correct an error message is logged and the parameter is discarded.</li>
+<li>[shelly-board]: For Shelly board only: added Network configuration
+reset and Factory reset.</li>
+</ul>
+<h3>Changed</h3>
+<ul>
+<li>[commissionig]: If the bridge is not paired, when the advertising
+stops (after 15 minutes from start) the QR code is hidden and a
+notification is displayed.</li>
+<li>[package]: Update dependencies.</li>
+<li>[package]: Update matter.js to 0.12.6.</li>
+</ul>
+<h3>Fixed</h3>
+<ul>
+<li>[ipv6address]: The ipv6address can be entered in the frontend with
+the scopeid. On Windows the format is ipv6%scopeid (i.e.
+fe80::5a71:b2f6:7bc8:d00b%8). On Linux the format is ipv6%interfaceName
+(i.e. fe80::5a71:b2f6:7bc8:d00b%eth0)</li>
+<li>[onOff]: The onOff cluster created from createOnOffClusterServer()
+is now correct (no Lighting feature).</li>
+</ul>
+<!-- raw HTML omitted -->
+<h2>[2.2.5] - 2025-03-19</h2>
+<h3>Added</h3>
+<ul>
+<li>[frontend]: Frontend v.2.6.0.</li>
+</ul>
+<!-- raw HTML omitted -->
+</blockquote>
+<p>... (truncated)</p>
 </details>
 <details>
 <summary>Commits</summary>
 <ul>
 <li><a
-href="https://github.com/docker/login-action/commit/74a5d142397b4f367a81961eba4e8cd7edddf772"><code>74a5d14</code></a>
+href="https://github.com/Luligu/matterbridge/commit/c19d5e1e312b4c6bfeca7793d380134f99211d70"><code>c19d5e1</code></a>
 Merge pull request <a
-href="https://redirect.github.com/docker/login-action/issues/856">#856</a>
-from docker/dependabot/npm_and_yarn/aws-sdk-dependenc...</li>
+href="https://redirect.github.com/Luligu/matterbridge/issues/256">#256</a>
+from Luligu/dev</li>
 <li><a
-href="https://github.com/docker/login-action/commit/2f4f00e4c6fe8a50cdd1fd618421be2e92b2f201"><code>2f4f00e</code></a>
-chore: update generated content</li>
+href="https://github.com/Luligu/matterbridge/commit/c4e194c3e9310aeed229316bcbab6be69b69ff8f"><code>c4e194c</code></a>
+Release 2.2.7</li>
 <li><a
-href="https://github.com/docker/login-action/commit/67c184546cf989af16f02a1b5359e4bde3cdc524"><code>67c1845</code></a>
-build(deps): bump the aws-sdk-dependencies group across 1 directory with
-2 up...</li>
+href="https://github.com/Luligu/matterbridge/commit/8c0e87fb1b327c28d5de2305f516a5efe7a10589"><code>8c0e87f</code></a>
+Release 2.2.7</li>
 <li><a
-href="https://github.com/docker/login-action/commit/3d4cc89e85e0cac73870ab81d3b72c0b700870d1"><code>3d4cc89</code></a>
-Merge pull request <a
-href="https://redirect.github.com/docker/login-action/issues/844">#844</a>
-from graysonpike/master</li>
+href="https://github.com/Luligu/matterbridge/commit/d26cf5b4ee408e7a5458f8dd87b56126e6c2644a"><code>d26cf5b</code></a>
+Frontend v.2.6.1</li>
 <li><a
-href="https://github.com/docker/login-action/commit/6cc823a6c4738f797f031790fa7f982b7a8dcfdc"><code>6cc823a</code></a>
-Merge pull request <a
-href="https://redirect.github.com/docker/login-action/issues/823">#823</a>
-from docker/dependabot/npm_and_yarn/proxy-agent-depen...</li>
+href="https://github.com/Luligu/matterbridge/commit/eb161c714e2a61affb3d3412513a16cca9c049fd"><code>eb161c7</code></a>
+Process author, homepage, repository, funding, README.md and
+CHANGELOG.md for...</li>
 <li><a
-href="https://github.com/docker/login-action/commit/d94e792124647378e94c07359922f0f821a9fab2"><code>d94e792</code></a>
-chore: update generated content</li>
+href="https://github.com/Luligu/matterbridge/commit/95e1236440f1b463f85899256e780c1bb0fd4810"><code>95e1236</code></a>
+Fix getSelectDevices and getSelectEntities</li>
 <li><a
-href="https://github.com/docker/login-action/commit/033db0da3047b4d01e249d66f56ae16a2ed6af87"><code>033db0d</code></a>
-Merge pull request <a
-href="https://redirect.github.com/docker/login-action/issues/812">#812</a>
-from docker/dependabot/github_actions/codecov/codecov...</li>
+href="https://github.com/Luligu/matterbridge/commit/c00ed697e6d0db8ca53778fa12b1b728b8abc702"><code>c00ed69</code></a>
+Fix author object in packageJson</li>
 <li><a
-href="https://github.com/docker/login-action/commit/09c2ae9716c0bacef3c03e120a61c28adfb8595b"><code>09c2ae9</code></a>
-build(deps): bump https-proxy-agent</li>
+href="https://github.com/Luligu/matterbridge/commit/16615c83f6a7e6056169f81fce2a2de1d13bafe4"><code>16615c8</code></a>
+Update CHANGELOG for version 2.2.7</li>
 <li><a
-href="https://github.com/docker/login-action/commit/ba56f006fc7190f752d4e6e1312f85697984a229"><code>ba56f00</code></a>
-ci: update deprecated input for codecov-action</li>
+href="https://github.com/Luligu/matterbridge/commit/3f19f571cfdda8a2755065124395a41efdc5ec2c"><code>3f19f57</code></a>
+Fix author object in packageJson</li>
 <li><a
-href="https://github.com/docker/login-action/commit/75bf9a79af089e9aa009972a6ecb22190a520679"><code>75bf9a7</code></a>
-Merge pull request <a
-href="https://redirect.github.com/docker/login-action/issues/858">#858</a>
-from docker/dependabot/npm_and_yarn/docker/actions-to...</li>
+href="https://github.com/Luligu/matterbridge/commit/2e85d7c09c17e56cade114470e6c92601fe812ea"><code>2e85d7c</code></a>
+Update device and entity icon parameter descriptions in
+MatterbridgePlatform</li>
 <li>Additional commits viewable in <a
-href="https://github.com/docker/login-action/compare/v3.3.0...v3.4.0">compare
+href="https://github.com/Luligu/matterbridge/compare/2.2.4...2.2.7">compare
 view</a></li>
 </ul>
 </details>
@@ -94,7 +188,7 @@ view</a></li>
 
 
 [![Dependabot compatibility
-score](https://dependabot-badges.githubapp.com/badges/compatibility_score?dependency-name=docker/login-action&package-manager=github_actions&previous-version=3.3.0&new-version=3.4.0)](https://docs.github.com/en/github/managing-security-vulnerabilities/about-dependabot-security-updates#about-compatibility-scores)
+score](https://dependabot-badges.githubapp.com/badges/compatibility_score?dependency-name=matterbridge&package-manager=npm_and_yarn&previous-version=2.2.4&new-version=2.2.7)](https://docs.github.com/en/github/managing-security-vulnerabilities/about-dependabot-security-updates#about-compatibility-scores)
 
 Dependabot will resolve any conflicts with this PR as long as you don't
 alter it yourself. You can also trigger a rebase manually by commenting
@@ -139,87 +233,107 @@ PR or upgrade to it yourself)
 Signed-off-by: dependabot[bot] <support@github.com>
 Co-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com></details>
 
-<details><summary>e2679f6 chore: bump actions/cache from 4.2.2 to 4.2.3 (#122)</summary>
-chore: bump actions/cache from 4.2.2 to 4.2.3 (#122)
+<details><summary>c8ad085 chore: bump matterbridge-zigbee2mqtt from 2.4.6 to 2.4.7 in /matterbridge-zigbee2mqtt (#121)</summary>
+chore: bump matterbridge-zigbee2mqtt from 2.4.6 to 2.4.7 in /matterbridge-zigbee2mqtt (#121)
 
-Bumps [actions/cache](https://github.com/actions/cache) from 4.2.2 to
-4.2.3.
+Bumps
+[matterbridge-zigbee2mqtt](https://github.com/Luligu/matterbridge-zigbee2mqtt)
+from 2.4.6 to 2.4.7.
 <details>
 <summary>Release notes</summary>
 <p><em>Sourced from <a
-href="https://github.com/actions/cache/releases">actions/cache's
+href="https://github.com/Luligu/matterbridge-zigbee2mqtt/releases">matterbridge-zigbee2mqtt's
 releases</a>.</em></p>
 <blockquote>
-<h2>v4.2.3</h2>
-<h2>What's Changed</h2>
+<h2>Release 2.4.7</h2>
+<h2>[2.4.7] - 2025-03-19</h2>
+<h3>Added</h3>
 <ul>
-<li>Update to use <code>@​actions/cache</code> 4.0.3 package &amp;
-prepare for new release by <a
-href="https://github.com/salmanmkc"><code>@​salmanmkc</code></a> in <a
-href="https://redirect.github.com/actions/cache/pull/1577">actions/cache#1577</a>
-(SAS tokens for cache entries are now masked in debug logs)</li>
+<li>[select]: Added the possibility to whitelist or blacklist with the
+device serial (i.e. 0x187a3efffe357548) or the group serial (i.e.
+group-1).</li>
 </ul>
-<h2>New Contributors</h2>
+<h3>Changed</h3>
 <ul>
-<li><a href="https://github.com/salmanmkc"><code>@​salmanmkc</code></a>
-made their first contribution in <a
-href="https://redirect.github.com/actions/cache/pull/1577">actions/cache#1577</a></li>
+<li>[package]: Updated package.</li>
+<li>[package]: Updated dependencies.</li>
+<li>[plugin]: Requires Matterbridge 2.2.5.</li>
+<li>[config]: Added parameter postfix (3 characters max) to be
+consistent with the other plugins. This parameter works with the Devices
+panel in the home page.</li>
+<li>[config]: The old postfixHostname will be removed in the next
+release. If you were using postfixHostname, please change it with
+postfix, the controllers will likely remove and recreate all the devices
+so make a backup of configurations (i.e. room assignements) and
+automations on the controller!</li>
 </ul>
-<p><strong>Full Changelog</strong>: <a
-href="https://github.com/actions/cache/compare/v4.2.2...v4.2.3">https://github.com/actions/cache/compare/v4.2.2...v4.2.3</a></p>
+<!-- raw HTML omitted -->
 </blockquote>
 </details>
 <details>
 <summary>Changelog</summary>
 <p><em>Sourced from <a
-href="https://github.com/actions/cache/blob/main/RELEASES.md">actions/cache's
+href="https://github.com/Luligu/matterbridge-zigbee2mqtt/blob/main/CHANGELOG.md">matterbridge-zigbee2mqtt's
 changelog</a>.</em></p>
 <blockquote>
-<h3>4.2.3</h3>
+<h2>[2.4.7] - 2025-03-19</h2>
+<h3>Added</h3>
 <ul>
-<li>Bump <code>@actions/cache</code> to v4.0.3 (obfuscates SAS token in
-debug logs for cache entries)</li>
+<li>[select]: Added the possibility to whitelist or blacklist with the
+device serial (i.e. 0x187a3efffe357548) or the group serial (i.e.
+group-1).</li>
 </ul>
+<h3>Changed</h3>
+<ul>
+<li>[package]: Updated package.</li>
+<li>[package]: Updated dependencies.</li>
+<li>[plugin]: Requires Matterbridge 2.2.5.</li>
+<li>[config]: Added parameter postfix (3 characters max) to be
+consistent with the other plugins. This parameter works with the Devices
+panel in the home page.</li>
+<li>[config]: The old postfixHostname will be removed in the next
+release. If you were using postfixHostname, please change it with
+postfix, the controllers will likely remove and recreate all the devices
+so make a backup of configurations (i.e. room assignements) and
+automations on the controller!</li>
+</ul>
+<!-- raw HTML omitted -->
 </blockquote>
 </details>
 <details>
 <summary>Commits</summary>
 <ul>
 <li><a
-href="https://github.com/actions/cache/commit/5a3ec84eff668545956fd18022155c47e93e2684"><code>5a3ec84</code></a>
+href="https://github.com/Luligu/matterbridge-zigbee2mqtt/commit/5372266e7e3c691a5191ab84af0fef823409b475"><code>5372266</code></a>
 Merge pull request <a
-href="https://redirect.github.com/actions/cache/issues/1577">#1577</a>
-from salmanmkc/salmanmkc/4-test</li>
+href="https://redirect.github.com/Luligu/matterbridge-zigbee2mqtt/issues/103">#103</a>
+from Luligu/dev</li>
 <li><a
-href="https://github.com/actions/cache/commit/7de21022a7b6824c106a9847befcbd8154b45b6a"><code>7de2102</code></a>
-Update releases.md</li>
+href="https://github.com/Luligu/matterbridge-zigbee2mqtt/commit/55c3420809e9df3087bcd2d2e00b2cb7c3ebbaea"><code>55c3420</code></a>
+Add scenes scanner</li>
 <li><a
-href="https://github.com/actions/cache/commit/76d40dd347779762a1c829bbeeda5da4d81ca8c1"><code>76d40dd</code></a>
-Update to use the latest version of the cache package to obfuscate the
-SAS</li>
+href="https://github.com/Luligu/matterbridge-zigbee2mqtt/commit/7f5b213f742791bf513d116029fde3660c63a558"><code>7f5b213</code></a>
+Refactor: Comment out debug log statements and improve cluster server ID
+hand...</li>
 <li><a
-href="https://github.com/actions/cache/commit/76dd5eb692f606c28d4b7a4ea7cfdffc926ba06a"><code>76dd5eb</code></a>
-update cache with main</li>
+href="https://github.com/Luligu/matterbridge-zigbee2mqtt/commit/23c199f7cccc35da602a527bc9b0ce364c8110b5"><code>23c199f</code></a>
+Merge pull request <a
+href="https://redirect.github.com/Luligu/matterbridge-zigbee2mqtt/issues/102">#102</a>
+from Luligu/dev</li>
 <li><a
-href="https://github.com/actions/cache/commit/8c80c27c5e4498d5675b05fb1eff96a56c593b06"><code>8c80c27</code></a>
-new package</li>
+href="https://github.com/Luligu/matterbridge-zigbee2mqtt/commit/5b7b67abe979f5beb9963626d59a72c3bcf76653"><code>5b7b67a</code></a>
+Update Node.js version matrix in CI workflow to include 23.x</li>
 <li><a
-href="https://github.com/actions/cache/commit/45cfd0e7fffd1869ea4d5bfb54a464d825c1f742"><code>45cfd0e</code></a>
-updates</li>
+href="https://github.com/Luligu/matterbridge-zigbee2mqtt/commit/a34adf26f09c54954a7327f7a7e394eea0c30f31"><code>a34adf2</code></a>
+Requires Matterbridge 2.2.5.</li>
 <li><a
-href="https://github.com/actions/cache/commit/edd449b9cf39c2a20dc7c3d505ff6dc193c48a02"><code>edd449b</code></a>
-updated cache with latest changes</li>
+href="https://github.com/Luligu/matterbridge-zigbee2mqtt/commit/7981f7538d0f1853e580fe450139d6e86f1df369"><code>7981f75</code></a>
+Release 2.4.7</li>
 <li><a
-href="https://github.com/actions/cache/commit/0576707e373f92196b81695442ed3f80c347f9c7"><code>0576707</code></a>
-latest test before pr</li>
-<li><a
-href="https://github.com/actions/cache/commit/3105dc9754dd9cd935ffcf45c091ed2cadbf42b9"><code>3105dc9</code></a>
-update</li>
-<li><a
-href="https://github.com/actions/cache/commit/9450d42d15022999ad2fa60a8b91f01fc92a0563"><code>9450d42</code></a>
-mask</li>
-<li>Additional commits viewable in <a
-href="https://github.com/actions/cache/compare/v4.2.2...v4.2.3">compare
+href="https://github.com/Luligu/matterbridge-zigbee2mqtt/commit/650d8e633c33cd7cfcb25a42b42e16f109393487"><code>650d8e6</code></a>
+Automator: update package</li>
+<li>See full diff in <a
+href="https://github.com/Luligu/matterbridge-zigbee2mqtt/compare/2.4.6...2.4.7">compare
 view</a></li>
 </ul>
 </details>
@@ -227,7 +341,7 @@ view</a></li>
 
 
 [![Dependabot compatibility
-score](https://dependabot-badges.githubapp.com/badges/compatibility_score?dependency-name=actions/cache&package-manager=github_actions&previous-version=4.2.2&new-version=4.2.3)](https://docs.github.com/en/github/managing-security-vulnerabilities/about-dependabot-security-updates#about-compatibility-scores)
+score](https://dependabot-badges.githubapp.com/badges/compatibility_score?dependency-name=matterbridge-zigbee2mqtt&package-manager=npm_and_yarn&previous-version=2.4.6&new-version=2.4.7)](https://docs.github.com/en/github/managing-security-vulnerabilities/about-dependabot-security-updates#about-compatibility-scores)
 
 Dependabot will resolve any conflicts with this PR as long as you don't
 alter it yourself. You can also trigger a rebase manually by commenting
@@ -271,6 +385,3 @@ PR or upgrade to it yourself)
 
 Signed-off-by: dependabot[bot] <support@github.com>
 Co-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com></details>
-
-<details><summary>87d0c8c chore: bump apline packages</summary>
-chore: bump apline packages</details>
