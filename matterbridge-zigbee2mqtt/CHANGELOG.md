@@ -1,7 +1,7 @@
 Changes in this Release
 
-<details><summary>f7ab468 ⬆️ Update matterbridge to v3.0.2 (#136)</summary>
-⬆️ Update matterbridge to v3.0.2 (#136)
+<details><summary>86d8add ⬆️ Update matterbridge to v3.0.3 (#138)</summary>
+⬆️ Update matterbridge to v3.0.3 (#138)
 
 This PR contains the following updates:
 
@@ -9,15 +9,15 @@ This PR contains the following updates:
 |---|---|---|---|---|---|
 |
 [matterbridge](https://redirect.github.com/Luligu/matterbridge/blob/main/README.md)
-([source](https://redirect.github.com/Luligu/matterbridge)) | `3.0.1` ->
-`3.0.2` |
-[![age](https://developer.mend.io/api/mc/badges/age/npm/matterbridge/3.0.2?slim=true)](https://docs.renovatebot.com/merge-confidence/)
+([source](https://redirect.github.com/Luligu/matterbridge)) | `3.0.2` ->
+`3.0.3` |
+[![age](https://developer.mend.io/api/mc/badges/age/npm/matterbridge/3.0.3?slim=true)](https://docs.renovatebot.com/merge-confidence/)
 |
-[![adoption](https://developer.mend.io/api/mc/badges/adoption/npm/matterbridge/3.0.2?slim=true)](https://docs.renovatebot.com/merge-confidence/)
+[![adoption](https://developer.mend.io/api/mc/badges/adoption/npm/matterbridge/3.0.3?slim=true)](https://docs.renovatebot.com/merge-confidence/)
 |
-[![passing](https://developer.mend.io/api/mc/badges/compatibility/npm/matterbridge/3.0.1/3.0.2?slim=true)](https://docs.renovatebot.com/merge-confidence/)
+[![passing](https://developer.mend.io/api/mc/badges/compatibility/npm/matterbridge/3.0.2/3.0.3?slim=true)](https://docs.renovatebot.com/merge-confidence/)
 |
-[![confidence](https://developer.mend.io/api/mc/badges/confidence/npm/matterbridge/3.0.1/3.0.2?slim=true)](https://docs.renovatebot.com/merge-confidence/)
+[![confidence](https://developer.mend.io/api/mc/badges/confidence/npm/matterbridge/3.0.2/3.0.3?slim=true)](https://docs.renovatebot.com/merge-confidence/)
 |
 
 ---
@@ -28,106 +28,100 @@ This PR contains the following updates:
 <summary>Luligu/matterbridge (matterbridge)</summary>
 
 ###
-[`v3.0.2`](https://redirect.github.com/Luligu/matterbridge/blob/HEAD/CHANGELOG.md#302---2025-05-14)
+[`v3.0.3`](https://redirect.github.com/Luligu/matterbridge/blob/HEAD/CHANGELOG.md#303---2025-05-19)
 
 [Compare
-Source](https://redirect.github.com/Luligu/matterbridge/compare/de9aacf96ef94c47d3f5837f302444fb4addc2c4...3.0.2)
+Source](https://redirect.github.com/Luligu/matterbridge/compare/e6e72571bfe5a01d71a45b597855f0722746c744...3.0.3)
+
+##### New plugins
+
+[Dyson
+robot](https://redirect.github.com/thoukydides/matterbridge-dyson-robot)
+
+A Matterbridge plugin that connects Dyson robot vacuums and air
+treatment devices.
+to the Matter smart home ecosystem via their local MQTT APIs.
+
+[Aeg
+robot](https://redirect.github.com/thoukydides/matterbridge-aeg-robot)
+
+AEG RX 9 / Electrolux Pure i9 robot vacuum plugin for Matterbridge.
 
 ##### Added
 
-- \[virtual] Added virtual devices Restart Matterbridge and Update
-Matterbridge and full Jest tests.
-- \[virtual] Added virtual devices Reboot Matterbridge for Shelly board
-and full Jest tests.
--   \[shelly] Refactor shelly api and added full Jest test.
+- \[virtual] Added virtual devices configuration mode in the
+Matterbridge Settings: 'Disabled', 'Light', 'Outlet', 'Switch',
+'Mounted_switch'. Switch is not supported by Alexa. Mounted Switch is
+not supported by Apple.
+- \[deviceTypes] Added evse, waterHeater, solarPower, batteryStorage and
+heatPump device type.
+- \[waterHeater] Added WaterHeater class to create a Water Heater Device
+Type in one line of code (thanks https://github.com/lboue).
+- \[subscribe] Added a third parameter context (provisional
+implementation: when "context.offline === true" then this is a change
+coming from the device).
 
 ##### Changed
 
 -   \[package]: Updated dependencies.
--   \[utils]: Refactor utils functions.
--   \[utils]: Updated Jest tests on utils functions.
-- \[devices]: Added RoboticVacuumCleaner class to create the Robotic
-Vacuum Cleaner device type in one line of code.
-
-##### Fixed
-
--   \[frontend]: Fixed refresh of start/stop sharing.
+- \[export]: Removed long deprecated Matter exports from matterbridge.
+Use matterbridge/matter.
+-   \[matterbridge]: Refactored initialize() and cleanup() methods.
+-   \[matterbridge]: Updated -help informations.
+- \[rvc]: Added the parameters in the RoboticVacuumCleaner class
+constructor.
 
 <a href="https://www.buymeacoffee.com/luligugithub">
   <img src="bmc-button.svg" alt="Buy me a coffee" width="80">
 </a>
 
 ###
-[`v3.0.2-dev-20250514-de9aacf`](https://redirect.github.com/Luligu/matterbridge/compare/827b4f2330bbd041a07ac89257be4075d052b768...de9aacf96ef94c47d3f5837f302444fb4addc2c4)
+[`v3.0.3-dev-20250520-e6e7257`](https://redirect.github.com/Luligu/matterbridge/compare/e6e72571bfe5a01d71a45b597855f0722746c744...e6e72571bfe5a01d71a45b597855f0722746c744)
 
 [Compare
-Source](https://redirect.github.com/Luligu/matterbridge/compare/827b4f2330bbd041a07ac89257be4075d052b768...de9aacf96ef94c47d3f5837f302444fb4addc2c4)
+Source](https://redirect.github.com/Luligu/matterbridge/compare/e6e72571bfe5a01d71a45b597855f0722746c744...e6e72571bfe5a01d71a45b597855f0722746c744)
 
 ###
-[`v3.0.2-dev-20250514-827b4f2`](https://redirect.github.com/Luligu/matterbridge/compare/175db7e7e43cae74132e1b595b524c6fa179d8d0...827b4f2330bbd041a07ac89257be4075d052b768)
+[`v3.0.3-dev-20250519-e6e7257`](https://redirect.github.com/Luligu/matterbridge/compare/acb27744e7577ba7fd0f0838915739b865cffc52...e6e72571bfe5a01d71a45b597855f0722746c744)
 
 [Compare
-Source](https://redirect.github.com/Luligu/matterbridge/compare/175db7e7e43cae74132e1b595b524c6fa179d8d0...827b4f2330bbd041a07ac89257be4075d052b768)
+Source](https://redirect.github.com/Luligu/matterbridge/compare/acb27744e7577ba7fd0f0838915739b865cffc52...e6e72571bfe5a01d71a45b597855f0722746c744)
 
 ###
-[`v3.0.2-dev-20250514-175db7e`](https://redirect.github.com/Luligu/matterbridge/compare/54ddac7e05a721fe78fdd907b7d663c652248777...175db7e7e43cae74132e1b595b524c6fa179d8d0)
+[`v3.0.3-dev-20250519-acb2774`](https://redirect.github.com/Luligu/matterbridge/compare/6aad062f7f6f7e436ebb2cd04639456fe843e4fa...acb27744e7577ba7fd0f0838915739b865cffc52)
 
 [Compare
-Source](https://redirect.github.com/Luligu/matterbridge/compare/54ddac7e05a721fe78fdd907b7d663c652248777...175db7e7e43cae74132e1b595b524c6fa179d8d0)
+Source](https://redirect.github.com/Luligu/matterbridge/compare/6aad062f7f6f7e436ebb2cd04639456fe843e4fa...acb27744e7577ba7fd0f0838915739b865cffc52)
 
 ###
-[`v3.0.2-dev-20250514-54ddac7`](https://redirect.github.com/Luligu/matterbridge/compare/6ffb9704ea349b155011a0ccffd81f08ed4c3d1a...54ddac7e05a721fe78fdd907b7d663c652248777)
+[`v3.0.3-dev-20250519-6aad062`](https://redirect.github.com/Luligu/matterbridge/compare/e0f532cc1cf6a1e679b66c8f9705aee5880af7f4...6aad062f7f6f7e436ebb2cd04639456fe843e4fa)
 
 [Compare
-Source](https://redirect.github.com/Luligu/matterbridge/compare/6ffb9704ea349b155011a0ccffd81f08ed4c3d1a...54ddac7e05a721fe78fdd907b7d663c652248777)
+Source](https://redirect.github.com/Luligu/matterbridge/compare/e0f532cc1cf6a1e679b66c8f9705aee5880af7f4...6aad062f7f6f7e436ebb2cd04639456fe843e4fa)
 
 ###
-[`v3.0.2-dev-20250514-6ffb970`](https://redirect.github.com/Luligu/matterbridge/compare/0b26f0a0a9d24131884315606b5d11b073ce8406...6ffb9704ea349b155011a0ccffd81f08ed4c3d1a)
+[`v3.0.3-dev-20250518-e0f532c`](https://redirect.github.com/Luligu/matterbridge/compare/a216d52874d197bdea955a2ce70b083a01537ebd...e0f532cc1cf6a1e679b66c8f9705aee5880af7f4)
 
 [Compare
-Source](https://redirect.github.com/Luligu/matterbridge/compare/0b26f0a0a9d24131884315606b5d11b073ce8406...6ffb9704ea349b155011a0ccffd81f08ed4c3d1a)
+Source](https://redirect.github.com/Luligu/matterbridge/compare/a216d52874d197bdea955a2ce70b083a01537ebd...e0f532cc1cf6a1e679b66c8f9705aee5880af7f4)
 
 ###
-[`v3.0.2-dev-20250514-0b26f0a`](https://redirect.github.com/Luligu/matterbridge/compare/ae61aa74c0dee1ffd75f4134b06fba3695567b2a...0b26f0a0a9d24131884315606b5d11b073ce8406)
+[`v3.0.3-dev-20250518-a216d52`](https://redirect.github.com/Luligu/matterbridge/compare/bcc5d13f0c1a2cad2e288df04fb1df279b96b147...a216d52874d197bdea955a2ce70b083a01537ebd)
 
 [Compare
-Source](https://redirect.github.com/Luligu/matterbridge/compare/ae61aa74c0dee1ffd75f4134b06fba3695567b2a...0b26f0a0a9d24131884315606b5d11b073ce8406)
+Source](https://redirect.github.com/Luligu/matterbridge/compare/bcc5d13f0c1a2cad2e288df04fb1df279b96b147...a216d52874d197bdea955a2ce70b083a01537ebd)
 
 ###
-[`v3.0.2-dev-20250513-ae61aa7`](https://redirect.github.com/Luligu/matterbridge/compare/ae61aa74c0dee1ffd75f4134b06fba3695567b2a...ae61aa74c0dee1ffd75f4134b06fba3695567b2a)
+[`v3.0.3-dev-20250517-bcc5d13`](https://redirect.github.com/Luligu/matterbridge/compare/720018f25d216cdd67f17ac300cff63fde403212...bcc5d13f0c1a2cad2e288df04fb1df279b96b147)
 
 [Compare
-Source](https://redirect.github.com/Luligu/matterbridge/compare/ae61aa74c0dee1ffd75f4134b06fba3695567b2a...ae61aa74c0dee1ffd75f4134b06fba3695567b2a)
+Source](https://redirect.github.com/Luligu/matterbridge/compare/720018f25d216cdd67f17ac300cff63fde403212...bcc5d13f0c1a2cad2e288df04fb1df279b96b147)
 
 ###
-[`v3.0.2-dev-20250512-ae61aa7`](https://redirect.github.com/Luligu/matterbridge/compare/ae61aa74c0dee1ffd75f4134b06fba3695567b2a...ae61aa74c0dee1ffd75f4134b06fba3695567b2a)
+[`v3.0.3-dev-20250517-720018f`](https://redirect.github.com/Luligu/matterbridge/compare/3.0.2...720018f25d216cdd67f17ac300cff63fde403212)
 
 [Compare
-Source](https://redirect.github.com/Luligu/matterbridge/compare/ae61aa74c0dee1ffd75f4134b06fba3695567b2a...ae61aa74c0dee1ffd75f4134b06fba3695567b2a)
-
-###
-[`v3.0.2-dev-20250511-ae61aa7`](https://redirect.github.com/Luligu/matterbridge/compare/ae61aa74c0dee1ffd75f4134b06fba3695567b2a...ae61aa74c0dee1ffd75f4134b06fba3695567b2a)
-
-[Compare
-Source](https://redirect.github.com/Luligu/matterbridge/compare/ae61aa74c0dee1ffd75f4134b06fba3695567b2a...ae61aa74c0dee1ffd75f4134b06fba3695567b2a)
-
-###
-[`v3.0.2-dev-20250510-ae61aa7`](https://redirect.github.com/Luligu/matterbridge/compare/ae61aa74c0dee1ffd75f4134b06fba3695567b2a...ae61aa74c0dee1ffd75f4134b06fba3695567b2a)
-
-[Compare
-Source](https://redirect.github.com/Luligu/matterbridge/compare/ae61aa74c0dee1ffd75f4134b06fba3695567b2a...ae61aa74c0dee1ffd75f4134b06fba3695567b2a)
-
-###
-[`v3.0.2-dev-20250509-ae61aa7`](https://redirect.github.com/Luligu/matterbridge/compare/7214e1761dc1bbbb930ff5d5fd4b38439dda6e36...ae61aa74c0dee1ffd75f4134b06fba3695567b2a)
-
-[Compare
-Source](https://redirect.github.com/Luligu/matterbridge/compare/7214e1761dc1bbbb930ff5d5fd4b38439dda6e36...ae61aa74c0dee1ffd75f4134b06fba3695567b2a)
-
-###
-[`v3.0.2-dev-20250508-7214e17`](https://redirect.github.com/Luligu/matterbridge/compare/3.0.1...7214e1761dc1bbbb930ff5d5fd4b38439dda6e36)
-
-[Compare
-Source](https://redirect.github.com/Luligu/matterbridge/compare/3.0.1...7214e1761dc1bbbb930ff5d5fd4b38439dda6e36)
+Source](https://redirect.github.com/Luligu/matterbridge/compare/3.0.2...720018f25d216cdd67f17ac300cff63fde403212)
 
 </details>
 
@@ -157,6 +151,6 @@ This PR was generated by [Mend Renovate](https://mend.io/renovate/).
 View the [repository job
 log](https://developer.mend.io/github/L2jLiga/ha-addons).
 
-<!--renovate-debug:eyJjcmVhdGVkSW5WZXIiOiI0MC4xMS45IiwidXBkYXRlZEluVmVyIjoiNDAuMTEuOSIsInRhcmdldEJyYW5jaCI6Im1hc3RlciIsImxhYmVscyI6WyJkZXBlbmRlbmNpZXMiLCJuby1zdGFsZSJdfQ==-->
+<!--renovate-debug:eyJjcmVhdGVkSW5WZXIiOiI0MC4xNi4wIiwidXBkYXRlZEluVmVyIjoiNDAuMTYuMCIsInRhcmdldEJyYW5jaCI6Im1hc3RlciIsImxhYmVscyI6WyJkZXBlbmRlbmNpZXMiLCJuby1zdGFsZSJdfQ==-->
 
 Co-authored-by: renovate[bot] <29139614+renovate[bot]@users.noreply.github.com></details>
