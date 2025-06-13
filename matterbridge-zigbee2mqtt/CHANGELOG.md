@@ -1,43 +1,106 @@
 Changes in this Release
 
-<details><summary>e562234 ⬆️ Update creyD/prettier_action action to v4.6 (#142)</summary>
-⬆️ Update creyD/prettier_action action to v4.6 (#142)
+<details><summary>cbeff2c ⬆️ Update matterbridge to v3.0.6 (#143)</summary>
+⬆️ Update matterbridge to v3.0.6 (#143)
 
 This PR contains the following updates:
 
-| Package | Type | Update | Change |
-|---|---|---|---|
+| Package | Change | Age | Adoption | Passing | Confidence |
+|---|---|---|---|---|---|
 |
-[creyD/prettier_action](https://redirect.github.com/creyD/prettier_action)
-| action | minor | `v4.5` -> `v4.6` |
+[matterbridge](https://redirect.github.com/Luligu/matterbridge/blob/main/README.md)
+([source](https://redirect.github.com/Luligu/matterbridge)) | `3.0.5` ->
+`3.0.6` |
+[![age](https://developer.mend.io/api/mc/badges/age/npm/matterbridge/3.0.6?slim=true)](https://docs.renovatebot.com/merge-confidence/)
+|
+[![adoption](https://developer.mend.io/api/mc/badges/adoption/npm/matterbridge/3.0.6?slim=true)](https://docs.renovatebot.com/merge-confidence/)
+|
+[![passing](https://developer.mend.io/api/mc/badges/compatibility/npm/matterbridge/3.0.5/3.0.6?slim=true)](https://docs.renovatebot.com/merge-confidence/)
+|
+[![confidence](https://developer.mend.io/api/mc/badges/confidence/npm/matterbridge/3.0.5/3.0.6?slim=true)](https://docs.renovatebot.com/merge-confidence/)
+|
 
 ---
 
 ### Release Notes
 
 <details>
-<summary>creyD/prettier_action (creyD/prettier_action)</summary>
+<summary>Luligu/matterbridge (matterbridge)</summary>
 
 ###
-[`v4.6`](https://redirect.github.com/creyD/prettier_action/releases/tag/v4.6)
+[`v3.0.6`](https://redirect.github.com/Luligu/matterbridge/blob/HEAD/CHANGELOG.md#306---2025-06-13)
 
 [Compare
-Source](https://redirect.github.com/creyD/prettier_action/compare/v4.5...v4.6)
+Source](https://redirect.github.com/Luligu/matterbridge/compare/2d33ac9685864a6ecf807a33dde76b8fb14f546b...3.0.6)
 
-#### What's Changed
+##### Added
 
-- Use npx to execute prettier by
-[@&#8203;dcode](https://redirect.github.com/dcode) in
-[https://github.com/creyD/prettier_action/pull/145](https://redirect.github.com/creyD/prettier_action/pull/145)
+- \[tests] Update Jest test coverage on addBridgedEndpoint and
+removeBridgedEndpoint.
+- \[fan]: Added createMultiSpeedFanControlClusterServer cluster helper
+with MultiSpeed feature.
+-   \[fan]: Added all parameters to the fan cluster helpers.
+- \[valve]: Added logic in
+MatterbridgeValveConfigurationAndControlServer.
+-   \[command]: Added cluster property to commandHandler data object.
+- \[mb-service]: Added a link to
+[mb-service](https://redirect.github.com/michaelahern/mb-service)
+package by [Michael Ahern](https://redirect.github.com/michaelahern). It
+runs matterbridge as a service in macOS.
 
-#### New Contributors
+##### Changed
 
-- [@&#8203;dcode](https://redirect.github.com/dcode) made their first
-contribution in
-[https://github.com/creyD/prettier_action/pull/145](https://redirect.github.com/creyD/prettier_action/pull/145)
+-   \[package]: Updated dependencies.
+-   \[fan]: The default fan has no more the MultiSpeed feature.
+-   \[behaviors]: Bump Matterbridge Behaviors to 1.3.0
+-   \[evse]: Updated class and behavior to 1.1.0.
+-   \[waterHeater]: Updated class and behavior to 1.1.0.
+-   \[rvc]: Updated class and behavior to 1.1.0.
+-   \[laundryWasher]: Updated class and behavior to 1.1.0.
 
-**Full Changelog**:
-https://github.com/creyD/prettier_action/compare/v4.5...v4.6
+##### Fixed
+
+-   \[evse]: Fixed jsdoc on Evse.
+
+<a href="https://www.buymeacoffee.com/luligugithub">
+  <img src="bmc-button.svg" alt="Buy me a coffee" width="80">
+</a>
+
+###
+[`v3.0.6-dev-20250613-2d33ac9`](https://redirect.github.com/Luligu/matterbridge/compare/a8a696e95bd88a5cc9bc1eb7c10c1e1a1d84168f...2d33ac9685864a6ecf807a33dde76b8fb14f546b)
+
+[Compare
+Source](https://redirect.github.com/Luligu/matterbridge/compare/a8a696e95bd88a5cc9bc1eb7c10c1e1a1d84168f...2d33ac9685864a6ecf807a33dde76b8fb14f546b)
+
+###
+[`v3.0.6-dev-20250612-a8a696e`](https://redirect.github.com/Luligu/matterbridge/compare/6b6e95335d95dd0632fad4fc12c47ce9b39d9bdc...a8a696e95bd88a5cc9bc1eb7c10c1e1a1d84168f)
+
+[Compare
+Source](https://redirect.github.com/Luligu/matterbridge/compare/6b6e95335d95dd0632fad4fc12c47ce9b39d9bdc...a8a696e95bd88a5cc9bc1eb7c10c1e1a1d84168f)
+
+###
+[`v3.0.6-dev-20250612-6b6e953`](https://redirect.github.com/Luligu/matterbridge/compare/48af7197f8c8cc1d53ad7489567e54180af9ba6f...6b6e95335d95dd0632fad4fc12c47ce9b39d9bdc)
+
+[Compare
+Source](https://redirect.github.com/Luligu/matterbridge/compare/48af7197f8c8cc1d53ad7489567e54180af9ba6f...6b6e95335d95dd0632fad4fc12c47ce9b39d9bdc)
+
+###
+[`v3.0.6-dev-20250611-48af719`](https://redirect.github.com/Luligu/matterbridge/compare/6f498112c9055a92b67114339db215c62f33e4b8...48af7197f8c8cc1d53ad7489567e54180af9ba6f)
+
+[Compare
+Source](https://redirect.github.com/Luligu/matterbridge/compare/6f498112c9055a92b67114339db215c62f33e4b8...48af7197f8c8cc1d53ad7489567e54180af9ba6f)
+
+###
+[`v3.0.6-dev-20250611-6f49811`](https://redirect.github.com/Luligu/matterbridge/compare/56cd4838455aa4620988419a30aa9ee51577e70c...6f498112c9055a92b67114339db215c62f33e4b8)
+
+[Compare
+Source](https://redirect.github.com/Luligu/matterbridge/compare/56cd4838455aa4620988419a30aa9ee51577e70c...6f498112c9055a92b67114339db215c62f33e4b8)
+
+###
+[`v3.0.6-dev-20250610-56cd483`](https://redirect.github.com/Luligu/matterbridge/compare/3.0.5...56cd4838455aa4620988419a30aa9ee51577e70c)
+
+[Compare
+Source](https://redirect.github.com/Luligu/matterbridge/compare/3.0.5...56cd4838455aa4620988419a30aa9ee51577e70c)
 
 </details>
 
@@ -48,8 +111,7 @@ https://github.com/creyD/prettier_action/compare/v4.5...v4.6
 📅 **Schedule**: Branch creation - At any time (no schedule defined),
 Automerge - At any time (no schedule defined).
 
-🚦 **Automerge**: Disabled by config. Please merge this manually once you
-are satisfied.
+🚦 **Automerge**: Enabled.
 
 ♻ **Rebasing**: Whenever PR is behind base branch, or you tick the
 rebase/retry checkbox.
@@ -68,6 +130,6 @@ This PR was generated by [Mend Renovate](https://mend.io/renovate/).
 View the [repository job
 log](https://developer.mend.io/github/L2jLiga/ha-addons).
 
-<!--renovate-debug:eyJjcmVhdGVkSW5WZXIiOiI0MC40OC41IiwidXBkYXRlZEluVmVyIjoiNDAuNDguNSIsInRhcmdldEJyYW5jaCI6Im1hc3RlciIsImxhYmVscyI6WyJkZXBlbmRlbmNpZXMiLCJuby1zdGFsZSJdfQ==-->
+<!--renovate-debug:eyJjcmVhdGVkSW5WZXIiOiI0MC41MC4wIiwidXBkYXRlZEluVmVyIjoiNDAuNTAuMCIsInRhcmdldEJyYW5jaCI6Im1hc3RlciIsImxhYmVscyI6WyJkZXBlbmRlbmNpZXMiLCJuby1zdGFsZSJdfQ==-->
 
 Co-authored-by: renovate[bot] <29139614+renovate[bot]@users.noreply.github.com></details>
