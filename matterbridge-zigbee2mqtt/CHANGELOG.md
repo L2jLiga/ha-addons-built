@@ -1,128 +1,42 @@
 Changes in this Release
 
-<details><summary>cbeff2c ⬆️ Update matterbridge to v3.0.6 (#143)</summary>
-⬆️ Update matterbridge to v3.0.6 (#143)
+<details><summary>39055fa chore: update healthcheck</summary>
+chore: update healthcheck
+</details>
 
-This PR contains the following updates:
-
-| Package | Change | Age | Adoption | Passing | Confidence |
-|---|---|---|---|---|---|
-|
-[matterbridge](https://redirect.github.com/Luligu/matterbridge/blob/main/README.md)
-([source](https://redirect.github.com/Luligu/matterbridge)) | `3.0.5` ->
-`3.0.6` |
-[![age](https://developer.mend.io/api/mc/badges/age/npm/matterbridge/3.0.6?slim=true)](https://docs.renovatebot.com/merge-confidence/)
-|
-[![adoption](https://developer.mend.io/api/mc/badges/adoption/npm/matterbridge/3.0.6?slim=true)](https://docs.renovatebot.com/merge-confidence/)
-|
-[![passing](https://developer.mend.io/api/mc/badges/compatibility/npm/matterbridge/3.0.5/3.0.6?slim=true)](https://docs.renovatebot.com/merge-confidence/)
-|
-[![confidence](https://developer.mend.io/api/mc/badges/confidence/npm/matterbridge/3.0.5/3.0.6?slim=true)](https://docs.renovatebot.com/merge-confidence/)
-|
+<details><summary>05c9fe0 ⬆️ Update docker/setup-buildx-action action to v3.11.0 (#144)</summary>
+⬆️ Update docker/setup-buildx-action action to v3.11.0 (#144)
 
 ---
 
 ### Release Notes
 
 <details>
-<summary>Luligu/matterbridge (matterbridge)</summary>
+<summary>docker/setup-buildx-action
+(docker/setup-buildx-action)</summary>
 
 ###
-[`v3.0.6`](https://redirect.github.com/Luligu/matterbridge/blob/HEAD/CHANGELOG.md#306---2025-06-13)
+[`v3.11.0`](https://redirect.github.com/docker/setup-buildx-action/releases/tag/v3.11.0)
 
 [Compare
-Source](https://redirect.github.com/Luligu/matterbridge/compare/2d33ac9685864a6ecf807a33dde76b8fb14f546b...3.0.6)
+Source](https://redirect.github.com/docker/setup-buildx-action/compare/v3.10.0...v3.11.0)
 
-##### Added
+- Keep BuildKit state support by
+[@&#8203;crazy-max](https://redirect.github.com/crazy-max) in
+[https://github.com/docker/setup-buildx-action/pull/427](https://redirect.github.com/docker/setup-buildx-action/pull/427)
+- Remove aliases created when installing by default by
+[@&#8203;hashhar](https://redirect.github.com/hashhar) in
+[https://github.com/docker/setup-buildx-action/pull/139](https://redirect.github.com/docker/setup-buildx-action/pull/139)
+- Bump
+[@&#8203;docker/actions-toolkit](https://redirect.github.com/docker/actions-toolkit)
+from 0.56.0 to 0.62.1 in
+[https://github.com/docker/setup-buildx-action/pull/422](https://redirect.github.com/docker/setup-buildx-action/pull/422)
+[https://github.com/docker/setup-buildx-action/pull/425](https://redirect.github.com/docker/setup-buildx-action/pull/425)
 
-- \[tests] Update Jest test coverage on addBridgedEndpoint and
-removeBridgedEndpoint.
-- \[fan]: Added createMultiSpeedFanControlClusterServer cluster helper
-with MultiSpeed feature.
--   \[fan]: Added all parameters to the fan cluster helpers.
-- \[valve]: Added logic in
-MatterbridgeValveConfigurationAndControlServer.
--   \[command]: Added cluster property to commandHandler data object.
-- \[mb-service]: Added a link to
-[mb-service](https://redirect.github.com/michaelahern/mb-service)
-package by [Michael Ahern](https://redirect.github.com/michaelahern). It
-runs matterbridge as a service in macOS.
-
-##### Changed
-
--   \[package]: Updated dependencies.
--   \[fan]: The default fan has no more the MultiSpeed feature.
--   \[behaviors]: Bump Matterbridge Behaviors to 1.3.0
--   \[evse]: Updated class and behavior to 1.1.0.
--   \[waterHeater]: Updated class and behavior to 1.1.0.
--   \[rvc]: Updated class and behavior to 1.1.0.
--   \[laundryWasher]: Updated class and behavior to 1.1.0.
-
-##### Fixed
-
--   \[evse]: Fixed jsdoc on Evse.
-
-<a href="https://www.buymeacoffee.com/luligugithub">
-  <img src="bmc-button.svg" alt="Buy me a coffee" width="80">
-</a>
-
-###
-[`v3.0.6-dev-20250613-2d33ac9`](https://redirect.github.com/Luligu/matterbridge/compare/a8a696e95bd88a5cc9bc1eb7c10c1e1a1d84168f...2d33ac9685864a6ecf807a33dde76b8fb14f546b)
-
-[Compare
-Source](https://redirect.github.com/Luligu/matterbridge/compare/a8a696e95bd88a5cc9bc1eb7c10c1e1a1d84168f...2d33ac9685864a6ecf807a33dde76b8fb14f546b)
-
-###
-[`v3.0.6-dev-20250612-a8a696e`](https://redirect.github.com/Luligu/matterbridge/compare/6b6e95335d95dd0632fad4fc12c47ce9b39d9bdc...a8a696e95bd88a5cc9bc1eb7c10c1e1a1d84168f)
-
-[Compare
-Source](https://redirect.github.com/Luligu/matterbridge/compare/6b6e95335d95dd0632fad4fc12c47ce9b39d9bdc...a8a696e95bd88a5cc9bc1eb7c10c1e1a1d84168f)
-
-###
-[`v3.0.6-dev-20250612-6b6e953`](https://redirect.github.com/Luligu/matterbridge/compare/48af7197f8c8cc1d53ad7489567e54180af9ba6f...6b6e95335d95dd0632fad4fc12c47ce9b39d9bdc)
-
-[Compare
-Source](https://redirect.github.com/Luligu/matterbridge/compare/48af7197f8c8cc1d53ad7489567e54180af9ba6f...6b6e95335d95dd0632fad4fc12c47ce9b39d9bdc)
-
-###
-[`v3.0.6-dev-20250611-48af719`](https://redirect.github.com/Luligu/matterbridge/compare/6f498112c9055a92b67114339db215c62f33e4b8...48af7197f8c8cc1d53ad7489567e54180af9ba6f)
-
-[Compare
-Source](https://redirect.github.com/Luligu/matterbridge/compare/6f498112c9055a92b67114339db215c62f33e4b8...48af7197f8c8cc1d53ad7489567e54180af9ba6f)
-
-###
-[`v3.0.6-dev-20250611-6f49811`](https://redirect.github.com/Luligu/matterbridge/compare/56cd4838455aa4620988419a30aa9ee51577e70c...6f498112c9055a92b67114339db215c62f33e4b8)
-
-[Compare
-Source](https://redirect.github.com/Luligu/matterbridge/compare/56cd4838455aa4620988419a30aa9ee51577e70c...6f498112c9055a92b67114339db215c62f33e4b8)
-
-###
-[`v3.0.6-dev-20250610-56cd483`](https://redirect.github.com/Luligu/matterbridge/compare/3.0.5...56cd4838455aa4620988419a30aa9ee51577e70c)
-
-[Compare
-Source](https://redirect.github.com/Luligu/matterbridge/compare/3.0.5...56cd4838455aa4620988419a30aa9ee51577e70c)
+**Full Changelog**:
+https://github.com/docker/setup-buildx-action/compare/v3.10.0...v3.11.0
 
 </details>
-
----
-
-### Configuration
-
-📅 **Schedule**: Branch creation - At any time (no schedule defined),
-Automerge - At any time (no schedule defined).
-
-🚦 **Automerge**: Enabled.
-
-♻ **Rebasing**: Whenever PR is behind base branch, or you tick the
-rebase/retry checkbox.
-
-🔕 **Ignore**: Close this PR and you won't be reminded about this update
-again.
-
----
-
-- [ ] <!-- rebase-check -->If you want to rebase/retry this PR, check
-this box
 
 ---
 
@@ -133,3 +47,7 @@ log](https://developer.mend.io/github/L2jLiga/ha-addons).
 <!--renovate-debug:eyJjcmVhdGVkSW5WZXIiOiI0MC41MC4wIiwidXBkYXRlZEluVmVyIjoiNDAuNTAuMCIsInRhcmdldEJyYW5jaCI6Im1hc3RlciIsImxhYmVscyI6WyJkZXBlbmRlbmNpZXMiLCJuby1zdGFsZSJdfQ==-->
 
 Co-authored-by: renovate[bot] <29139614+renovate[bot]@users.noreply.github.com></details>
+
+<details><summary>1bf7e19 chore: update renovate config</summary>
+chore: update renovate config
+</details>
