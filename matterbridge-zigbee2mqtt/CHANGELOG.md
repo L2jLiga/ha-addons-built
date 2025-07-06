@@ -1,7 +1,7 @@
 Changes in this Release
 
-<details><summary>0604577 ⬆️ Update matterbridge to v3.1.1 (#149)</summary>
-⬆️ Update matterbridge to v3.1.1 (#149)
+<details><summary>3c63ebc ⬆️ Update matterbridge to v3.1.2 (#150)</summary>
+⬆️ Update matterbridge to v3.1.2 (#150)
 
 ---
 
@@ -11,10 +11,10 @@ Changes in this Release
 <summary>Luligu/matterbridge (matterbridge)</summary>
 
 ###
-[`v3.1.1`](https://redirect.github.com/Luligu/matterbridge/blob/HEAD/CHANGELOG.md#311---2025-07-04)
+[`v3.1.2`](https://redirect.github.com/Luligu/matterbridge/blob/HEAD/CHANGELOG.md#312---2025-07-06)
 
 [Compare
-Source](https://redirect.github.com/Luligu/matterbridge/compare/aff5fcb641a6dea0d0afe4cb7428bfe7f848cb8e...3.1.1)
+Source](https://redirect.github.com/Luligu/matterbridge/compare/6c6481ea73484be1c4e2fbec6ba4d543c1f8888c...3.1.2)
 
 ##### Development Breaking Changes
 
@@ -27,80 +27,32 @@ the device indipendent from its plugin. It has its own server node:
 QRCode, Fabrics and Sessions are visible in the Devices section of the
 Home page. This is a workaround for the Rvc Apple issue. With
 mode=server the Rvc (like any other device) can be paired directly to
-the controller like a native not bridged Matter device.
+the controller like a native not bridged Matter device. Refer to the
+[documentation](README-DEV.md) for details on using mode.
 
 ##### Added
 
-- \[LaundryDryer]: Added LaundryDryer (not supported by the Home app)
-class and Jest test.
-- \[DeviceEnergyManagement]: Added
-MatterbridgeDeviceEnergyManagementServer with power adjustment methods.
-- \[SolarPower]: Added SolarPower class and Jest test (working on Home
-Assistant and SmartThings). Thanks Ludovic BOUÉ.
-- \[BatteryStorage]: Added BatteryStorage class and Jest test (working
-on Home Assistant and SmartThings). Thanks Ludovic BOUÉ.
-- \[HeatPump]: Added HeatPump class and Jest test (working on Home
-Assistant and SmartThings).
-- \[test]: Improved test units on Frontend class and all Matterbridge
-classes (coverage 93%).
+- \[test]: Improved test units on Frontend class (coverage 97%).
 
 ##### Changed
 
 - \[package]: Updated dependencies.
-- \[matter.js]: Bumped `matter.js` to 0.15.1
-([https://github.com/project-chip/matter.js/discussions/2220](https://redirect.github.com/project-chip/matter.js/discussions/2220)).
-Great job matter.js!
-- \[frontend]: Added all esa devices.
-- \[frontend]: New default values: devices on the home page and icon
-view on the devices page.
-- \[imports]: Added dynamic imports to Matterbridge and Frontend
-classes.
 
 <a href="https://www.buymeacoffee.com/luligugithub">
   <img src="bmc-button.svg" alt="Buy me a coffee" width="80">
 </a>
 
 ###
-[`v3.1.1-dev-20250704-aff5fcb`](https://redirect.github.com/Luligu/matterbridge/compare/80c685d95a0eb5e98f78d1daabbb5cb01fe3f226...aff5fcb641a6dea0d0afe4cb7428bfe7f848cb8e)
+[`v3.1.2-dev-20250706-6c6481e`](https://redirect.github.com/Luligu/matterbridge/compare/7da1eacf9ff495e0da926dc7b660fe7bc9fc42de...6c6481ea73484be1c4e2fbec6ba4d543c1f8888c)
 
 [Compare
-Source](https://redirect.github.com/Luligu/matterbridge/compare/80c685d95a0eb5e98f78d1daabbb5cb01fe3f226...aff5fcb641a6dea0d0afe4cb7428bfe7f848cb8e)
+Source](https://redirect.github.com/Luligu/matterbridge/compare/7da1eacf9ff495e0da926dc7b660fe7bc9fc42de...6c6481ea73484be1c4e2fbec6ba4d543c1f8888c)
 
 ###
-[`v3.1.1-dev-20250703-80c685d`](https://redirect.github.com/Luligu/matterbridge/compare/92816298209299204cf8652e02f2ebd422921236...80c685d95a0eb5e98f78d1daabbb5cb01fe3f226)
+[`v3.1.2-dev-20250705-7da1eac`](https://redirect.github.com/Luligu/matterbridge/compare/3.1.1...7da1eacf9ff495e0da926dc7b660fe7bc9fc42de)
 
 [Compare
-Source](https://redirect.github.com/Luligu/matterbridge/compare/92816298209299204cf8652e02f2ebd422921236...80c685d95a0eb5e98f78d1daabbb5cb01fe3f226)
-
-###
-[`v3.1.1-dev-20250701-9281629`](https://redirect.github.com/Luligu/matterbridge/compare/ea4c889d93eb8ccebd3e4c262ff2aa83d5e3033b...92816298209299204cf8652e02f2ebd422921236)
-
-[Compare
-Source](https://redirect.github.com/Luligu/matterbridge/compare/ea4c889d93eb8ccebd3e4c262ff2aa83d5e3033b...92816298209299204cf8652e02f2ebd422921236)
-
-###
-[`v3.1.1-dev-20250630-ea4c889`](https://redirect.github.com/Luligu/matterbridge/compare/1555eaed3738b4c42cba195291e953cfe9aeea9d...ea4c889d93eb8ccebd3e4c262ff2aa83d5e3033b)
-
-[Compare
-Source](https://redirect.github.com/Luligu/matterbridge/compare/1555eaed3738b4c42cba195291e953cfe9aeea9d...ea4c889d93eb8ccebd3e4c262ff2aa83d5e3033b)
-
-###
-[`v3.1.1-dev-20250630-1555eae`](https://redirect.github.com/Luligu/matterbridge/compare/f14b88600d5afee0747102ab064aa0e43074915e...1555eaed3738b4c42cba195291e953cfe9aeea9d)
-
-[Compare
-Source](https://redirect.github.com/Luligu/matterbridge/compare/f14b88600d5afee0747102ab064aa0e43074915e...1555eaed3738b4c42cba195291e953cfe9aeea9d)
-
-###
-[`v3.1.1-dev-20250629-f14b886`](https://redirect.github.com/Luligu/matterbridge/compare/cfe9124511aa68776c5d276dd60a11979a47c38c...f14b88600d5afee0747102ab064aa0e43074915e)
-
-[Compare
-Source](https://redirect.github.com/Luligu/matterbridge/compare/cfe9124511aa68776c5d276dd60a11979a47c38c...f14b88600d5afee0747102ab064aa0e43074915e)
-
-###
-[`v3.1.1-dev-20250629-cfe9124`](https://redirect.github.com/Luligu/matterbridge/compare/3.1.0...cfe9124511aa68776c5d276dd60a11979a47c38c)
-
-[Compare
-Source](https://redirect.github.com/Luligu/matterbridge/compare/3.1.0...cfe9124511aa68776c5d276dd60a11979a47c38c)
+Source](https://redirect.github.com/Luligu/matterbridge/compare/3.1.1...7da1eacf9ff495e0da926dc7b660fe7bc9fc42de)
 
 </details>
 
