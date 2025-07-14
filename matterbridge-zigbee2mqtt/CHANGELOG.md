@@ -1,7 +1,62 @@
 Changes in this Release
 
-<details><summary>0569211 ⬆️ Update alpine_3_21/icu-data-full to v74.2-r1 (#151)</summary>
-⬆️ Update alpine_3_21/icu-data-full to v74.2-r1 (#151)
+<details><summary>c4d7b2d ⬆️ Update matterbridge to v3.1.3 (#152)</summary>
+⬆️ Update matterbridge to v3.1.3 (#152)
+
+---
+
+### Release Notes
+
+<details>
+<summary>Luligu/matterbridge (matterbridge)</summary>
+
+###
+[`v3.1.3`](https://redirect.github.com/Luligu/matterbridge/blob/HEAD/CHANGELOG.md#313---2025-07-14)
+
+[Compare
+Source](https://redirect.github.com/Luligu/matterbridge/compare/c9b85b31d6384fe10e475ddf67c2181d67d21719...3.1.3)
+
+##### Added
+
+- \[endpoint]: Improved jsdoc description on endpoint helpers.
+- \[endpoint]: Added createDefaultMomentarySwitchClusterServer() cluster
+helper.
+
+##### Changed
+
+- \[package]: Updated dependencies.
+- \[vendorId]: Added Shortcut Labs Flic (0x1488).
+- \[server]: Refactored serverNode event handlers and types.
+- \[matterbridge]: Removed duplicated properties.
+
+##### Fixed
+
+- \[shutdown]: Fixed error messages from frontend when Matterbridge is
+shutting down.
+
+<a href="https://www.buymeacoffee.com/luligugithub">
+  <img src="bmc-button.svg" alt="Buy me a coffee" width="80">
+</a>
+
+###
+[`v3.1.3-dev-20250714-c9b85b3`](https://redirect.github.com/Luligu/matterbridge/compare/03e05f25ae4ac05db6a5bf15ff69d0ad53c2ad68...c9b85b31d6384fe10e475ddf67c2181d67d21719)
+
+[Compare
+Source](https://redirect.github.com/Luligu/matterbridge/compare/03e05f25ae4ac05db6a5bf15ff69d0ad53c2ad68...c9b85b31d6384fe10e475ddf67c2181d67d21719)
+
+###
+[`v3.1.3-dev-20250714-03e05f2`](https://redirect.github.com/Luligu/matterbridge/compare/616f7ed682d43cfc5cc5903f7aaf15faaa710169...03e05f25ae4ac05db6a5bf15ff69d0ad53c2ad68)
+
+[Compare
+Source](https://redirect.github.com/Luligu/matterbridge/compare/616f7ed682d43cfc5cc5903f7aaf15faaa710169...03e05f25ae4ac05db6a5bf15ff69d0ad53c2ad68)
+
+###
+[`v3.1.3-dev-20250712-616f7ed`](https://redirect.github.com/Luligu/matterbridge/compare/3.1.2...616f7ed682d43cfc5cc5903f7aaf15faaa710169)
+
+[Compare
+Source](https://redirect.github.com/Luligu/matterbridge/compare/3.1.2...616f7ed682d43cfc5cc5903f7aaf15faaa710169)
+
+</details>
 
 ---
 
