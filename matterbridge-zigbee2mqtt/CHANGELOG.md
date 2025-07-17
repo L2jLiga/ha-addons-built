@@ -1,71 +1,58 @@
 Changes in this Release
 
-<details><summary>214d1b3 ⬆️ Update matterbridge-zigbee2mqtt to v2.7.0 (#153)</summary>
-⬆️ Update matterbridge-zigbee2mqtt to v2.7.0 (#153)
+<details><summary>8eee1b8 ⬆️ Update matterbridge to v3.1.4 (#154)</summary>
+⬆️ Update matterbridge to v3.1.4 (#154)
 
 ---
 
 ### Release Notes
 
 <details>
-<summary>Luligu/matterbridge-zigbee2mqtt
-(matterbridge-zigbee2mqtt)</summary>
+<summary>Luligu/matterbridge (matterbridge)</summary>
 
 ###
-[`v2.7.0`](https://redirect.github.com/Luligu/matterbridge-zigbee2mqtt/blob/HEAD/CHANGELOG.md#270---2025-07-14)
+[`v3.1.4`](https://redirect.github.com/Luligu/matterbridge/blob/HEAD/CHANGELOG.md#314---2025-07-16)
 
 [Compare
-Source](https://redirect.github.com/Luligu/matterbridge-zigbee2mqtt/compare/6299fe02a3f44854153a96143aa3cc9cefdec841...2.7.0)
+Source](https://redirect.github.com/Luligu/matterbridge/compare/04049c4224a8b6068e427b1664576c1547c2c100...3.1.4)
 
 ##### Added
 
-- \[entity]: Added the ability to cache commands for a single light
-device or group. They will be executed in once. This helps to execute
-scenes from the controller in large setups.
-- \[composed]: Added the ability to send commands on child enpoint also
-for ColorControl cluster.
-- \[startup]: Changed the timeout for the connection to the mqtt broker
-to 60 seconds. This resolve the race condition when docker compose (or a
-host reboot) starts mosquitto, zigbee2mqtt and matterbridge in the same
-moment.
-- \[jest]: Added a few more test. Coverage will improve in the next
-releases.
+- \[frontend]: Added support for p12 certificates. Add cert.p12 and
+cert.pass in the '.matterbridge/cert' directory. If both .p12 and
+cert.pem are present, only the .p12 will be used. See the README.md for
+more info.
+- \[frontend]: Added support for p12 certificates with mTLS: both the
+server and the client must present the correct certificate. Add the
+parameter '-mtls'. See the README.md for more info.
+- \[frontend]: Improved test units on Frontend class (total coverage
+98%).
 
 ##### Changed
 
 - \[package]: Updated dependencies.
-- \[package]: Updated package to Automator v. 2.0.2.
-- \[DevContainer]: Added support for the [**Matterbridge Plugin Dev
-Container**](https://redirect.github.com/Luligu/matterbridge/blob/dev/README-DEV.md#matterbridge-plugin-dev-container)
-with optimized named volumes for `matterbridge` and `node_modules`.
-- \[GitHub]: Added GitHub issue templates for bug reports and feature
-requests.
-- \[ESLint]: Refactored the flat config.
-- \[ESLint]: Added the plugins `eslint-plugin-promise`,
-`eslint-plugin-jsdoc`, and `@vitest/eslint-plugin`.
-- \[Jest]: Refactored the flat config.
-- \[Vitest]: Added Vitest for TypeScript project testing. It will
-replace Jest, which does not work correctly with ESM module mocks.
-- \[JSDoc]: Added missing JSDoc comments, including `@param` and
-`@returns` tags.
-- \[CodeQL]: Added CodeQL badge in the readme.
-- \[Codecov]: Added Codecov badge in the readme.
+- \[network]: Refactor network logging to improve clarity and update
+logging format.
+
+##### Fixed
+
+- \[bin]: Updated matterbridge bin.
 
 <a href="https://www.buymeacoffee.com/luligugithub">
   <img src="bmc-button.svg" alt="Buy me a coffee" width="80">
 </a>
 
 ###
-[`v2.7.0-dev-20250711-6299fe0`](https://redirect.github.com/Luligu/matterbridge-zigbee2mqtt/compare/325cd3ceacc346159d00b14a2b0ca1b214f43be1...6299fe02a3f44854153a96143aa3cc9cefdec841)
+[`v3.1.4-dev-20250715-04049c4`](https://redirect.github.com/Luligu/matterbridge/compare/075e7229c0a3a8ca1923df17e969ea4175808a0c...04049c4224a8b6068e427b1664576c1547c2c100)
 
 [Compare
-Source](https://redirect.github.com/Luligu/matterbridge-zigbee2mqtt/compare/325cd3ceacc346159d00b14a2b0ca1b214f43be1...6299fe02a3f44854153a96143aa3cc9cefdec841)
+Source](https://redirect.github.com/Luligu/matterbridge/compare/075e7229c0a3a8ca1923df17e969ea4175808a0c...04049c4224a8b6068e427b1664576c1547c2c100)
 
 ###
-[`v2.7.0-dev-20250710-325cd3c`](https://redirect.github.com/Luligu/matterbridge-zigbee2mqtt/compare/2.6.0...325cd3ceacc346159d00b14a2b0ca1b214f43be1)
+[`v3.1.4-dev-20250715-075e722`](https://redirect.github.com/Luligu/matterbridge/compare/3.1.3...075e7229c0a3a8ca1923df17e969ea4175808a0c)
 
 [Compare
-Source](https://redirect.github.com/Luligu/matterbridge-zigbee2mqtt/compare/2.6.0...325cd3ceacc346159d00b14a2b0ca1b214f43be1)
+Source](https://redirect.github.com/Luligu/matterbridge/compare/3.1.3...075e7229c0a3a8ca1923df17e969ea4175808a0c)
 
 </details>
 
