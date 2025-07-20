@@ -1,7 +1,7 @@
 Changes in this Release
 
-<details><summary>8eee1b8 ⬆️ Update matterbridge to v3.1.4 (#154)</summary>
-⬆️ Update matterbridge to v3.1.4 (#154)
+<details><summary>b23b231 ⬆️ Update matterbridge to v3.1.5 (#155)</summary>
+⬆️ Update matterbridge to v3.1.5 (#155)
 
 ---
 
@@ -11,48 +11,47 @@ Changes in this Release
 <summary>Luligu/matterbridge (matterbridge)</summary>
 
 ###
-[`v3.1.4`](https://redirect.github.com/Luligu/matterbridge/blob/HEAD/CHANGELOG.md#314---2025-07-16)
+[`v3.1.5`](https://redirect.github.com/Luligu/matterbridge/blob/HEAD/CHANGELOG.md#315---2025-07-19)
 
 [Compare
-Source](https://redirect.github.com/Luligu/matterbridge/compare/04049c4224a8b6068e427b1664576c1547c2c100...3.1.4)
+Source](https://redirect.github.com/Luligu/matterbridge/compare/5a0b41efb189b781057b428bf037c913c88e69e0...3.1.5)
 
 ##### Added
 
-- \[frontend]: Added support for p12 certificates. Add cert.p12 and
-cert.pass in the '.matterbridge/cert' directory. If both .p12 and
-cert.pem are present, only the .p12 will be used. See the README.md for
-more info.
-- \[frontend]: Added support for p12 certificates with mTLS: both the
-server and the client must present the correct certificate. Add the
-parameter '-mtls'. See the README.md for more info.
-- \[frontend]: Improved test units on Frontend class (total coverage
-98%).
+- \[error]: Added error logging functions and corresponding tests.
+- \[matterbridge]: Improved test units on Matterbridge class (total
+coverage 99%).
+- \[rvc] Add RVC SupportedMaps Attribute from ServiceArea cluster.
+Thanks Ludovic BOUÉ
+[https://github.com/Luligu/matterbridge/pull/355](https://redirect.github.com/Luligu/matterbridge/pull/355)5).
 
 ##### Changed
 
-- \[package]: Updated dependencies.
-- \[network]: Refactor network logging to improve clarity and update
-logging format.
-
-##### Fixed
-
-- \[bin]: Updated matterbridge bin.
+- \[matterbridge]: Refactored initialization of DeviceManager and
+PluginManager.
+- \[pluginManager]: Refactored PluginManager removing unused
+install/uninstall methods.
+- \[pluginManager]: Added loading of default plugin config when a plugin
+is added the first time. It must be a file in the package root named
+'\[PLUGIN-NAME].config.json'.
+- \[readme-dev]: Added [documentation](README-DEV.md) for default plugin
+config and schema files.
 
 <a href="https://www.buymeacoffee.com/luligugithub">
   <img src="bmc-button.svg" alt="Buy me a coffee" width="80">
 </a>
 
 ###
-[`v3.1.4-dev-20250715-04049c4`](https://redirect.github.com/Luligu/matterbridge/compare/075e7229c0a3a8ca1923df17e969ea4175808a0c...04049c4224a8b6068e427b1664576c1547c2c100)
+[`v3.1.5-dev-20250720-5a0b41e`](https://redirect.github.com/Luligu/matterbridge/compare/054cd80c70367cc6ef209059f182f00ca7eefd02...5a0b41efb189b781057b428bf037c913c88e69e0)
 
 [Compare
-Source](https://redirect.github.com/Luligu/matterbridge/compare/075e7229c0a3a8ca1923df17e969ea4175808a0c...04049c4224a8b6068e427b1664576c1547c2c100)
+Source](https://redirect.github.com/Luligu/matterbridge/compare/054cd80c70367cc6ef209059f182f00ca7eefd02...5a0b41efb189b781057b428bf037c913c88e69e0)
 
 ###
-[`v3.1.4-dev-20250715-075e722`](https://redirect.github.com/Luligu/matterbridge/compare/3.1.3...075e7229c0a3a8ca1923df17e969ea4175808a0c)
+[`v3.1.5-dev-20250718-054cd80`](https://redirect.github.com/Luligu/matterbridge/compare/3.1.4...054cd80c70367cc6ef209059f182f00ca7eefd02)
 
 [Compare
-Source](https://redirect.github.com/Luligu/matterbridge/compare/3.1.3...075e7229c0a3a8ca1923df17e969ea4175808a0c)
+Source](https://redirect.github.com/Luligu/matterbridge/compare/3.1.4...054cd80c70367cc6ef209059f182f00ca7eefd02)
 
 </details>
 
