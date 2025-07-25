@@ -1,7 +1,7 @@
 Changes in this Release
 
-<details><summary>33d3205 ⬆️ Update matterbridge to v3.1.6 (#156)</summary>
-⬆️ Update matterbridge to v3.1.6 (#156)
+<details><summary>2c93709 ⬆️ Update matterbridge to v3.1.7 (#157)</summary>
+⬆️ Update matterbridge to v3.1.7 (#157)
 
 ---
 
@@ -11,31 +11,35 @@ Changes in this Release
 <summary>Luligu/matterbridge (matterbridge)</summary>
 
 ###
-[`v3.1.6`](https://redirect.github.com/Luligu/matterbridge/blob/HEAD/CHANGELOG.md#316---2025-07-22)
+[`v3.1.7`](https://redirect.github.com/Luligu/matterbridge/blob/HEAD/CHANGELOG.md#317---2025-07-25)
 
 [Compare
-Source](https://redirect.github.com/Luligu/matterbridge/compare/75fab6b9f79afce26fa9059ab66ca114aab6ab5b...3.1.6)
+Source](https://redirect.github.com/Luligu/matterbridge/compare/c3522e6b42ac3a00b1d551fc315188135a206998...3.1.7)
 
 ##### Added
 
-- \[reset]: Improved "Reset all devices" command in the frontend. It
-will shutdown all the plugins and recreate the devices with new state
-and enpoint numbers even if the device is not selected.
-- \[enpoint]: Enhanced HEPA and Activated Carbon Filter Monitoring
-Cluster Server methods with additional features and improved default
-parameters.
-- \[enpoint]: Added resetCondition MAtter command for HEPA and Activated
-Carbon Filter Monitoring Cluster Server.
-- \[dishwasher]: Added Dishwasher class and Jest test. It is not
-supported by the Home app.
-- \[extractorHood]: Added ExtractorHood class and Jest test. It is not
-supported by the Home app.
-- \[fan]: Added the createCompleteFanControlClusterServer() cluster
-helper that create a fan device with all the features. Thanks Ludovic
-BOUÉ
-[https://github.com/Luligu/matterbridge/pull/362](https://redirect.github.com/Luligu/matterbridge/pull/362)2).
-- \[docker]: Added logging configuration instructions to [docker
-setup](README-DOCKER.md).
+- \[docker]: Added trigger of Build Docker Image latest from
+publish.yml.
+- \[docker]: Added trigger of Build Docker Image dev from
+publish-dev-daily.yml.
+- \[docker]: Added on demand trigger for Build Docker Image latest from
+other plugins workflows.
+- \[docker]: Added on demand trigger for Build Docker Image dev from
+other plugins workflows.
+- \[mdns]: Added bin mb\_mdns.
+- \[coap]: Added bin mb\_coap.
+- \[operationalState]: Improved documentation on
+createDefaultOperationalStateClusterServer() and added the optional
+attribute countdownTime. Thanks Ludovic BOUÉ
+[https://github.com/Luligu/matterbridge/pull/363](https://redirect.github.com/Luligu/matterbridge/pull/363)3).
+- \[momentarySwitch]: Added createDefaultMomentarySwitchClusterServer().
+It creates a single click only switch. It is supported by the Home app.
+- \[fixedLabels]: Improved documentation and added character length
+check.
+- \[userLabels]: Improved documentation and added character length
+check.
+- \[certification]: Improved certification management in pairing.json
+with new properties.
 
 ##### Changed
 
@@ -46,16 +50,22 @@ setup](README-DOCKER.md).
 </a>
 
 ###
-[`v3.1.6-dev-20250721-75fab6b`](https://redirect.github.com/Luligu/matterbridge/compare/88d61413406fe46f54ff909871640bcf17ec4b0a...75fab6b9f79afce26fa9059ab66ca114aab6ab5b)
+[`v3.1.7-dev-20250724-c3522e6`](https://redirect.github.com/Luligu/matterbridge/compare/aab81fec569f4753cc8fda1ee1f804bd87cee2aa...c3522e6b42ac3a00b1d551fc315188135a206998)
 
 [Compare
-Source](https://redirect.github.com/Luligu/matterbridge/compare/88d61413406fe46f54ff909871640bcf17ec4b0a...75fab6b9f79afce26fa9059ab66ca114aab6ab5b)
+Source](https://redirect.github.com/Luligu/matterbridge/compare/aab81fec569f4753cc8fda1ee1f804bd87cee2aa...c3522e6b42ac3a00b1d551fc315188135a206998)
 
 ###
-[`v3.1.6-dev-20250720-88d6141`](https://redirect.github.com/Luligu/matterbridge/compare/3.1.5...88d61413406fe46f54ff909871640bcf17ec4b0a)
+[`v3.1.7-dev-20250723-aab81fe`](https://redirect.github.com/Luligu/matterbridge/compare/8e073ce797c2d879acf2e4ff4d1d3c98fbcef05e...aab81fec569f4753cc8fda1ee1f804bd87cee2aa)
 
 [Compare
-Source](https://redirect.github.com/Luligu/matterbridge/compare/3.1.5...88d61413406fe46f54ff909871640bcf17ec4b0a)
+Source](https://redirect.github.com/Luligu/matterbridge/compare/8e073ce797c2d879acf2e4ff4d1d3c98fbcef05e...aab81fec569f4753cc8fda1ee1f804bd87cee2aa)
+
+###
+[`v3.1.7-dev-20250723-8e073ce`](https://redirect.github.com/Luligu/matterbridge/compare/3.1.6...8e073ce797c2d879acf2e4ff4d1d3c98fbcef05e)
+
+[Compare
+Source](https://redirect.github.com/Luligu/matterbridge/compare/3.1.6...8e073ce797c2d879acf2e4ff4d1d3c98fbcef05e)
 
 </details>
 
