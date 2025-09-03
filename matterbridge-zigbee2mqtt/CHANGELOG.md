@@ -1,7 +1,7 @@
 Changes in this Release
 
-<details><summary>3ebc521 ⬆️ Update matterbridge to v3.2.4 (#164)</summary>
-⬆️ Update matterbridge to v3.2.4 (#164)
+<details><summary>613f561 ⬆️ Update matterbridge to v3.2.5 (#165)</summary>
+⬆️ Update matterbridge to v3.2.5 (#165)
 
 ---
 
@@ -11,36 +11,46 @@ Changes in this Release
 <summary>Luligu/matterbridge (matterbridge)</summary>
 
 ###
-[`v3.2.4`](https://redirect.github.com/Luligu/matterbridge/blob/HEAD/CHANGELOG.md#324---2025-08-29)
+[`v3.2.5`](https://redirect.github.com/Luligu/matterbridge/blob/HEAD/CHANGELOG.md#325---2025-09-02)
 
 [Compare
-Source](https://redirect.github.com/Luligu/matterbridge/compare/5c484528471d5e14c0d875834af8ffac5acba181...3.2.4)
+Source](https://redirect.github.com/Luligu/matterbridge/compare/732330c1f0423f206ef85cfc8bcbd6a30351f6ea...3.2.5)
 
 ##### Added
 
-- \[platform]: Added clearEntitySelect() to Platform.
+- \[refrigerator]: Added RefrigeratorAlarm cluster.
+- \[refrigerator]: Added setDoorOpenState method to set the doorOpen
+state of RefrigeratorAlarm cluster.
+- \[refrigerator]: Added triggerDoorOpenState method to trigger the
+alert for the doorOpen state of RefrigeratorAlarm cluster.
+- \[frontend]: Bumped `frontend` version to 2.7.4.
 
 ##### Changed
 
 - \[package]: Updated dependencies.
+- \[devContainer]: Updated devContainer with repository name for the
+container.
 
 ##### Fixed
+
+- \[refrigerator]: Fixed device type.
+- \[frontend]: Fixed padding in QRDivDevice (devices in 'server' mode).
 
 <a href="https://www.buymeacoffee.com/luligugithub">
   <img src="bmc-button.svg" alt="Buy me a coffee" width="80">
 </a>
 
 ###
-[`v3.2.4-dev-20250830-5c48452`](https://redirect.github.com/Luligu/matterbridge/compare/cf982122e74f19d576f8c6c6a72554e47fc65bd0...5c484528471d5e14c0d875834af8ffac5acba181)
+[`v3.2.5-dev-20250831-732330c`](https://redirect.github.com/Luligu/matterbridge/compare/218c05fcbe681effe48c4838197f590771d92fe9...732330c1f0423f206ef85cfc8bcbd6a30351f6ea)
 
 [Compare
-Source](https://redirect.github.com/Luligu/matterbridge/compare/cf982122e74f19d576f8c6c6a72554e47fc65bd0...5c484528471d5e14c0d875834af8ffac5acba181)
+Source](https://redirect.github.com/Luligu/matterbridge/compare/218c05fcbe681effe48c4838197f590771d92fe9...732330c1f0423f206ef85cfc8bcbd6a30351f6ea)
 
 ###
-[`v3.2.4-dev-20250828-cf98212`](https://redirect.github.com/Luligu/matterbridge/compare/3.2.3...cf982122e74f19d576f8c6c6a72554e47fc65bd0)
+[`v3.2.5-dev-20250831-218c05f`](https://redirect.github.com/Luligu/matterbridge/compare/3.2.4...218c05fcbe681effe48c4838197f590771d92fe9)
 
 [Compare
-Source](https://redirect.github.com/Luligu/matterbridge/compare/3.2.3...cf982122e74f19d576f8c6c6a72554e47fc65bd0)
+Source](https://redirect.github.com/Luligu/matterbridge/compare/3.2.4...218c05fcbe681effe48c4838197f590771d92fe9)
 
 </details>
 
