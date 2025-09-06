@@ -1,7 +1,7 @@
 Changes in this Release
 
-<details><summary>613f561 ⬆️ Update matterbridge to v3.2.5 (#165)</summary>
-⬆️ Update matterbridge to v3.2.5 (#165)
+<details><summary>14cbf6b ⬆️ Update matterbridge to v3.2.6 (#167)</summary>
+⬆️ Update matterbridge to v3.2.6 (#167)
 
 ---
 
@@ -11,46 +11,99 @@ Changes in this Release
 <summary>Luligu/matterbridge (matterbridge)</summary>
 
 ###
-[`v3.2.5`](https://redirect.github.com/Luligu/matterbridge/blob/HEAD/CHANGELOG.md#325---2025-09-02)
+[`v3.2.6`](https://redirect.github.com/Luligu/matterbridge/blob/HEAD/CHANGELOG.md#326---2025-09-06)
 
 [Compare
-Source](https://redirect.github.com/Luligu/matterbridge/compare/732330c1f0423f206ef85cfc8bcbd6a30351f6ea...3.2.5)
+Source](https://redirect.github.com/Luligu/matterbridge/compare/34345e5afc42b7bfda5dad170e35d360a485ae54...3.2.6)
 
 ##### Added
 
-- \[refrigerator]: Added RefrigeratorAlarm cluster.
-- \[refrigerator]: Added setDoorOpenState method to set the doorOpen
-state of RefrigeratorAlarm cluster.
-- \[refrigerator]: Added triggerDoorOpenState method to trigger the
-alert for the doorOpen state of RefrigeratorAlarm cluster.
-- \[frontend]: Bumped `frontend` version to 2.7.4.
+- \[frontend]: Added primary color to QR icon in childbridge mode if the
+plugin is not paired.
+- \[frontend]: Added secondary color to QR icon in childbridge mode if
+the plugin server node is paired but doesn't have at least 1 session and
+1 subscription.
+- \[frontend]: Added color red to QR icon in childbridge mode if the
+plugin server node is not online.
+- \[frontend]: Added primary color to QR icon of 'server' mode devices
+if the device is not paired.
+- \[frontend]: Added secondary color to QR icon of 'server' mode devices
+if the device server node is paired but doesn't have at least 1 session
+and 1 subscription.
+- \[frontend]: Added color red to QR icon of 'server' mode devices if
+the device server node is not online.
+- \[frontend]: Added serialNumber to QR icon of 'server' mode devices.
+- \[frontend]: Bumped `frontend` version to 2.7.5.
+- \[childbridge]: Added restart needed when the plugin is first added in
+childbridge mode.
+- \[childbridge]: Create the server node for Dynamic plugins even if
+they have 0 devices. This allow to pair empty plugins in huge setup.
+- \[select]: Enhanced documentation for Platform setSelectDevice,
+setSelectDeviceEntity, and setSelectEntity methods with schema examples
+(see the Jsdoc of the methods).
+- \[MatterbridgeEndpoint]: Improved documentation in jsdoc.
+- \[AirConditioner]: Added AirConditioner() class and Jest test. It is
+not supported correctly by Google. Improved
+createDefaultThermostatUserInterfaceConfigurationClusterServer().
+- \[DeviceTypes]: Add Chapter 10. Media Device Types.
+- \[Speaker]: Added Speaker() class and Jest test. Supported only by
+SmartThings.
+- \[mb\_mdns]: Added help screen and the ability to filter mDNS packets.
+Useful to see all paired and commissionable Matter devices on the
+network.
+- \[matter.js]: Removed legacy and deprecated calls to Logger.setLogger
+etc. and use Logger.destinations.
 
 ##### Changed
 
 - \[package]: Updated dependencies.
-- \[devContainer]: Updated devContainer with repository name for the
-container.
+- \[package]: Bumped Jest to v. 30.1.3. (this version finally solves the
+broken ESM module mock).
+- \[jest]: Refactor all tests units.
 
 ##### Fixed
 
-- \[refrigerator]: Fixed device type.
-- \[frontend]: Fixed padding in QRDivDevice (devices in 'server' mode).
+- \[jest]: Fixed cli test failing with Jest v. 30.1.3.
 
 <a href="https://www.buymeacoffee.com/luligugithub">
   <img src="bmc-button.svg" alt="Buy me a coffee" width="80">
 </a>
 
 ###
-[`v3.2.5-dev-20250831-732330c`](https://redirect.github.com/Luligu/matterbridge/compare/218c05fcbe681effe48c4838197f590771d92fe9...732330c1f0423f206ef85cfc8bcbd6a30351f6ea)
+[`v3.2.6-dev-20250906-34345e5`](https://redirect.github.com/Luligu/matterbridge/compare/4b022a09d27ef1e00f5decb3b5193369137219b7...34345e5afc42b7bfda5dad170e35d360a485ae54)
 
 [Compare
-Source](https://redirect.github.com/Luligu/matterbridge/compare/218c05fcbe681effe48c4838197f590771d92fe9...732330c1f0423f206ef85cfc8bcbd6a30351f6ea)
+Source](https://redirect.github.com/Luligu/matterbridge/compare/4b022a09d27ef1e00f5decb3b5193369137219b7...34345e5afc42b7bfda5dad170e35d360a485ae54)
 
 ###
-[`v3.2.5-dev-20250831-218c05f`](https://redirect.github.com/Luligu/matterbridge/compare/3.2.4...218c05fcbe681effe48c4838197f590771d92fe9)
+[`v3.2.6-dev-20250906-4b022a0`](https://redirect.github.com/Luligu/matterbridge/compare/a79f653b70203dbd83c7cf3b0116adc942d380a7...4b022a09d27ef1e00f5decb3b5193369137219b7)
 
 [Compare
-Source](https://redirect.github.com/Luligu/matterbridge/compare/3.2.4...218c05fcbe681effe48c4838197f590771d92fe9)
+Source](https://redirect.github.com/Luligu/matterbridge/compare/a79f653b70203dbd83c7cf3b0116adc942d380a7...4b022a09d27ef1e00f5decb3b5193369137219b7)
+
+###
+[`v3.2.6-dev-20250904-a79f653`](https://redirect.github.com/Luligu/matterbridge/compare/1c6290c7fda03f35ebf896d3a1e01c9fc9deeb70...a79f653b70203dbd83c7cf3b0116adc942d380a7)
+
+[Compare
+Source](https://redirect.github.com/Luligu/matterbridge/compare/1c6290c7fda03f35ebf896d3a1e01c9fc9deeb70...a79f653b70203dbd83c7cf3b0116adc942d380a7)
+
+###
+[`v3.2.6-dev-20250904-1c6290c`](https://redirect.github.com/Luligu/matterbridge/compare/6ab5022a9abed620a9499e91294011285c2aad97...1c6290c7fda03f35ebf896d3a1e01c9fc9deeb70)
+
+[Compare
+Source](https://redirect.github.com/Luligu/matterbridge/compare/6ab5022a9abed620a9499e91294011285c2aad97...1c6290c7fda03f35ebf896d3a1e01c9fc9deeb70)
+
+###
+[`v3.2.6-dev-20250903-6ab5022`](https://redirect.github.com/Luligu/matterbridge/compare/2acb9189a42f2b77c438a4bc4a3c80361d385291...6ab5022a9abed620a9499e91294011285c2aad97)
+
+[Compare
+Source](https://redirect.github.com/Luligu/matterbridge/compare/2acb9189a42f2b77c438a4bc4a3c80361d385291...6ab5022a9abed620a9499e91294011285c2aad97)
+
+###
+[`v3.2.6-dev-20250903-2acb918`](https://redirect.github.com/Luligu/matterbridge/compare/3.2.5...2acb9189a42f2b77c438a4bc4a3c80361d385291)
+
+[Compare
+Source](https://redirect.github.com/Luligu/matterbridge/compare/3.2.5...2acb9189a42f2b77c438a4bc4a3c80361d385291)
 
 </details>
 
