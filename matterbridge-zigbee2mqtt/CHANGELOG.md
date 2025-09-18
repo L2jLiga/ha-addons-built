@@ -1,7 +1,11 @@
 Changes in this Release
 
-<details><summary>14cbf6b ⬆️ Update matterbridge to v3.2.6 (#167)</summary>
-⬆️ Update matterbridge to v3.2.6 (#167)
+<details><summary>ac17cc3 ⬆️ Update Matterbridge (#168)</summary>
+⬆️ Update Matterbridge (#168)
+
+Coming soon: The Renovate bot (GitHub App) will be renamed to Mend. PRs
+from Renovate will soon appear from 'Mend'. Learn more
+[here](https://redirect.github.com/renovatebot/renovate/discussions/37842).
 
 ---
 
@@ -11,99 +15,143 @@ Changes in this Release
 <summary>Luligu/matterbridge (matterbridge)</summary>
 
 ###
-[`v3.2.6`](https://redirect.github.com/Luligu/matterbridge/blob/HEAD/CHANGELOG.md#326---2025-09-06)
+[`v3.2.7`](https://redirect.github.com/Luligu/matterbridge/blob/HEAD/CHANGELOG.md#327---2025-09-14)
 
 [Compare
-Source](https://redirect.github.com/Luligu/matterbridge/compare/34345e5afc42b7bfda5dad170e35d360a485ae54...3.2.6)
+Source](https://redirect.github.com/Luligu/matterbridge/compare/f9e5ea7a5ad4795b6d9783c1a2d481d9297804cd...3.2.7)
+
+##### Breaking Changes
+
+- \[platform]: Typed PlatformConfig with the default properties: name,
+type, version, debug and unregisterOnShutdown.
+- \[platform]: Removed DefaultPlatformConfig interface definition.
 
 ##### Added
 
-- \[frontend]: Added primary color to QR icon in childbridge mode if the
-plugin is not paired.
-- \[frontend]: Added secondary color to QR icon in childbridge mode if
-the plugin server node is paired but doesn't have at least 1 session and
-1 subscription.
-- \[frontend]: Added color red to QR icon in childbridge mode if the
-plugin server node is not online.
-- \[frontend]: Added primary color to QR icon of 'server' mode devices
-if the device is not paired.
-- \[frontend]: Added secondary color to QR icon of 'server' mode devices
-if the device server node is paired but doesn't have at least 1 session
-and 1 subscription.
-- \[frontend]: Added color red to QR icon of 'server' mode devices if
-the device server node is not online.
-- \[frontend]: Added serialNumber to QR icon of 'server' mode devices.
-- \[frontend]: Bumped `frontend` version to 2.7.5.
-- \[childbridge]: Added restart needed when the plugin is first added in
-childbridge mode.
-- \[childbridge]: Create the server node for Dynamic plugins even if
-they have 0 devices. This allow to pair empty plugins in huge setup.
-- \[select]: Enhanced documentation for Platform setSelectDevice,
-setSelectDeviceEntity, and setSelectEntity methods with schema examples
-(see the Jsdoc of the methods).
-- \[MatterbridgeEndpoint]: Improved documentation in jsdoc.
-- \[AirConditioner]: Added AirConditioner() class and Jest test. It is
-not supported correctly by Google. Improved
-createDefaultThermostatUserInterfaceConfigurationClusterServer().
-- \[DeviceTypes]: Add Chapter 10. Media Device Types.
-- \[Speaker]: Added Speaker() class and Jest test. Supported only by
-SmartThings.
-- \[mb\_mdns]: Added help screen and the ability to filter mDNS packets.
-Useful to see all paired and commissionable Matter devices on the
-network.
-- \[matter.js]: Removed legacy and deprecated calls to Logger.setLogger
-etc. and use Logger.destinations.
+- \[jest]: Added Jest helpers module.
+- \[colorControl]: Added createEnhancedColorControlClusterServer
+(provisional to run compatibility tests on all controllers).
+- \[frontend]: Bumped `frontend` version to 2.7.6.
+- \[frontend]: Added api/view-diagnostic.
+- \[frontend]: Refactored the QRCode component for device with
+mode='server' (e.g. the Rvcs): added turn on and off pairing mode,
+resend mDns advertise, remove single fabrics, formatted manual paring
+code, copy to clipboard the manual pairing code and is fully web socket
+based. The main QRCode panel will have the same features (bridge mode
+and childbridge mode) in the next release.
 
 ##### Changed
 
 - \[package]: Updated dependencies.
-- \[package]: Bumped Jest to v. 30.1.3. (this version finally solves the
-broken ESM module mock).
-- \[jest]: Refactor all tests units.
+- \[matterbridge.io]: Updated web site
+[matterbridge.io](matterbridge.io).
 
 ##### Fixed
-
-- \[jest]: Fixed cli test failing with Jest v. 30.1.3.
 
 <a href="https://www.buymeacoffee.com/luligugithub">
   <img src="bmc-button.svg" alt="Buy me a coffee" width="80">
 </a>
 
 ###
-[`v3.2.6-dev-20250906-34345e5`](https://redirect.github.com/Luligu/matterbridge/compare/4b022a09d27ef1e00f5decb3b5193369137219b7...34345e5afc42b7bfda5dad170e35d360a485ae54)
+[`v3.2.7-dev-20250914-f9e5ea7`](https://redirect.github.com/Luligu/matterbridge/compare/9d0d09554cc97336b4235ab95209c28efad6c773...f9e5ea7a5ad4795b6d9783c1a2d481d9297804cd)
 
 [Compare
-Source](https://redirect.github.com/Luligu/matterbridge/compare/4b022a09d27ef1e00f5decb3b5193369137219b7...34345e5afc42b7bfda5dad170e35d360a485ae54)
+Source](https://redirect.github.com/Luligu/matterbridge/compare/9d0d09554cc97336b4235ab95209c28efad6c773...f9e5ea7a5ad4795b6d9783c1a2d481d9297804cd)
 
 ###
-[`v3.2.6-dev-20250906-4b022a0`](https://redirect.github.com/Luligu/matterbridge/compare/a79f653b70203dbd83c7cf3b0116adc942d380a7...4b022a09d27ef1e00f5decb3b5193369137219b7)
+[`v3.2.7-dev-20250913-9d0d095`](https://redirect.github.com/Luligu/matterbridge/compare/10831d3c40c83f61fea76b9f7f40c289866104b3...9d0d09554cc97336b4235ab95209c28efad6c773)
 
 [Compare
-Source](https://redirect.github.com/Luligu/matterbridge/compare/a79f653b70203dbd83c7cf3b0116adc942d380a7...4b022a09d27ef1e00f5decb3b5193369137219b7)
+Source](https://redirect.github.com/Luligu/matterbridge/compare/10831d3c40c83f61fea76b9f7f40c289866104b3...9d0d09554cc97336b4235ab95209c28efad6c773)
 
 ###
-[`v3.2.6-dev-20250904-a79f653`](https://redirect.github.com/Luligu/matterbridge/compare/1c6290c7fda03f35ebf896d3a1e01c9fc9deeb70...a79f653b70203dbd83c7cf3b0116adc942d380a7)
+[`v3.2.7-dev-20250909-10831d3`](https://redirect.github.com/Luligu/matterbridge/compare/3bb699e14625f719b2cb958e1c2a84a5de0daea0...10831d3c40c83f61fea76b9f7f40c289866104b3)
 
 [Compare
-Source](https://redirect.github.com/Luligu/matterbridge/compare/1c6290c7fda03f35ebf896d3a1e01c9fc9deeb70...a79f653b70203dbd83c7cf3b0116adc942d380a7)
+Source](https://redirect.github.com/Luligu/matterbridge/compare/3bb699e14625f719b2cb958e1c2a84a5de0daea0...10831d3c40c83f61fea76b9f7f40c289866104b3)
 
 ###
-[`v3.2.6-dev-20250904-1c6290c`](https://redirect.github.com/Luligu/matterbridge/compare/6ab5022a9abed620a9499e91294011285c2aad97...1c6290c7fda03f35ebf896d3a1e01c9fc9deeb70)
+[`v3.2.7-dev-20250908-3bb699e`](https://redirect.github.com/Luligu/matterbridge/compare/c623e4298ec055e5a224179add8e7fa8ef871836...3bb699e14625f719b2cb958e1c2a84a5de0daea0)
 
 [Compare
-Source](https://redirect.github.com/Luligu/matterbridge/compare/6ab5022a9abed620a9499e91294011285c2aad97...1c6290c7fda03f35ebf896d3a1e01c9fc9deeb70)
+Source](https://redirect.github.com/Luligu/matterbridge/compare/c623e4298ec055e5a224179add8e7fa8ef871836...3bb699e14625f719b2cb958e1c2a84a5de0daea0)
 
 ###
-[`v3.2.6-dev-20250903-6ab5022`](https://redirect.github.com/Luligu/matterbridge/compare/2acb9189a42f2b77c438a4bc4a3c80361d385291...6ab5022a9abed620a9499e91294011285c2aad97)
+[`v3.2.7-dev-20250907-c623e42`](https://redirect.github.com/Luligu/matterbridge/compare/3.2.6...c623e4298ec055e5a224179add8e7fa8ef871836)
 
 [Compare
-Source](https://redirect.github.com/Luligu/matterbridge/compare/2acb9189a42f2b77c438a4bc4a3c80361d385291...6ab5022a9abed620a9499e91294011285c2aad97)
+Source](https://redirect.github.com/Luligu/matterbridge/compare/3.2.6...c623e4298ec055e5a224179add8e7fa8ef871836)
+
+</details>
+
+<details>
+<summary>Luligu/matterbridge-zigbee2mqtt
+(matterbridge-zigbee2mqtt)</summary>
 
 ###
-[`v3.2.6-dev-20250903-2acb918`](https://redirect.github.com/Luligu/matterbridge/compare/3.2.5...2acb9189a42f2b77c438a4bc4a3c80361d385291)
+[`v2.8.0`](https://redirect.github.com/Luligu/matterbridge-zigbee2mqtt/blob/HEAD/CHANGELOG.md#280---2025-09-14)
 
 [Compare
-Source](https://redirect.github.com/Luligu/matterbridge/compare/3.2.5...2acb9189a42f2b77c438a4bc4a3c80361d385291)
+Source](https://redirect.github.com/Luligu/matterbridge-zigbee2mqtt/compare/41664fb3d18fb175542831185f3774f2d1e05042...2.8.0)
+
+##### Breaking changes
+
+Some color conversion have been optimized to improve performnces.
+
+It is possible that existing scenes on the controllers now render the
+color in a different nuance.
+
+If this is the case, update the color attributes in the controller
+scenes.
+
+##### Automations and scenes
+
+The package
+[zigbee2mqtt-automations](https://redirect.github.com/Luligu/zigbee2mqtt-automations)
+has been updated to version 3.0.0 that includes also scenes.
+
+##### Added
+
+- \[adaptiveLighting]: Added support for **Apple Home Adaptive
+Lighting**. See
+<https://redirect.github.com/Luligu/matterbridge/discussions/390>.
+- \[platform]: Optimized command handlers execution and perfomance when
+the controllers send huge light scenes.
+- \[devcontainer]: Added the plugin name to the container.
+- \[devcontainer]: Improved performance of first build with shallow
+clone.
+- \[workflows]: The publish workflow now triggers automatically the
+docker build of matterbridge.
+- \[jest]: Added jest helper module v. 1.0.6.
+
+##### Changed
+
+- \[package]: Updated dependencies.
+- \[package]: Updated package to Automator v. 2.0.6.
+- \[workflows]: Ignore any .md anywhere.
+- \[workflows]: Improved speed on Node CI.
+
+<a href="https://www.buymeacoffee.com/luligugithub">
+  <img src="bmc-button.svg" alt="Buy me a coffee" width="80">
+</a>
+
+###
+[`v2.8.0-dev-20250915-41664fb`](https://redirect.github.com/Luligu/matterbridge-zigbee2mqtt/compare/2f5e24e86da526a0aa9e48256cc9548263404c54...41664fb3d18fb175542831185f3774f2d1e05042)
+
+[Compare
+Source](https://redirect.github.com/Luligu/matterbridge-zigbee2mqtt/compare/2f5e24e86da526a0aa9e48256cc9548263404c54...41664fb3d18fb175542831185f3774f2d1e05042)
+
+###
+[`v2.8.0-dev-20250912-2f5e24e`](https://redirect.github.com/Luligu/matterbridge-zigbee2mqtt/compare/36784a2d250ec797ee98de865998b1a425b4e997...2f5e24e86da526a0aa9e48256cc9548263404c54)
+
+[Compare
+Source](https://redirect.github.com/Luligu/matterbridge-zigbee2mqtt/compare/36784a2d250ec797ee98de865998b1a425b4e997...2f5e24e86da526a0aa9e48256cc9548263404c54)
+
+###
+[`v2.8.0-dev-20250911-36784a2`](https://redirect.github.com/Luligu/matterbridge-zigbee2mqtt/compare/2.7.0...36784a2d250ec797ee98de865998b1a425b4e997)
+
+[Compare
+Source](https://redirect.github.com/Luligu/matterbridge-zigbee2mqtt/compare/2.7.0...36784a2d250ec797ee98de865998b1a425b4e997)
 
 </details>
 
@@ -113,6 +161,6 @@ This PR was generated by [Mend Renovate](https://mend.io/renovate/).
 View the [repository job
 log](https://developer.mend.io/github/L2jLiga/ha-addons).
 
-<!--renovate-debug:eyJjcmVhdGVkSW5WZXIiOiI0MS45MS4xIiwidXBkYXRlZEluVmVyIjoiNDEuOTEuMSIsInRhcmdldEJyYW5jaCI6Im1hc3RlciIsImxhYmVscyI6WyJkZXBlbmRlbmNpZXMiLCJuby1zdGFsZSJdfQ==-->
+<!--renovate-debug:eyJjcmVhdGVkSW5WZXIiOiI0MS45Ny4xMCIsInVwZGF0ZWRJblZlciI6IjQxLjk3LjEwIiwidGFyZ2V0QnJhbmNoIjoibWFzdGVyIiwibGFiZWxzIjpbImRlcGVuZGVuY2llcyIsIm5vLXN0YWxlIl19-->
 
 Co-authored-by: renovate[bot] <29139614+renovate[bot]@users.noreply.github.com></details>
