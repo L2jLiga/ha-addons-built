@@ -1,7 +1,7 @@
 Changes in this Release
 
-<details><summary>b7731a4 ⬆️ Update matterbridge to v3.2.8 (#169)</summary>
-⬆️ Update matterbridge to v3.2.8 (#169)
+<details><summary>f3af222 ⬆️ Update matterbridge to v3.2.9 (#170)</summary>
+⬆️ Update matterbridge to v3.2.9 (#170)
 
 Coming soon: The Renovate bot (GitHub App) will be renamed to Mend. PRs
 from Renovate will soon appear from 'Mend'. Learn more
@@ -15,100 +15,105 @@ from Renovate will soon appear from 'Mend'. Learn more
 <summary>Luligu/matterbridge (matterbridge)</summary>
 
 ###
-[`v3.2.8`](https://redirect.github.com/Luligu/matterbridge/blob/HEAD/CHANGELOG.md#328---2025-09-20)
+[`v3.2.9`](https://redirect.github.com/Luligu/matterbridge/blob/HEAD/CHANGELOG.md#329---2025-09-27)
 
 [Compare
-Source](https://redirect.github.com/Luligu/matterbridge/compare/80e79005b08d8979ab54ec177c9879bc7df15e52...3.2.8)
+Source](https://redirect.github.com/Luligu/matterbridge/compare/bb89bea5d1d0e558df693c455fe73473d521aecd...3.2.9)
 
 ##### Breaking Changes
 
+- \[profiles]: Profile management has changed. Now, each profile has its
+own independent directories under `profiles` with storage,
+matterstorage, plugin config, and plugin directory. This means that if
+you are using profiles, Matterbridge will not find the old profile data.
+The new profile management allows to run multiple instances of
+matterbridge (change the frontend port and the matter port for each
+profile) or to simply make a test of a new plugin without modifing your
+production setup.
+
 ##### Added
 
-- \[logger]: Set different color for log names to matterbridge, frontend
-and matter.js.
-- \[frontend]: Bumped `frontend` version to 3.0.0.
-- \[frontend]: Bumped `react` version to 19.1.1.
-- \[frontend]: Bumped `react-router` version to 7.9.1.
-- \[frontend]: Bumped `@mui` version to 7.3.2.
-- \[frontend]: Bumped `@rjsf` version to 5.24.13.
-- \[frontend]: Dropped `Create React App (CRA)` and moved to `Vite`.
-- \[frontend]: Added `eslint` and `vitest`.
-- \[frontend]: Typed broadcast messages.
-- \[frontend]: Typed api request and api response messages.
-- \[frontend]: Updated the QRCode component to be used in bridge mode
-and childbridge mode and for the devices with mode='server'. Features:
-turn on and off pairing mode, resend mDns advertise, remove single
-fabrics, formatted manual paring code, copy to clipboard the manual
-pairing code.
+- \[frontend]: Bumped `frontend` version to 3.1.0. Now, 100% on
+typescript and fully typed with the backend.
+- \[frontend]: Removed legacy `react-table` and created an autonomous
+component `MbfTable`. Features: unique UI for all tables with integrated
+column sorting and column selection.
+- \[frontend]: Use MbfTable for Plugins, Devices, Registered devices and
+Clusters tables.
+- \[frontend]: Optimized WebSocker message handlers. Now, the handler
+targets the component.
+- \[frontend]: Removed dangerouslySetInnerHTML from log rendering.
+- \[frontend]: Added push update to Icon view and table view cluster
+panel. Now, they updates data in real time.
+- \[frontend]: Added install progress dialog when installing or
+uploading packages.
+- \[endpoint]: Added occupancy feature to all Thermostat cluster
+helpers. When provided (either false or true) it will create a
+Thermostat with occupancy feature.
+- \[endpoint]: Added outdoorTemperature to all Thermostat cluster
+helpers. Default is undefined (it will be ignored).
 
 ##### Changed
 
+- \[matter]: Bumped `matter.js` version to 0.15.4. Thanks matter.js!
 - \[package]: Updated dependencies.
 
 ##### Fixed
 
-- \[childbridge]: Fixed the case when the plugin didn't restart in
-childbridge mode when it didn't add any device.
-- \[shutdown]: Fixed the case when shutting down the http(s) server took
-10 seconds.
+- \[frontend]: Fix default values (devices) for homePageMode
+(logs/devices) in MatterbridgeSettings.
 
 <a href="https://www.buymeacoffee.com/luligugithub">
   <img src="bmc-button.svg" alt="Buy me a coffee" width="80">
 </a>
 
 ###
-[`v3.2.8-dev-20250920-80e7900`](https://redirect.github.com/Luligu/matterbridge/compare/1a6178dd60a8a5f0d3908ab0c8ad2f4bac705ab5...80e79005b08d8979ab54ec177c9879bc7df15e52)
+[`v3.2.9-dev-20250926-bb89bea`](https://redirect.github.com/Luligu/matterbridge/compare/85736bb1f3245824f27c7b31a553e50605a6aaa3...bb89bea5d1d0e558df693c455fe73473d521aecd)
 
 [Compare
-Source](https://redirect.github.com/Luligu/matterbridge/compare/1a6178dd60a8a5f0d3908ab0c8ad2f4bac705ab5...80e79005b08d8979ab54ec177c9879bc7df15e52)
+Source](https://redirect.github.com/Luligu/matterbridge/compare/85736bb1f3245824f27c7b31a553e50605a6aaa3...bb89bea5d1d0e558df693c455fe73473d521aecd)
 
 ###
-[`v3.2.8-dev-20250920-1a6178d`](https://redirect.github.com/Luligu/matterbridge/compare/e967b552307ac1b7e6509b81680b86085cf37e7b...1a6178dd60a8a5f0d3908ab0c8ad2f4bac705ab5)
+[`v3.2.9-dev-20250926-85736bb`](https://redirect.github.com/Luligu/matterbridge/compare/c639a33217ddd695f5f599fbbed9a9d88b2b52ca...85736bb1f3245824f27c7b31a553e50605a6aaa3)
 
 [Compare
-Source](https://redirect.github.com/Luligu/matterbridge/compare/e967b552307ac1b7e6509b81680b86085cf37e7b...1a6178dd60a8a5f0d3908ab0c8ad2f4bac705ab5)
+Source](https://redirect.github.com/Luligu/matterbridge/compare/c639a33217ddd695f5f599fbbed9a9d88b2b52ca...85736bb1f3245824f27c7b31a553e50605a6aaa3)
 
 ###
-[`v3.2.8-dev-20250919-e967b55`](https://redirect.github.com/Luligu/matterbridge/compare/7a90169a4776708f6e66e70d70d51918d7975540...e967b552307ac1b7e6509b81680b86085cf37e7b)
+[`v3.2.9-dev-20250924-c639a33`](https://redirect.github.com/Luligu/matterbridge/compare/9417698fad74c1fae1d7cc2f792bb4228cae726f...c639a33217ddd695f5f599fbbed9a9d88b2b52ca)
 
 [Compare
-Source](https://redirect.github.com/Luligu/matterbridge/compare/7a90169a4776708f6e66e70d70d51918d7975540...e967b552307ac1b7e6509b81680b86085cf37e7b)
+Source](https://redirect.github.com/Luligu/matterbridge/compare/9417698fad74c1fae1d7cc2f792bb4228cae726f...c639a33217ddd695f5f599fbbed9a9d88b2b52ca)
 
 ###
-[`v3.2.8-dev-20250919-7a90169`](https://redirect.github.com/Luligu/matterbridge/compare/0c456499a3c40d7aef08ac6cd4264503fcd19470...7a90169a4776708f6e66e70d70d51918d7975540)
+[`v3.2.9-dev-20250924-9417698`](https://redirect.github.com/Luligu/matterbridge/compare/2e9594f5918f4af006b7ca4b587fdf0887abd638...9417698fad74c1fae1d7cc2f792bb4228cae726f)
 
 [Compare
-Source](https://redirect.github.com/Luligu/matterbridge/compare/0c456499a3c40d7aef08ac6cd4264503fcd19470...7a90169a4776708f6e66e70d70d51918d7975540)
+Source](https://redirect.github.com/Luligu/matterbridge/compare/2e9594f5918f4af006b7ca4b587fdf0887abd638...9417698fad74c1fae1d7cc2f792bb4228cae726f)
 
 ###
-[`v3.2.8-dev-20250919-0c45649`](https://redirect.github.com/Luligu/matterbridge/compare/52dc90c1393a65b7e4ccf31b07d760803d3a37a7...0c456499a3c40d7aef08ac6cd4264503fcd19470)
+[`v3.2.9-dev-20250924-2e9594f`](https://redirect.github.com/Luligu/matterbridge/compare/359572c7a7f704bf7f4fae609e8d70d0f13d16dc...2e9594f5918f4af006b7ca4b587fdf0887abd638)
 
 [Compare
-Source](https://redirect.github.com/Luligu/matterbridge/compare/52dc90c1393a65b7e4ccf31b07d760803d3a37a7...0c456499a3c40d7aef08ac6cd4264503fcd19470)
+Source](https://redirect.github.com/Luligu/matterbridge/compare/359572c7a7f704bf7f4fae609e8d70d0f13d16dc...2e9594f5918f4af006b7ca4b587fdf0887abd638)
 
 ###
-[`v3.2.8-dev-20250918-52dc90c`](https://redirect.github.com/Luligu/matterbridge/compare/da71182a7478c98afdafb9e552824241403e8caa...52dc90c1393a65b7e4ccf31b07d760803d3a37a7)
+[`v3.2.9-dev-20250923-359572c`](https://redirect.github.com/Luligu/matterbridge/compare/517cae7b2cd9b17b3dbbaced720506965e637c18...359572c7a7f704bf7f4fae609e8d70d0f13d16dc)
 
 [Compare
-Source](https://redirect.github.com/Luligu/matterbridge/compare/da71182a7478c98afdafb9e552824241403e8caa...52dc90c1393a65b7e4ccf31b07d760803d3a37a7)
+Source](https://redirect.github.com/Luligu/matterbridge/compare/517cae7b2cd9b17b3dbbaced720506965e637c18...359572c7a7f704bf7f4fae609e8d70d0f13d16dc)
 
 ###
-[`v3.2.8-dev-20250916-da71182`](https://redirect.github.com/Luligu/matterbridge/compare/967e0b8bc4cb7b1a514397a694cf7ca8222271b2...da71182a7478c98afdafb9e552824241403e8caa)
+[`v3.2.9-dev-20250922-517cae7`](https://redirect.github.com/Luligu/matterbridge/compare/6e00637d4216c3a3e83faf3fd8c3b453e7d3ac9d...517cae7b2cd9b17b3dbbaced720506965e637c18)
 
 [Compare
-Source](https://redirect.github.com/Luligu/matterbridge/compare/967e0b8bc4cb7b1a514397a694cf7ca8222271b2...da71182a7478c98afdafb9e552824241403e8caa)
+Source](https://redirect.github.com/Luligu/matterbridge/compare/6e00637d4216c3a3e83faf3fd8c3b453e7d3ac9d...517cae7b2cd9b17b3dbbaced720506965e637c18)
 
 ###
-[`v3.2.8-dev-20250916-967e0b8`](https://redirect.github.com/Luligu/matterbridge/compare/e9a566066ec5780a011ef375871eeead02eb2e68...967e0b8bc4cb7b1a514397a694cf7ca8222271b2)
+[`v3.2.9-dev-20250922-6e00637`](https://redirect.github.com/Luligu/matterbridge/compare/3.2.8...6e00637d4216c3a3e83faf3fd8c3b453e7d3ac9d)
 
 [Compare
-Source](https://redirect.github.com/Luligu/matterbridge/compare/e9a566066ec5780a011ef375871eeead02eb2e68...967e0b8bc4cb7b1a514397a694cf7ca8222271b2)
-
-###
-[`v3.2.8-dev-20250915-e9a5660`](https://redirect.github.com/Luligu/matterbridge/compare/3.2.7...e9a566066ec5780a011ef375871eeead02eb2e68)
-
-[Compare
-Source](https://redirect.github.com/Luligu/matterbridge/compare/3.2.7...e9a566066ec5780a011ef375871eeead02eb2e68)
+Source](https://redirect.github.com/Luligu/matterbridge/compare/3.2.8...6e00637d4216c3a3e83faf3fd8c3b453e7d3ac9d)
 
 </details>
 
@@ -118,6 +123,6 @@ This PR was generated by [Mend Renovate](https://mend.io/renovate/).
 View the [repository job
 log](https://developer.mend.io/github/L2jLiga/ha-addons).
 
-<!--renovate-debug:eyJjcmVhdGVkSW5WZXIiOiI0MS45Ny4xMCIsInVwZGF0ZWRJblZlciI6IjQxLjk3LjEwIiwidGFyZ2V0QnJhbmNoIjoibWFzdGVyIiwibGFiZWxzIjpbImRlcGVuZGVuY2llcyIsIm5vLXN0YWxlIl19-->
+<!--renovate-debug:eyJjcmVhdGVkSW5WZXIiOiI0MS4xMzAuMSIsInVwZGF0ZWRJblZlciI6IjQxLjEzMC4xIiwidGFyZ2V0QnJhbmNoIjoibWFzdGVyIiwibGFiZWxzIjpbImRlcGVuZGVuY2llcyIsIm5vLXN0YWxlIl19-->
 
 Co-authored-by: renovate[bot] <29139614+renovate[bot]@users.noreply.github.com></details>
