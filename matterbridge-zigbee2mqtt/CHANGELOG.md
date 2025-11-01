@@ -1,7 +1,7 @@
 Changes in this Release
 
-<details><summary>c6e282c ⬆️ Update matterbridge to v3.3.5 (#179)</summary>
-⬆️ Update matterbridge to v3.3.5 (#179)
+<details><summary>18e1cb9 ⬆️ Update matterbridge to v3.3.6 (#180)</summary>
+⬆️ Update matterbridge to v3.3.6 (#180)
 
 ---
 
@@ -11,65 +11,25 @@ Changes in this Release
 <summary>Luligu/matterbridge (matterbridge)</summary>
 
 ###
-[`v3.3.5`](https://redirect.github.com/Luligu/matterbridge/blob/HEAD/CHANGELOG.md#335---2025-10-31)
+[`v3.3.6`](https://redirect.github.com/Luligu/matterbridge/blob/HEAD/CHANGELOG.md#336---2025-11-01)
 
 [Compare
-Source](https://redirect.github.com/Luligu/matterbridge/compare/3482891a61c1719ec3ae1070ccc116284e42f7ea...3.3.5)
-
-##### Breaking Changes
-
-- \[concentrationMeasurement]: Changed the default unit of measurement
-of some concentration measurement clusters to adapt to the generally
-used (and supported by Apple Home). Is is always possible to pass a
-different unit of measurement (Tvoc is Ugm3. Formaldehyde is Mgm3. Pm1,
-Pm2.5 and Pm10 are Ugm3. Ozone is Ugm3. Radon is Bqm3.)
-
-##### Added
-
-- \[thread]: Added get\_log\_level and set\_log\_level to
-BroadcastServer.
-- \[frontend]: Added password check to WebSocket.
-- \[service]: Added link to [configuration](README-SERVICE-LOCAL.md) to
-run matterbridge as a daemon with systemctl (Linux only) and with local
-global node\_modules (no sudo required).
+Source](https://redirect.github.com/Luligu/matterbridge/compare/3.3.5...3.3.6)
 
 ##### Changed
 
 - \[package]: Updated dependencies.
-- \[frontend]: Bumped `frontend` version to 3.2.4.
+- \[frontend]: Bumped `frontend` version to 3.3.0.
+- \[frontend]: Updated dependencies.
+- \[frontend]: Removed password dialog when running in Ingress.
 
 ##### Fixed
 
-- \[service]: Fixed systemd [configuration](README-SERVICE-LOCAL.md)
-with local global node\_modules.
+- \[ingress]: Fixed websocket connection from Ingress.
 
 <a href="https://www.buymeacoffee.com/luligugithub">
   <img src="bmc-button.svg" alt="Buy me a coffee" width="80">
 </a>
-
-###
-[`v3.3.5-dev-20251031-3482891`](https://redirect.github.com/Luligu/matterbridge/compare/a0d9d11157239bd5aec8be9a4e7228417dd7f492...3482891a61c1719ec3ae1070ccc116284e42f7ea)
-
-[Compare
-Source](https://redirect.github.com/Luligu/matterbridge/compare/a0d9d11157239bd5aec8be9a4e7228417dd7f492...3482891a61c1719ec3ae1070ccc116284e42f7ea)
-
-###
-[`v3.3.5-dev-20251029-a0d9d11`](https://redirect.github.com/Luligu/matterbridge/compare/d89f93f27d5071728ac61273dc13a2989129edcc...a0d9d11157239bd5aec8be9a4e7228417dd7f492)
-
-[Compare
-Source](https://redirect.github.com/Luligu/matterbridge/compare/d89f93f27d5071728ac61273dc13a2989129edcc...a0d9d11157239bd5aec8be9a4e7228417dd7f492)
-
-###
-[`v3.3.5-dev-20251028-d89f93f`](https://redirect.github.com/Luligu/matterbridge/compare/26d5c31f2cfae0d86158a219890bbcb108ff5bf0...d89f93f27d5071728ac61273dc13a2989129edcc)
-
-[Compare
-Source](https://redirect.github.com/Luligu/matterbridge/compare/26d5c31f2cfae0d86158a219890bbcb108ff5bf0...d89f93f27d5071728ac61273dc13a2989129edcc)
-
-###
-[`v3.3.5-dev-20251025-26d5c31`](https://redirect.github.com/Luligu/matterbridge/compare/3.3.4...26d5c31f2cfae0d86158a219890bbcb108ff5bf0)
-
-[Compare
-Source](https://redirect.github.com/Luligu/matterbridge/compare/3.3.4...26d5c31f2cfae0d86158a219890bbcb108ff5bf0)
 
 </details>
 
@@ -80,92 +40,5 @@ View the [repository job
 log](https://developer.mend.io/github/L2jLiga/ha-addons).
 
 <!--renovate-debug:eyJjcmVhdGVkSW5WZXIiOiI0MS4xNTkuNCIsInVwZGF0ZWRJblZlciI6IjQxLjE1OS40IiwidGFyZ2V0QnJhbmNoIjoibWFzdGVyIiwibGFiZWxzIjpbImRlcGVuZGVuY2llcyIsIm5vLXN0YWxlIl19-->
-
-Co-authored-by: renovate[bot] <29139614+renovate[bot]@users.noreply.github.com></details>
-
-<details><summary>dffa015 ⬆️ Update matterbridge to v3.3.4 (#178)</summary>
-⬆️ Update matterbridge to v3.3.4 (#178)
-
----
-
-### Release Notes
-
-<details>
-<summary>Luligu/matterbridge (matterbridge)</summary>
-
-###
-[`v3.3.4`](https://redirect.github.com/Luligu/matterbridge/blob/HEAD/CHANGELOG.md#334---2025-10-24)
-
-[Compare
-Source](https://redirect.github.com/Luligu/matterbridge/compare/681420cb8ce36674e8db24b0205b28842839f20c...3.3.4)
-
-##### Breaking Changes
-
-- \[nodejs]: Matterbridge will not start if the Node.js version is less
-then 20.x.x.
-
-##### Added
-
-- \[frontend]: Added debounce to MatterSettings.
-- \[cli]: Bumped `cli` version to 3.0.0 with backport of Traker and
-Inspector from thread module.
-- \[powerSource]: Added MatterbridgePowerSourceServer. It initializes
-the enpointList of the PowerSource cluster.
-- \[thread]: Added BroadcastServer to Matterbridge.
-- \[service]: Added configuration [guide](README-SERVICE-LOCAL.md) to
-run matterbridge as a daemon with systemctl (Linux only) and with local
-global node\_modules (no sudo required).
-
-##### Changed
-
-- \[package]: Updated dependencies.
-- \[package]: Optimized
-[@&#8203;matter](https://redirect.github.com/matter) imports.
-- \[endpoint]: Optimized memory requirements.
-- \[matter]: Bumped `matter.js` version to 0.15.6. Thanks matter.js!
-- \[frontend]: Bumped `frontend` version to 3.2.3.
-- \[thread]: Bumped `BroadcastServer` version to 1.0.1.
-
-##### Fixed
-
-- \[thrmostat]: Fixed minSetpointDeadBand data type. Thanks Apollon!
-
-<a href="https://www.buymeacoffee.com/luligugithub">
-  <img src="bmc-button.svg" alt="Buy me a coffee" width="80">
-</a>
-
-###
-[`v3.3.4-dev-20251022-681420c`](https://redirect.github.com/Luligu/matterbridge/compare/7651f5745f4ebe5e3d926906f5c355eaad52ea2f...681420cb8ce36674e8db24b0205b28842839f20c)
-
-[Compare
-Source](https://redirect.github.com/Luligu/matterbridge/compare/7651f5745f4ebe5e3d926906f5c355eaad52ea2f...681420cb8ce36674e8db24b0205b28842839f20c)
-
-###
-[`v3.3.4-dev-20251021-7651f57`](https://redirect.github.com/Luligu/matterbridge/compare/df40d12c681a497fa5b4acb5b719e2f92eaeae4b...7651f5745f4ebe5e3d926906f5c355eaad52ea2f)
-
-[Compare
-Source](https://redirect.github.com/Luligu/matterbridge/compare/df40d12c681a497fa5b4acb5b719e2f92eaeae4b...7651f5745f4ebe5e3d926906f5c355eaad52ea2f)
-
-###
-[`v3.3.4-dev-20251020-df40d12`](https://redirect.github.com/Luligu/matterbridge/compare/4d2dd49e569b720b65c9fa94a0dc869883da09a0...df40d12c681a497fa5b4acb5b719e2f92eaeae4b)
-
-[Compare
-Source](https://redirect.github.com/Luligu/matterbridge/compare/4d2dd49e569b720b65c9fa94a0dc869883da09a0...df40d12c681a497fa5b4acb5b719e2f92eaeae4b)
-
-###
-[`v3.3.4-dev-20251020-4d2dd49`](https://redirect.github.com/Luligu/matterbridge/compare/3.3.3...4d2dd49e569b720b65c9fa94a0dc869883da09a0)
-
-[Compare
-Source](https://redirect.github.com/Luligu/matterbridge/compare/3.3.3...4d2dd49e569b720b65c9fa94a0dc869883da09a0)
-
-</details>
-
----
-
-This PR was generated by [Mend Renovate](https://mend.io/renovate/).
-View the [repository job
-log](https://developer.mend.io/github/L2jLiga/ha-addons).
-
-<!--renovate-debug:eyJjcmVhdGVkSW5WZXIiOiI0MS4xNTYuMSIsInVwZGF0ZWRJblZlciI6IjQxLjE1Ni4xIiwidGFyZ2V0QnJhbmNoIjoibWFzdGVyIiwibGFiZWxzIjpbImRlcGVuZGVuY2llcyIsIm5vLXN0YWxlIl19-->
 
 Co-authored-by: renovate[bot] <29139614+renovate[bot]@users.noreply.github.com></details>
