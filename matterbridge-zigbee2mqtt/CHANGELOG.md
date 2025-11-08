@@ -1,21 +1,80 @@
 Changes in this Release
 
-<details><summary>4c6c0c6 ⬆️ Update matterbridge-zigbee2mqtt to v2.9.0-dev-20251101-be5ef3b (#183)</summary>
-⬆️ Update matterbridge-zigbee2mqtt to v2.9.0-dev-20251101-be5ef3b (#183)
+<details><summary>4684b3b ⬆️ Update matterbridge to v3.3.7 (#185)</summary>
+⬆️ Update matterbridge to v3.3.7 (#185)
 
 ---
 
 ### Release Notes
 
 <details>
-<summary>Luligu/matterbridge-zigbee2mqtt
-(matterbridge-zigbee2mqtt)</summary>
+<summary>Luligu/matterbridge (matterbridge)</summary>
 
 ###
-[`v2.9.0-dev-20251101-be5ef3b`](https://redirect.github.com/Luligu/matterbridge-zigbee2mqtt/compare/2.8.1...be5ef3b1ab1e990d1d5bb95be737c42346484fcf)
+[`v3.3.7`](https://redirect.github.com/Luligu/matterbridge/blob/HEAD/CHANGELOG.md#337---2025-11-08)
 
 [Compare
-Source](https://redirect.github.com/Luligu/matterbridge-zigbee2mqtt/compare/2.8.1...be5ef3b1ab1e990d1d5bb95be737c42346484fcf)
+Source](https://redirect.github.com/Luligu/matterbridge/compare/f254812d69f48ae58eee3340d4037e7858ec9205...3.3.7)
+
+##### Breaking Changes
+
+- \[frontend]: When a plugin is first added, it will not be anymore
+started to allow to configure it before restarting.
+
+##### Added
+
+- \[matterbridge]: Added a first check for plugin existence (docker pull
+or Hass add-on rebuild) and reinstall it before parsing the plugin. The
+error messages have been removed.
+- \[service]: Added [configuration](README-SERVICE-OPT.md) to run
+matterbridge as a daemon with systemctl (Linux only), private global
+node\_modules, user/group matterbridge and no sudo required.
+
+##### Changed
+
+- \[frontend]: Bumped `frontend` version to 3.3.1.
+- \[PluginManager]: Bumped `PluginManager` version to 1.3.0.
+- \[DeviceManager]: Bumped `DeviceManager` version to 1.1.0.
+- \[frontend]: Readded password dialog when running in Ingress.
+
+##### Fixed
+
+- \[frontend]: Fixed route fallback and cross platform path failing
+randomly with node prefix.
+
+<a href="https://www.buymeacoffee.com/luligugithub">
+  <img src="bmc-button.svg" alt="Buy me a coffee" width="80">
+</a>
+
+###
+[`v3.3.7-dev-20251108-f254812`](https://redirect.github.com/Luligu/matterbridge/compare/de2d9ea87100bdd844bd5ae949cc38cf59bf59fa...f254812d69f48ae58eee3340d4037e7858ec9205)
+
+[Compare
+Source](https://redirect.github.com/Luligu/matterbridge/compare/de2d9ea87100bdd844bd5ae949cc38cf59bf59fa...f254812d69f48ae58eee3340d4037e7858ec9205)
+
+###
+[`v3.3.7-dev-20251106-de2d9ea`](https://redirect.github.com/Luligu/matterbridge/compare/440e5494e27d16574164e7bd4c9ec3d7e8abe7a2...de2d9ea87100bdd844bd5ae949cc38cf59bf59fa)
+
+[Compare
+Source](https://redirect.github.com/Luligu/matterbridge/compare/440e5494e27d16574164e7bd4c9ec3d7e8abe7a2...de2d9ea87100bdd844bd5ae949cc38cf59bf59fa)
+
+###
+[`v3.3.7-dev-20251105-440e549`](https://redirect.github.com/Luligu/matterbridge/compare/7c779b99006bd47ee4397e0c50903b900e46d17d...440e5494e27d16574164e7bd4c9ec3d7e8abe7a2)
+
+[Compare
+Source](https://redirect.github.com/Luligu/matterbridge/compare/7c779b99006bd47ee4397e0c50903b900e46d17d...440e5494e27d16574164e7bd4c9ec3d7e8abe7a2)
+
+###
+[`v3.3.7-dev-20251104-7c779b9`](https://redirect.github.com/Luligu/matterbridge/compare/c85d5741a47bb92d962dc9ab2e5e390b1ce95b8d...7c779b99006bd47ee4397e0c50903b900e46d17d)
+
+[Compare
+Source](https://redirect.github.com/Luligu/matterbridge/compare/c85d5741a47bb92d962dc9ab2e5e390b1ce95b8d...7c779b99006bd47ee4397e0c50903b900e46d17d)
+
+###
+[`v3.3.7-dev-20251102-c85d574`](https://redirect.github.com/Luligu/matterbridge/compare/3.3.6...c85d5741a47bb92d962dc9ab2e5e390b1ce95b8d)
+
+[Compare
+Source](https://redirect.github.com/Luligu/matterbridge/compare/3.3.6...c85d5741a47bb92d962dc9ab2e5e390b1ce95b8d)
 
 </details>
 
