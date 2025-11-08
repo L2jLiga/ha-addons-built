@@ -1,35 +1,21 @@
 Changes in this Release
 
-<details><summary>18e1cb9 ⬆️ Update matterbridge to v3.3.6 (#180)</summary>
-⬆️ Update matterbridge to v3.3.6 (#180)
+<details><summary>4c6c0c6 ⬆️ Update matterbridge-zigbee2mqtt to v2.9.0-dev-20251101-be5ef3b (#183)</summary>
+⬆️ Update matterbridge-zigbee2mqtt to v2.9.0-dev-20251101-be5ef3b (#183)
 
 ---
 
 ### Release Notes
 
 <details>
-<summary>Luligu/matterbridge (matterbridge)</summary>
+<summary>Luligu/matterbridge-zigbee2mqtt
+(matterbridge-zigbee2mqtt)</summary>
 
 ###
-[`v3.3.6`](https://redirect.github.com/Luligu/matterbridge/blob/HEAD/CHANGELOG.md#336---2025-11-01)
+[`v2.9.0-dev-20251101-be5ef3b`](https://redirect.github.com/Luligu/matterbridge-zigbee2mqtt/compare/2.8.1...be5ef3b1ab1e990d1d5bb95be737c42346484fcf)
 
 [Compare
-Source](https://redirect.github.com/Luligu/matterbridge/compare/3.3.5...3.3.6)
-
-##### Changed
-
-- \[package]: Updated dependencies.
-- \[frontend]: Bumped `frontend` version to 3.3.0.
-- \[frontend]: Updated dependencies.
-- \[frontend]: Removed password dialog when running in Ingress.
-
-##### Fixed
-
-- \[ingress]: Fixed websocket connection from Ingress.
-
-<a href="https://www.buymeacoffee.com/luligugithub">
-  <img src="bmc-button.svg" alt="Buy me a coffee" width="80">
-</a>
+Source](https://redirect.github.com/Luligu/matterbridge-zigbee2mqtt/compare/2.8.1...be5ef3b1ab1e990d1d5bb95be737c42346484fcf)
 
 </details>
 
