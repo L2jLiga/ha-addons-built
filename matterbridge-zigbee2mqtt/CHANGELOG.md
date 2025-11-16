@@ -1,7 +1,7 @@
 Changes in this Release
 
-<details><summary>4684b3b ⬆️ Update matterbridge to v3.3.7 (#185)</summary>
-⬆️ Update matterbridge to v3.3.7 (#185)
+<details><summary>41ceb05 ⬆️ Update matterbridge to v3.3.8 (#186)</summary>
+⬆️ Update matterbridge to v3.3.8 (#186)
 
 ---
 
@@ -11,70 +11,79 @@ Changes in this Release
 <summary>Luligu/matterbridge (matterbridge)</summary>
 
 ###
-[`v3.3.7`](https://redirect.github.com/Luligu/matterbridge/blob/HEAD/CHANGELOG.md#337---2025-11-08)
+[`v3.3.8`](https://redirect.github.com/Luligu/matterbridge/blob/HEAD/CHANGELOG.md#338---2025-11-15)
 
 [Compare
-Source](https://redirect.github.com/Luligu/matterbridge/compare/f254812d69f48ae58eee3340d4037e7858ec9205...3.3.7)
+Source](https://redirect.github.com/Luligu/matterbridge/compare/59b0ba94227fde7891052178002bf0c8f8da7fa7...3.3.8)
 
-##### Breaking Changes
+##### Development Breaking Changes
 
-- \[frontend]: When a plugin is first added, it will not be anymore
-started to allow to configure it before restarting.
+This will be the last release with the following long deprecated
+elements:
+
+- \[platform]: Matterbridge instead of PlatformMatterbridge in the
+platform constructor (deprecated since 3.0.0).
+- \[endpoint]: uniqueStorageKey instead of id in
+MatterbridgeEndpointOptions (deprecated since months).
+- \[endpoint]: endpointId instead of number in
+MatterbridgeEndpointOptions (deprecated since months).
+
+So please update your plugin.
 
 ##### Added
 
-- \[matterbridge]: Added a first check for plugin existence (docker pull
-or Hass add-on rebuild) and reinstall it before parsing the plugin. The
-error messages have been removed.
-- \[service]: Added [configuration](README-SERVICE-OPT.md) to run
-matterbridge as a daemon with systemctl (Linux only), private global
-node\_modules, user/group matterbridge and no sudo required.
+- \[endpoint]: Added matterbridgeEndpointTypes.
+- \[devices]: Added tests for device types and their revision changes.
+- \[clusters]: Added test for clusters and their revision changes.
+- \[chip]: Added fetch script to download zcl data from connectedhomeip.
+- \[endpoint]: Added createDefaultPowerSourceBatteryClusterServer(). Add
+Power Source cluster for a generic battery device.
+- \[platform]: Added setSchema() to temporarly set the schema for the
+config editor.
+- \[platform]: Added getSchema() to retrieve the schema from the
+Matterbridge plugin manager.
+- \[platform]: Added return value to registerVirtualDevice().
 
 ##### Changed
 
-- \[frontend]: Bumped `frontend` version to 3.3.1.
-- \[PluginManager]: Bumped `PluginManager` version to 1.3.0.
-- \[DeviceManager]: Bumped `DeviceManager` version to 1.1.0.
-- \[frontend]: Readded password dialog when running in Ingress.
-
-##### Fixed
-
-- \[frontend]: Fixed route fallback and cross platform path failing
-randomly with node prefix.
+- \[package]: Updated dependencies.
+- \[package]: Bumped jestHelpers v.1.0.12.
+- \[endpoint]: Changed long deprecated uniqueStorageKey with id in
+MatterbridgeEndpointOptions.
+- \[endpoint]: Changed long deprecated endpointId with number in
+MatterbridgeEndpointOptions.
+- \[endpoint]: Added property originalId in MatterbridgeEndpoint to
+store the original id passed in MatterbridgeEndpointOptions (since it
+can be changed for matter.js storage compatibility).
+- \[endpoint]: Changed logger level of single device classes.
 
 <a href="https://www.buymeacoffee.com/luligugithub">
   <img src="bmc-button.svg" alt="Buy me a coffee" width="80">
 </a>
 
 ###
-[`v3.3.7-dev-20251108-f254812`](https://redirect.github.com/Luligu/matterbridge/compare/de2d9ea87100bdd844bd5ae949cc38cf59bf59fa...f254812d69f48ae58eee3340d4037e7858ec9205)
+[`v3.3.8-dev-20251116-59b0ba9`](https://redirect.github.com/Luligu/matterbridge/compare/ca5ff216122bff6ee50ad1c11a8253beaf4f791d...59b0ba94227fde7891052178002bf0c8f8da7fa7)
 
 [Compare
-Source](https://redirect.github.com/Luligu/matterbridge/compare/de2d9ea87100bdd844bd5ae949cc38cf59bf59fa...f254812d69f48ae58eee3340d4037e7858ec9205)
+Source](https://redirect.github.com/Luligu/matterbridge/compare/ca5ff216122bff6ee50ad1c11a8253beaf4f791d...59b0ba94227fde7891052178002bf0c8f8da7fa7)
 
 ###
-[`v3.3.7-dev-20251106-de2d9ea`](https://redirect.github.com/Luligu/matterbridge/compare/440e5494e27d16574164e7bd4c9ec3d7e8abe7a2...de2d9ea87100bdd844bd5ae949cc38cf59bf59fa)
+[`v3.3.8-dev-20251115-ca5ff21`](https://redirect.github.com/Luligu/matterbridge/compare/920acfccf58ff10411978b736f694ca74d7108d2...ca5ff216122bff6ee50ad1c11a8253beaf4f791d)
 
 [Compare
-Source](https://redirect.github.com/Luligu/matterbridge/compare/440e5494e27d16574164e7bd4c9ec3d7e8abe7a2...de2d9ea87100bdd844bd5ae949cc38cf59bf59fa)
+Source](https://redirect.github.com/Luligu/matterbridge/compare/920acfccf58ff10411978b736f694ca74d7108d2...ca5ff216122bff6ee50ad1c11a8253beaf4f791d)
 
 ###
-[`v3.3.7-dev-20251105-440e549`](https://redirect.github.com/Luligu/matterbridge/compare/7c779b99006bd47ee4397e0c50903b900e46d17d...440e5494e27d16574164e7bd4c9ec3d7e8abe7a2)
+[`v3.3.8-dev-20251115-920acfc`](https://redirect.github.com/Luligu/matterbridge/compare/9b65e594bc598adacdbfb60e6602c1447ef26632...920acfccf58ff10411978b736f694ca74d7108d2)
 
 [Compare
-Source](https://redirect.github.com/Luligu/matterbridge/compare/7c779b99006bd47ee4397e0c50903b900e46d17d...440e5494e27d16574164e7bd4c9ec3d7e8abe7a2)
+Source](https://redirect.github.com/Luligu/matterbridge/compare/9b65e594bc598adacdbfb60e6602c1447ef26632...920acfccf58ff10411978b736f694ca74d7108d2)
 
 ###
-[`v3.3.7-dev-20251104-7c779b9`](https://redirect.github.com/Luligu/matterbridge/compare/c85d5741a47bb92d962dc9ab2e5e390b1ce95b8d...7c779b99006bd47ee4397e0c50903b900e46d17d)
+[`v3.3.8-dev-20251114-9b65e59`](https://redirect.github.com/Luligu/matterbridge/compare/3.3.7...9b65e594bc598adacdbfb60e6602c1447ef26632)
 
 [Compare
-Source](https://redirect.github.com/Luligu/matterbridge/compare/c85d5741a47bb92d962dc9ab2e5e390b1ce95b8d...7c779b99006bd47ee4397e0c50903b900e46d17d)
-
-###
-[`v3.3.7-dev-20251102-c85d574`](https://redirect.github.com/Luligu/matterbridge/compare/3.3.6...c85d5741a47bb92d962dc9ab2e5e390b1ce95b8d)
-
-[Compare
-Source](https://redirect.github.com/Luligu/matterbridge/compare/3.3.6...c85d5741a47bb92d962dc9ab2e5e390b1ce95b8d)
+Source](https://redirect.github.com/Luligu/matterbridge/compare/3.3.7...9b65e594bc598adacdbfb60e6602c1447ef26632)
 
 </details>
 
@@ -84,6 +93,6 @@ This PR was generated by [Mend Renovate](https://mend.io/renovate/).
 View the [repository job
 log](https://developer.mend.io/github/L2jLiga/ha-addons).
 
-<!--renovate-debug:eyJjcmVhdGVkSW5WZXIiOiI0MS4xNTkuNCIsInVwZGF0ZWRJblZlciI6IjQxLjE1OS40IiwidGFyZ2V0QnJhbmNoIjoibWFzdGVyIiwibGFiZWxzIjpbImRlcGVuZGVuY2llcyIsIm5vLXN0YWxlIl19-->
+<!--renovate-debug:eyJjcmVhdGVkSW5WZXIiOiI0MS4xNzMuMSIsInVwZGF0ZWRJblZlciI6IjQxLjE3My4xIiwidGFyZ2V0QnJhbmNoIjoibWFzdGVyIiwibGFiZWxzIjpbImRlcGVuZGVuY2llcyIsIm5vLXN0YWxlIl19-->
 
 Co-authored-by: renovate[bot] <29139614+renovate[bot]@users.noreply.github.com></details>
